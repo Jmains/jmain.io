@@ -1,0 +1,4 @@
+.btnBg {
+  @apply px-3 py-2 text-gray-50 rounded-lg shadow-md mt-6;
+  background: linear-gradient(90deg, #7e7cff 0%, #df9aff 100%);
+}

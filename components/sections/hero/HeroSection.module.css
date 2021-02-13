@@ -1,0 +1,17 @@
+.gradientText {
+  @apply md:text-6xl text-5xl font-bold tracking-wider text-white mt-6;
+  background-image: linear-gradient(90deg, #acb6e5 0%, #86fde8 100%);
+  background-image: conic-gradient(90deg, #acb6e5 0%, #86fde8 100%);
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-repeat: repeat;
+}
+
+.container {
+  @apply lg:w-4/6 relative bg-gray-bg rounded-br-lg;
+  height: 826px;
+}
