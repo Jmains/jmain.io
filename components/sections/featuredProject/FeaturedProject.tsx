@@ -1,12 +1,12 @@
 import { FC } from "react";
 import Link from "next/link";
 import s from "./FeaturedProject.module.css";
-import FtProjIcon from "@components/icons/FtProject";
+import { FtProjIcon, LgPinkOct } from "@components/icons";
 
 const FeaturedProject: FC = () => {
   return (
     <section className="relative lg:px-16 lg:pt-20 py-12 px-4 sm:px-10 text-center lg:text-left">
-      <div className="flex">
+      <div className="flex justify-center lg:justify-start">
         <div className="max-w-lg sm:mx-auto md:max-w-4xl lg:max-w-sm xl:max-w-2xl lg:mx-0">
           <div className="flex justify-center lg:hidden">
             <FtProjIcon />
@@ -27,13 +27,28 @@ const FeaturedProject: FC = () => {
                 <a className="text-lg md:text-xl">collabme.com</a>
               </Link>
             </div>
-            <FtProjIcon className="bg-pink-300 ml-8" />
+            <FtProjIcon className="hidden lg:block ml-8" />
           </div>
 
-          <p className="mt-6 md:text-lg md:leading-8 text-gray-500">
-            A LinkedIn for individuals from all avenues of entertainment, such as artists,
-            musicians, audio engineers, comedians and painters to connect and collaborate.
-          </p>
+          <div className="mt-6">
+            <h5 className="text-gray-500 md:leading-7 font-semibold">Why?</h5>
+            <p className="text-gray-500 md:leading-7 mt-2">
+              It's difficult for small artists, musicians, comedians and painters to get
+              recognition and promote their original works. This platform provides a way for
+              individuals to showcase and promote their original works as well as connect with
+              others in adjacent fields or specialties.{" "}
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <h5 className="text-gray-500 md:leading-7 font-semibold">What?</h5>
+            <p className="mt-2 md:leading-7 text-gray-500">
+              An online platform to <em>develop</em>, <em>connect</em> and <em>discover</em>{" "}
+              individuals from all avenues of entertainment, such as artists, musicians, audio
+              engineers, comedians and painters.
+            </p>
+          </div>
+
           <button className={s.btnBg}>Learn more.</button>
         </div>
       </div>
@@ -42,6 +57,9 @@ const FeaturedProject: FC = () => {
         src="https://images.unsplash.com/photo-1560814322-23e126ad9e84?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
         alt=""
       />
+      {/* <div className="absolute bottom-0 right-0  z-0 -mb-10">
+        <LgPinkOct className="z-0" />
+      </div> */}
     </section>
   );
 };

@@ -2,6 +2,7 @@ import { useState, useEffect, FC } from "react";
 import throttle from "lodash.throttle";
 import cn from "classnames";
 import s from "./Navbar.module.css";
+import { Email } from "@components/icons";
 // import { AcademicCap } from "@components/icons";
 // import { useUIDispatch } from "@components/ui/context";
 
@@ -12,7 +13,7 @@ const Navbar: FC = () => {
   // Detect whether user has scrolled down
   useEffect(() => {
     const handleScroll = throttle(() => {
-      const offset = 5;
+      const offset = 15;
       const { scrollTop } = document.documentElement;
       const scrolled = scrollTop > offset;
       setHasScrolled(scrolled);
@@ -26,22 +27,16 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={cn(
-        "bg-transparent sticky top-0 z-40 transition-all duration-300 ease-in-out ",
-        {
-          "": hasScrolled,
-        }
-      )}
+      className={cn("sticky top-0 z-40 transition-all duration-300 ease-in-out", {
+        "bg-white shadow-md": hasScrolled,
+      })}
     >
       {/* Maybe add some navbar scrolling effects later */}
       <div className="w-full mx-auto">
-        <div className="flex items-center justify-between bg-gray-bg h-16 lg:w-4/6 lg:rounded-tr-xl px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between bg-gray-bg h-14 lg:w-4/6 lg:rounded-tr-xl px-4 md:px-6 lg:px-8">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              {/* <AcademicCap className="w-10 h-10 text-lime-600" /> */}
-            </div>
             <div className="md:block">
-              <div className="sm:ml-10 flex items-baseline space-x-4">
+              <div className="sm:ml-6 flex items-baseline space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
                 <a href="" className={s.gradientText}>
                   JM.
@@ -142,11 +137,36 @@ const Navbar: FC = () => {
               </svg> */}
           {/* </button>
           </div> */}
-          <div className="text-gray-400">
-            <button className="md:mr-10 mr-5">projects.</button>
-            <button className="md:mr-10 mr-5">skills.</button>
-            <button className="md:mr-5 mr-2">about.</button>
+          <div className="text-gray-400 text-sm">
+            <button className="md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
+              projects.
+            </button>
+            <button className="md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
+              skills.
+            </button>
+            <button className="md:mr-3 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
+              about.
+            </button>
           </div>
+
+          <span
+            className={
+              hasScrolled
+                ? " absolute right-0 mr-24 text-sm text-gray-400 hidden hover:text-red-300 transition duration-300 ease-in-out cursor-pointer lg:block"
+                : "hidden"
+            }
+          >
+            Let's Talk.
+          </span>
+          <button
+            className={
+              hasScrolled
+                ? " absolute right-0 mr-12 focus:outline-none text-red-400 fill-current hidden lg:block"
+                : "hidden"
+            }
+          >
+            <Email className="h-7 w-7" />
+          </button>
         </div>
       </div>
 

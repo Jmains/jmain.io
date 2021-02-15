@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const Projects: FC = () => {
   return (
-    <section className="bg-gray-100 bg-gradient-to-b px-4 md:px-10 lg:px-20 pt-16 pb-10 text-center lg:text-left">
+    <section className="bg-gray-100 bg-gradient-to-b px-4 md:px-10 lg:px-16 pt-16 pb-10 text-center lg:text-left">
       <h2 className="text-pink-400 tracking-wide text-4xl font-bold">Projects.</h2>
       <div className="mt-10 lg:hidden">
         {projectsData.map((project) => {
