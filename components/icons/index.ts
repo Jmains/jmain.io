@@ -6,7 +6,7 @@ export { default as ThreeWhiteOct } from "./ThreeWhiteOct";
 export { default as ThreeBlackOct } from "./ThreeBlackOct";
 export { default as ThreeOctagon } from "./ThreeOctagon";
 
-export { default as LgPinkOct } from "./lgPinkOct";
+export { default as LgPinkOct } from "./LgPinkOct";
 
 export { default as OctagonPink } from "./OctagonPink";
 export { default as OctagonClear } from "./OctagonClear";
