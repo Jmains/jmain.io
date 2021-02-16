@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectCard: FC<{ project: Props }> = ({ project }) => {
   return (
-    <div className="w-full bg-gradient-to-b from-pink-200 via-gray-200 to-gray-50 p-4 lg:mx-2 rounded-lg shadow-md relative hover:scale-105 hover:-translate-y-3 transform transition duration-300 ease-in-out">
+    <div className="w-full bg-gradient-to-br from-white via-gray-200 to-gray-200 p-4 lg:mx-2 rounded-lg shadow-md relative ">
       {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
       <div className="block ">
@@ -18,18 +18,20 @@ const ProjectCard: FC<{ project: Props }> = ({ project }) => {
           <h4 className="text-gray-700 text-lg font-semibold">{project.title}</h4>
           <p className="text-gray-900 mt-3 leading-7 lg:text-sm">{project.description}</p>
         </div>
-        <img
-          className="h-48 w-54 object-center object-cover rounded-lg mx-auto shadow-md mt-8"
-          src={project.img}
-          alt=""
-        />
+        <div className="rounded-lg shadow-lg p-3 mt-4">
+          <img
+            className="object-center object-cover rounded-lg mx-auto h-56 w-full lg:mx-0 shadow-lg "
+            src={project.img}
+            alt=""
+          />
+        </div>
       </div>
 
-      <div className="flex mt-5 justify-around rounded-md px-5 py-3 overflow-hidden text-gray-500">
-        <Reactjs className="h-6 w-6 " />
-        <Javascript className="h-6 w-6" />
-        <Html className="h-6 w-6" />
-        <Css className="h-6 w-6" />
+      <div className="flex mt-5 justify-around space-x-5 rounded-md px-5 py-3 overflow-hidden text-gray-500">
+        <Reactjs className="h-12 px-2 py-1 rounded-lg w-12 shadow-md bg-gray-200" />
+        <Javascript className="h-12 px-2 py-1 rounded-lg w-12 shadow-md" />
+        <Html className="h-12 px-2 py-1 rounded-lg w-12 shadow-md" />
+        <Css className="h-12 px-2 py-1 rounded-lg w-12 shadow-md" />
 
         {/* {project.technologies.map((tech) => {
           return <span className="mx-2">{tech}</span>;

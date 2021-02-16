@@ -16,7 +16,7 @@ export default function Home() {
       <SkillsSection />
       {/* <About/>
       <Contact/> */}
-      <div className=" h-0.5 bg-gray-200 rounded-full mx-4"></div>
+      <div className=" h-0.5 bg-gray-200 rounded-full mx-auto w-80 md:w-full md:max-w-4xl flex "></div>
       <FooterSection />
     </div>
   );
