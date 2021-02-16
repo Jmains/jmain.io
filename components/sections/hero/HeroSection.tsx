@@ -64,11 +64,10 @@ const HeroSection: FC = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 -mr-20  transform transition-all duration-300 ease-in-out">
-          {/* <ThreeOctagon /> */}
-          <OctagonClear className="" />
-          <OctagonCyan className="" />
-          <OctagonPink className="" />
+        <div className="absolute right-0 top-0 -mr-20  transform transition-all duration-300 ease-in-out hidden lg:block">
+          <OctagonClear />
+          <OctagonCyan />
+          <OctagonPink />
         </div>
         {/* small screen octagon on left side */}
         <div className="absolute left-0 opacity-70 bottom-0 -mr-20 lg:hidden">

@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        "proj-1": "url('/headshot.JPG')",
+      }),
       colors: {
         "gray-bg": "#1C1C1C",
       },

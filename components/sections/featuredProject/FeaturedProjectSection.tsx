@@ -5,7 +5,7 @@ import { FtProjIcon, LgPinkOct } from "@components/icons";
 
 const FeaturedProjectSection: FC = () => {
   return (
-    <section className="relative lg:px-16 lg:pt-20 py-12 px-4 sm:px-10 text-center lg:text-left">
+    <section className="relative bg-gradient-to-t from-gray-100 to-white lg:px-16 lg:pt-20 py-12 px-4 sm:px-10 text-center lg:text-left">
       <div className="flex justify-center lg:justify-start">
         <div className="max-w-lg sm:mx-auto md:max-w-4xl lg:max-w-sm xl:max-w-2xl lg:mx-0">
           <div className="flex justify-center lg:hidden">

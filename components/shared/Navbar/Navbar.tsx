@@ -27,13 +27,13 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={cn("sticky top-0 z-40 transition-all duration-300 ease-in-out", {
-        "bg-white shadow-md": hasScrolled,
+      className={cn(s.blurB, {
+        "": hasScrolled,
       })}
     >
       {/* Maybe add some navbar scrolling effects later */}
       <div className="w-full mx-auto">
-        <div className="flex items-center justify-between bg-gray-bg h-14 lg:w-4/6 lg:rounded-tr-xl px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between blurB bg-gray-bg  h-14 lg:w-4/6 lg:rounded-tr-xl px-4 md:px-6 lg:px-8">
           <div className="flex items-center">
             <div className="md:block">
               <div className="sm:ml-6 flex items-baseline space-x-4">
@@ -137,7 +137,7 @@ const Navbar: FC = () => {
               </svg> */}
           {/* </button>
           </div> */}
-          <div className="text-gray-400 text-sm">
+          <div className="text-gray-400 text-sm ">
             <button className="md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
               projects.
             </button>

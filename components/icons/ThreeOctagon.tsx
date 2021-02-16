@@ -3,7 +3,7 @@ const ThreeOctagon = ({ ...props }) => {
     <svg
       {...props}
       width="80"
-      height="212"
+      height="200"
       viewBox="0 0 80 212"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
