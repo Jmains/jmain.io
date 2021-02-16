@@ -1,9 +1,9 @@
 import { FC } from "react";
 import Link from "next/link";
-import s from "./FeaturedProject.module.css";
+import s from "./FeaturedProjectSection.module.css";
 import { FtProjIcon, LgPinkOct } from "@components/icons";
 
-const FeaturedProject: FC = () => {
+const FeaturedProjectSection: FC = () => {
   return (
     <section className="relative lg:px-16 lg:pt-20 py-12 px-4 sm:px-10 text-center lg:text-left">
       <div className="flex justify-center lg:justify-start">
@@ -11,16 +11,16 @@ const FeaturedProject: FC = () => {
           <div className="flex justify-center lg:hidden">
             <FtProjIcon />
           </div>
-          <h2 className="lg:hidden text-purple-500 uppercase font-bold tracking-widest text-lg md:text-xl mt-4">
+          <h2 className="lg:hidden text-purple-400 uppercase font-bold tracking-widest text-lg md:text-xl mt-4">
             Featured Project
           </h2>
           <Link href="#">
-            <a className="lg:hidden text-lg md:text-xl">collabme.com</a>
+            <a className="lg:hidden text-lg text-gray-800 md:text-xl">collabme.com</a>
           </Link>
 
           <div className="hidden lg:flex lg:items-end">
             <div>
-              <h2 className="text-purple-500 uppercase font-bold tracking-widest text-lg md:text-xl mt-4">
+              <h2 className="text-purple-400 uppercase font-bold tracking-widest text-lg md:text-xl mt-4">
                 Featured Project
               </h2>
               <Link href="#">
@@ -48,8 +48,6 @@ const FeaturedProject: FC = () => {
               engineers, comedians and painters.
             </p>
           </div>
-
-          <button className={s.btnBg}>Learn more.</button>
         </div>
       </div>
       <img
@@ -57,6 +55,7 @@ const FeaturedProject: FC = () => {
         src="https://images.unsplash.com/photo-1560814322-23e126ad9e84?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
         alt=""
       />
+      <button className={s.btnBg}>Learn more.</button>
       {/* <div className="absolute bottom-0 right-0  z-0 -mb-10">
         <LgPinkOct className="z-0" />
       </div> */}
@@ -64,4 +63,4 @@ const FeaturedProject: FC = () => {
   );
 };
 
-export default FeaturedProject;
+export default FeaturedProjectSection;

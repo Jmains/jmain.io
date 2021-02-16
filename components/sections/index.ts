@@ -1,3 +1,4 @@
 export { default as HeroSection } from "./hero/HeroSection";
-export { default as FeaturedProject } from "./featuredProject/FeaturedProject";
-export { default as Projects } from "./projects/Projects";
+export { default as FeaturedProjectSection } from "./featuredProject/FeaturedProjectSection";
+export { default as ProjectsSection } from "./projects/ProjectsSection";
+export { default as SkillsSection } from "./skills/SkillsSection";

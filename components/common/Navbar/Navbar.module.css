@@ -1,14 +1,3 @@
-.blur {
-  @apply shadow-md;
-  /* -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px); */
-  -webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px);
-}
-
 .gradientText {
   @apply text-3xl px-2 py-2 rounded-md font-semibold;
   background-image: linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
@@ -21,3 +10,25 @@
   -moz-text-fill-color: transparent;
   background-repeat: repeat;
 }
+
+.blur {
+  @apply shadow-md;
+  /* -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+}
+
+/* Blue gradient */
+/* background-image: linear-gradient(90deg, #acb6e5 0%, #86fde8 100%);
+  background-image: conic-gradient(90deg, #acb6e5 0%, #86fde8 100%);
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-repeat: repeat; */
