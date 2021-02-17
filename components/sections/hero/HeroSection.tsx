@@ -8,15 +8,21 @@ import {
   ThreeOctagon,
   ThreeBlackOct,
   ThreeWhiteOct,
+  Github,
 } from "@components/icons";
 import { FC } from "react";
 import s from "./HeroSection.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection: FC = () => {
   return (
-    <section className=" bg-gradient-to-b from-gray-50 to-white">
+    <section className="">
       <div className={s.container}>
+        <Link href="https://github.com/Jmains">
+          <Github className="h-8 w-8 fill-current text-gray-300 absolute top-0 right-0 mt-5 mr-4 md:mr-10 shadow-md cursor-pointer" />
+        </Link>
+
         <div className="sm:px-32 lg:px-16 lg:pr-32 xl:pr-48 px-4 pt-24 text-center lg:text-left">
           <div className="lg:hidden">
             <Image
@@ -27,6 +33,7 @@ const HeroSection: FC = () => {
               alt="picture of me"
             />
           </div>
+
           {/* <img
             className="rounded-full h-24 w-24 object-cover mx-auto object-center shadow-md lg:hidden"
             src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
@@ -49,7 +56,7 @@ const HeroSection: FC = () => {
               alt=""
             /> */}
             <h4 className="lg:ml-3 md:text-base text-sm">
-              Full Stack Developer | Wanna be UX/UI Designer
+              Full Stack Developer | Aspiring UX/UI Designer
             </h4>
           </div>
           <h2 className="md:text-2xl sm:text-lg text-gray-300 tracking-wide mt-10">

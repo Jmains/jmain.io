@@ -3,6 +3,7 @@ import throttle from "lodash.throttle";
 import cn from "classnames";
 import s from "./Navbar.module.css";
 import { Email } from "@components/icons";
+import Link from "next/link";
 // import { AcademicCap } from "@components/icons";
 // import { useUIDispatch } from "@components/ui/context";
 
@@ -27,20 +28,20 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={cn(s.blurB, {
-        "": hasScrolled,
+      className={cn(" sticky top-0 z-40 transition-all duration-300 ease-in-out", {
+        "shadow-md bg-white": hasScrolled,
       })}
     >
       {/* Maybe add some navbar scrolling effects later */}
       <div className="w-full mx-auto">
-        <div className="flex items-center justify-between blurB bg-gray-bg  h-14 lg:w-4/6 lg:rounded-tr-xl px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between bg-gray-bg h-14 lg:w-4/6 lg:rounded-tr-xl pl-4 pr-2 md:px-6 lg:pl-8 lg:pr-5">
           <div className="flex items-center">
             <div className="md:block">
               <div className="sm:ml-6 flex items-baseline space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
-                <a href="" className={s.gradientText}>
-                  JM.
-                </a>
+                <Link href="/">
+                  <a className={s.gradientText}>JM.</a>
+                </Link>
               </div>
             </div>
           </div>

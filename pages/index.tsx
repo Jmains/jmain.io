@@ -13,12 +13,13 @@ export default function Home() {
     <div className="">
       <HeroSection />
       <AboutSection />
+      <div className=" h-0.5 bg-gray-200 rounded-full mx-auto w-4/5 flex"></div>
       <FeaturedProjectSection />
       <ProjectsSection />
       <SkillsSection />
 
       {/* <Contact/> */}
-      <div className=" h-0.5 bg-gray-200 rounded-full mx-auto w-80 md:w-full md:max-w-4xl flex "></div>
+      <div className=" h-0.5 bg-gray-200 rounded-full mx-auto w-4/5 flex "></div>
       <FooterSection />
     </div>
   );

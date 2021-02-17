@@ -11,7 +11,7 @@ interface Props {
 
 const ProjectCard: FC<{ project: Props }> = ({ project }) => {
   return (
-    <div className="w-full bg-gradient-to-br from-white via-gray-100 to-white p-4 lg:mx-2 rounded-lg shadow-md relative ">
+    <div className="w-full mx-auto md:max-w-xl bg-gradient-to-br from-white via-gray-100 to-white p-4 lg:mx-2 rounded-lg shadow-md relative ">
       {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
       <div className="block">

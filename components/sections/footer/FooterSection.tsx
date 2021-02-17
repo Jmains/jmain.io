@@ -6,7 +6,7 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer className="p-4 pb-10 pt-10">
-      <div className="px-3 py-1 bg-gray-bg rounded-lg flex justify-center w-16 mx-auto shadow-md">
+      <div className="px-3 py-1 rounded-lg bg-gray-bg flex justify-center w-16 mx-auto shadow-md">
         <h4 className={s.gradientText}>JM.</h4>
       </div>
 

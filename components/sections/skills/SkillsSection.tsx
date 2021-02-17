@@ -36,7 +36,7 @@ const SkillsSection: FC<Props> = () => {
           <h3 className="text-gray-700 tracking-wide">Frameworks & Libraries</h3>
           <div className="grid grid-cols-3 md:grid-cols-3 grid-flow-row mt-10 gap-y-14">
             <Reactjs className="h-10 w-10 mx-auto" />
-            <Nextjs className="h-10 w-10 mx-auto" />
+            <Nextjs className="h-12 w-12 mx-auto" />
             <Graphql className="h-10 w-10 mx-auto" />
             <Express className="h-14 w-14 mx-auto" />
             <Tailwind className="h-10 w-10 mx-auto" />
