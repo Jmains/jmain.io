@@ -15,7 +15,7 @@ import Image from "next/image";
 
 const HeroSection: FC = () => {
   return (
-    <section>
+    <section className=" bg-gradient-to-b from-gray-50 to-white">
       <div className={s.container}>
         <div className="sm:px-32 lg:px-16 lg:pr-32 xl:pr-48 px-4 pt-24 text-center lg:text-left">
           <div className="lg:hidden">

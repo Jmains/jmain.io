@@ -2,6 +2,9 @@ export { default as FtProjIcon } from "./FtProject";
 export { default as ArrowDown } from "./ArrowDown";
 export { default as Email } from "./Email";
 export { default as Github } from "./Github";
+export { default as Eye } from "./Eye";
+export { default as Olympics } from "./Olympics";
+export { default as USFlag } from "./USFlag";
 
 // Programming language icons
 export { default as Reactjs } from "./Reactjs";

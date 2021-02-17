@@ -25,7 +25,7 @@ const ProjectsSection: FC = () => {
 
 const projectsData = [
   {
-    title: "Contact Manager Android",
+    title: "Contact Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tellus elit, duis consectetur aliquam proin metus. A nulla nibh ornare diam",
     technologies: ["Next.js", "javascript", "html", "css", "apollo", "mongoDB"],
