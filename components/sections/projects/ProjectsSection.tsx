@@ -11,22 +11,22 @@ const ProjectsSection: FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l border-r lg:grid-cols-3 pb-10">
         {/* Card 1 */}
-        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-5">
+        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
           <div className="">
             <div className="p-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <div className="flex justify-between items-center">
-                <h4 className="text-gray-600 text-2xl font-semibold">
-                  {projectsData[0].title}{" "}
-                </h4>
+              <h6 className="text-projectBlue font-semibold text-lg">2019</h6>
+              <div className="flex justify-between items-center mt-3">
+                <h4 className="text-gray-600 text-2xl font-semibold">Contact Manager</h4>
                 <Android className="h-7 w-7" />
               </div>
-              <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-5 border-projectBlue px-4 my-2">
-                What?
-              </h5>
-              <p className="text-gray-500  leading-7 lg:text-sm">
-                {projectsData[0].description}
+
+              <p className="text-gray-500  leading-7 border-l-4 -ml-5 border-projectBlue px-4 lg:text-sm mt-5">
+                An android app that mimics the functionality of a contact manager in either
+                Android or iOS phones. Users can view their list of contacts sorted in
+                alphabetical order, view their location, and also add, edit, and remove a
+                contact from the contact list.
               </p>
             </div>
             <div className="rounded-lg p-4 max-w-4xl mx-auto my-4">
@@ -55,23 +55,20 @@ const ProjectsSection: FC = () => {
         {/* End Card 1 */}
 
         {/* Card 2 */}
-        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-5">
+        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
           <div className="">
             <div className="p-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <div className="flex justify-between items-center">
-                <h4 className="text-gray-600 text-2xl font-semibold">
-                  {projectsData[1].title}{" "}
-                </h4>
+              <h6 className="text-projectBlue font-semibold text-lg">2018</h6>
+              <div className="flex justify-between items-center mt-3">
+                <h4 className="text-gray-600 text-2xl font-semibold">Favorite Movie App </h4>
                 <Android className="h-7 w-7" />
               </div>
 
-              <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-5 border-projectBlue px-4 my-2">
-                What?
-              </h5>
-              <p className="text-gray-500  leading-7 lg:text-sm">
-                {projectsData[1].description}
+              <p className="text-gray-500  leading-7 border-l-4 -ml-5 border-projectBlue px-4 mt-5 lg:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tellus elit, duis
+                consectetur aliquam proin metus. A nulla nibh ornare diam
               </p>
             </div>
             <div className="rounded-lg p-4 max-w-4xl mx-auto my-4">
@@ -100,22 +97,20 @@ const ProjectsSection: FC = () => {
         {/* End Card 2 */}
 
         {/* Card 3 */}
-        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-5">
+        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
           <div className="">
             <div className="p-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <div className="flex justify-between items-center">
-                <h4 className="text-gray-600 text-2xl font-semibold">
-                  {projectsData[2].title}{" "}
-                </h4>
+              <h6 className="text-projectBlue font-semibold text-lg">2020</h6>
+              <div className="flex justify-between items-center mt-3">
+                <h4 className="text-gray-600 text-2xl font-semibold">SpaceX Redesign </h4>
                 <Android className="h-7 w-7" />
               </div>
-              <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-5 border-projectBlue px-4 my-2">
-                What?
-              </h5>
-              <p className="text-gray-500  leading-7 lg:text-sm">
-                {projectsData[2].description}
+
+              <p className="text-gray-500 leading-7 border-l-4 -ml-5 border-projectBlue px-4 mt-5 lg:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tellus elit, duis
+                consectetur aliquam proin metus. A nulla nibh ornare diam
               </p>
             </div>
             <div className="rounded-lg p-4 max-w-4xl mx-auto my-4">
