@@ -17,7 +17,7 @@ import Link from "next/link";
 
 const HeroSection: FC = () => {
   return (
-    <section className="">
+    <section className="max-w-screen-xl mx-auto">
       <div className={s.container}>
         <Link href="https://github.com/Jmains">
           <Github className="h-8 w-8 fill-current text-gray-300 absolute top-0 right-0 mt-5 mr-4 md:mr-10 shadow-md cursor-pointer" />

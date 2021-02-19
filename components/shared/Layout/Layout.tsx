@@ -17,16 +17,12 @@ const Layout: FC = ({ children }) => {
   // };
 
   return (
-    <div className={cn("h-full bg-white mx-auto transition-colors duration-150 ")}>
+    <div className={cn("h-full bg-white mx-auto transition-colors duration-150")}>
       <Navbar />
       {/* <PageHeader /> */}
-      <main className="antialiased overflow-hidden grid-cols-1 lg:grid-cols-4">
-        {children}
-      </main>
+      <main className="antialiased overflow-hidden">{children}</main>
       <div className="bg-gray-100">
-        <div className="grid grid-cols-1 mx-4 border-gray-200 border-l-2 border-r-2 lg:grid-cols-4">
-          <FooterSection />
-        </div>
+        <FooterSection />
       </div>
 
       {/* <Sidebar open={displaySidebar} onClose={closeSidebar}>
