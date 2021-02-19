@@ -5,6 +5,7 @@ export { default as Github } from "./Github";
 export { default as Eye } from "./Eye";
 export { default as Olympics } from "./Olympics";
 export { default as USFlag } from "./USFlag";
+export { default as Android } from "./Android";
 
 // Social icons
 export { default as Instagram } from "./Instagram";

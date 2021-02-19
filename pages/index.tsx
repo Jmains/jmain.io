@@ -17,13 +17,12 @@ export default function Home() {
       <div className="bg-gradient-to-t from-gray-50 to-white">
         <FeaturedProjectSection />
       </div>
-      <div className="bg-gray-50">
+
+      <div className="bg-gradient-to-b from-gray-50 to-white">
         <ProjectsSection />
       </div>
       <div className="bg-white">
-        <div className="grid grid-cols-1 mx-4 border-gray-200 border-l-2 border-r-2 md:grid-cols-2 lg:grid-cols-4">
-          {/* <SkillsSection /> */}
-        </div>
+        <SkillsSection />
       </div>
 
       {/* <Contact/> */}

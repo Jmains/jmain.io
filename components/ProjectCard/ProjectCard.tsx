@@ -1,4 +1,4 @@
-import { Css, Eye, Github, Html, Javascript, Reactjs } from "@components/icons";
+import { Android, Css, Eye, Github, Html, Javascript, Reactjs } from "@components/icons";
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,12 +11,15 @@ interface Props {
 // bg-gradient-to-br from-white via-gray-100 to-white shadow-md
 const ProjectCard: FC<{ project: Props }> = ({ project }) => {
   return (
-    <div className="xl:h-card relative md:border-r-2 md:border-gray-200">
+    <div className="xl:h-card lg:h-card relative md:border-r-2 md:border-gray-200 my-5">
       {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
       <div className="">
-        <div className="p-4 rounded-lg my-4 lg:h-56 xl:h-48">
-          <h4 className="text-gray-600 text-2xl font-semibold">{project.title} </h4>
+        <div className="p-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
+          <div className="flex justify-between items-center">
+            <h4 className="text-gray-600 text-2xl font-semibold">{project.title} </h4>
+            <Android className="h-7 w-7" />
+          </div>
           {/* <div className="flex justify-center lg:justify-start items-center mt-3">
             <Image
               className="object-center object-cover rounded-full shadow-md "
@@ -29,14 +32,14 @@ const ProjectCard: FC<{ project: Props }> = ({ project }) => {
               <span className="text-gray-500 text-xs font-light block">Oct 21, 2020</span>
             </div>
           </div> */}
-          <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-5 border-blue-200 px-4 my-2">
+          <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-5 border-blue-300 px-4 my-2">
             What?
           </h5>
           <p className="text-gray-500  leading-7 lg:text-sm">{project.description}</p>
         </div>
         <div className="rounded-lg p-4 max-w-4xl mx-auto my-4">
           <img
-            className="object-center object-cover rounded-lg mx-auto h-56 w-full sm:w-80 lg:w-full lg:mx-0 shadow-lg"
+            className="object-center object-cover rounded-lg mx-auto h-56 w-96 sm:w-96 shadow-lg"
             src={project.img}
             alt=""
           />
