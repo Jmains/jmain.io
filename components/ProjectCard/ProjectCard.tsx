@@ -8,10 +8,11 @@ interface Props {
   technologies: string[];
   img: string;
 }
+
 // bg-gradient-to-br from-white via-gray-100 to-white shadow-md
 const ProjectCard: FC<{ project: Props }> = ({ project }) => {
   return (
-    <div className="xl:h-card lg:h-card relative md:border-r-2 md:border-gray-200 my-5">
+    <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-5">
       {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
       <div className="">
@@ -32,7 +33,7 @@ const ProjectCard: FC<{ project: Props }> = ({ project }) => {
               <span className="text-gray-500 text-xs font-light block">Oct 21, 2020</span>
             </div>
           </div> */}
-          <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-5 border-blue-300 px-4 my-2">
+          <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-5 border-projectBlue px-4 my-2">
             What?
           </h5>
           <p className="text-gray-500  leading-7 lg:text-sm">{project.description}</p>

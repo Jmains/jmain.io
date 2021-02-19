@@ -19,16 +19,16 @@ interface Props {}
 const SkillsSection: FC<Props> = () => {
   return (
     <section className="">
-      <div className="py-3 border-l-2 border-r-2 border-gray-200 bg-gray-bg shadow-lg">
+      <div className="py-3 border-l border-r border-gray-200 bg-gray-bg shadow-lg">
         <h2 className="px-4 tracking-wide text-purple-300 text-center text-3xl font-semibold uppercase">
           Skills.
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 mx-4 border-gray-200 border-l-2 border-r-2 md:grid-cols-2 lg:grid-cols-4 pb-16">
+      <div className="grid grid-cols-1 mx-4 border-gray-200 border-l border-r md:grid-cols-2 lg:grid-cols-4 pb-16">
         <div className="mt-10">
           <h3 className="text-gray-700 tracking-wide px-4 text-center">Languages</h3>
-          <div className="grid grid-cols-3 px-4 md:grid-cols-3 grid-flow-row mt-10 gap-y-16 border-gray-200 border-r">
+          <div className="grid grid-cols-3 px-4 md:grid-cols-3 grid-flow-row mt-10 gap-y-16 border-gray-200 md:border-r">
             <Typescript className="h-10 w-10 mx-auto" />
             <Javascript className="h-10 w-10 rounded-md mx-auto" />
             <Java className="h-10 w-10 mx-auto" />

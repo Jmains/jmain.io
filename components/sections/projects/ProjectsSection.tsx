@@ -5,10 +5,10 @@ import s from "./ProjectsSection.module.css";
 const ProjectsSection: FC = () => {
   return (
     <section className="">
-      <div className="py-3 border-l-2 border-r-2 border-gray-200 bg-gray-bg shadow-lg">
+      <div className="py-3 border-l border-r border-gray-200 bg-gray-bg shadow-lg">
         <h2 className={s.gradientText}>Projects.</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l-2 border-r-2 lg:grid-cols-3 pb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l border-r lg:grid-cols-3 pb-10">
         {projectsData.map((project, i) => {
           return <ProjectCard key={i} project={project} />;
         })}

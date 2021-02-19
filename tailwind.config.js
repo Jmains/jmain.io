@@ -8,6 +8,7 @@ module.exports = {
       }),
       colors: {
         "gray-bg": "#1C1C1C",
+        projectBlue: "#34C2E3",
       },
       height: {
         fph: "400px",
