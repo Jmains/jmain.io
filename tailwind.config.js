@@ -11,6 +11,7 @@ module.exports = {
       },
       height: {
         fph: "400px",
+        card: "34rem",
       },
       width: {
         fpw: "500px",

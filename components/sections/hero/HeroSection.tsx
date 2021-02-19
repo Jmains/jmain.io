@@ -77,8 +77,8 @@ const HeroSection: FC = () => {
           <OctagonPink />
         </div>
         {/* small screen octagon on left side */}
-        <div className="absolute left-0 opacity-70 bottom-0 -mr-20 lg:hidden">
-          <ThreeOctagon />
+        <div className="absolute left-0 opacity-70 bottom-0 -ml-2 lg:hidden">
+          <ThreeOctagon className="h-44" />
         </div>
 
         <div className="absolute right-0 top-52 lg:block hidden">
@@ -88,8 +88,8 @@ const HeroSection: FC = () => {
           <ThreeBlackOct />
         </div>
         {/* small screen octagon on right side */}
-        <div className="absolute right-0 opacity-70 bottom-0 mt-56">
-          <ThreeOctagon />
+        <div className="absolute right-0 opacity-70 bottom-0 -mr-2 mt-56">
+          <ThreeOctagon className="h-44" />
         </div>
         <div className="absolute right-0 bottom-0 -ml-20 hidden lg:block">
           <OctagonPink className={s.hvrPush} />

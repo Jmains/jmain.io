@@ -1,20 +1,15 @@
 import ProjectCard from "@components/ProjectCard";
 import { FC } from "react";
+import s from "./ProjectsSection.module.css";
 
 const ProjectsSection: FC = () => {
   return (
-    <section className="bg-gray-bg bg-gradient-to-b p-4 md:px-10 lg:px-16 pt-10 pb-10 text-center shadow-md lg:text-left">
-      <h2 className="text-pink-400 tracking-wide text-4xl font-bold">Projects.</h2>
-      <div className="mt-10 lg:hidden">
-        {projectsData.map((project) => {
-          return (
-            <div className="mt-8">
-              <ProjectCard project={project} />
-            </div>
-          );
-        })}
+    <section className="pb-10">
+      <div className="py-5 lg:py-8 mx-4 border-l-2 border-r-2 border-gray-200 bg-white">
+        <h2 className={s.gradientText}>Projects.</h2>
       </div>
-      <div className="mt-10 hidden lg:flex">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l-2 border-r-2 lg:grid-cols-3">
         {projectsData.map((project, i) => {
           return <ProjectCard key={i} project={project} />;
         })}

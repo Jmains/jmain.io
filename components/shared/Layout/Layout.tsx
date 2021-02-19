@@ -2,6 +2,7 @@ import { FC } from "react";
 import cn from "classnames";
 import s from "./Layout.module.css";
 import Navbar from "../Navbar";
+import { FooterSection } from "@components/sections";
 // import Modal from "@components/ui/Modal";
 // import { useUIDispatch, useUIState } from "@components/ui/context";
 // import { LoginView, RegisterView, ForgotPassView } from "@components/auth";
@@ -21,8 +22,14 @@ const Layout: FC = ({ children }) => {
     >
       <Navbar />
       {/* <PageHeader /> */}
-      <main className="antialiased overflow-hidden">{children}</main>
-      {/* <Footer pages={pageProps.pages} /> */}
+      <main className="antialiased overflow-hidden grid-cols-1 lg:grid-cols-4">
+        {children}
+      </main>
+      <div className="bg-gray-100">
+        <div className="grid grid-cols-1 mx-4 border-gray-200 border-l-2 border-r-2 lg:grid-cols-4">
+          <FooterSection />
+        </div>
+      </div>
 
       {/* <Sidebar open={displaySidebar} onClose={closeSidebar}>
     <CartSidebarView />

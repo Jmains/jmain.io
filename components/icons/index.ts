@@ -6,6 +6,11 @@ export { default as Eye } from "./Eye";
 export { default as Olympics } from "./Olympics";
 export { default as USFlag } from "./USFlag";
 
+// Social icons
+export { default as Instagram } from "./Instagram";
+export { default as Linkedin } from "./Linkedin";
+export { default as Twitter } from "./Twitter";
+
 // Programming language icons
 export { default as Reactjs } from "./Reactjs";
 export { default as Graphql } from "./Graphql";
