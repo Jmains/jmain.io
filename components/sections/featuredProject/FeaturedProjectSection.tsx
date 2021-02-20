@@ -13,7 +13,7 @@ const FeaturedProjectSection: FC = () => {
             <FtProjIcon />
           </div>
 
-          <h2 className="text-purple-400 uppercase font-bold tracking-widest text-xl md:text-xl mt-4 text-center">
+          <h2 className="text-purple-400 uppercase font-semibold tracking-widest text-xl md:text-xl mt-4 text-center">
             Featured Project
           </h2>
           <div className="px-4 text-center">

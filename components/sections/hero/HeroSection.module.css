@@ -1,5 +1,5 @@
 .gradientText {
-  @apply md:text-6xl text-4xl font-bold tracking-wide text-white mt-6;
+  @apply md:text-6xl text-4xl font-semibold tracking-wide text-white mt-6;
   background-image: linear-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
   background-image: conic-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
   background-clip: text;
