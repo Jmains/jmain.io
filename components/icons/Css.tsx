@@ -2,7 +2,7 @@ const Css = ({ ...props }) => {
   return (
     <svg
       {...props}
-      enable-background="new 0 0 1771 2499.8"
+      enableBackground="new 0 0 1771 2499.8"
       viewBox="0 0 1771 2499.8"
       xmlns="http://www.w3.org/2000/svg"
     >

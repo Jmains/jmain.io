@@ -6,23 +6,25 @@ import { Android, Eye, Github } from "@components/icons";
 const ProjectsSection: FC = () => {
   return (
     <section className="max-w-screen-xl mx-auto">
-      <div className="py-3 border-l border-r border-gray-200 bg-gray-bg shadow-lg">
+      <div className="py-3 bg-gray-bg border-t border-gray-200 shadow-lg">
         <h2 className={s.gradientText}>Projects.</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l border-r lg:grid-cols-3 pb-10">
         {/* Card 1 */}
-        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
+        <div className=" xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
           <div className="">
-            <div className="p-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <h6 className="text-projectBlue font-semibold text-lg">2019</h6>
-              <div className="flex justify-between items-center mt-3">
-                <h4 className="text-gray-600 text-2xl font-semibold">Contact Manager</h4>
-                <Android className="h-7 w-7" />
+            <div className="px-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
+              <h6 className="text-projectBlue font-semibold">2019</h6>
+              <div className="flex justify-between mt-3">
+                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 border-projectBlue px-4">
+                  Contact Manager
+                </h4>
+                <Android className="h-6 w-6" />
               </div>
 
-              <p className="text-gray-500  leading-7 border-l-4 -ml-5 border-projectBlue px-4 lg:text-sm mt-5">
+              <p className="text-gray-600 mt-5">
                 An android app that mimics the functionality of a contact manager in either
                 Android or iOS phones. Users can view their list of contacts sorted in
                 alphabetical order, view their location, and also add, edit, and remove a
@@ -59,14 +61,16 @@ const ProjectsSection: FC = () => {
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
           <div className="">
-            <div className="p-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <h6 className="text-projectBlue font-semibold text-lg">2018</h6>
-              <div className="flex justify-between items-center mt-3">
-                <h4 className="text-gray-600 text-2xl font-semibold">Favorite Movie App </h4>
-                <Android className="h-7 w-7" />
+            <div className="px-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
+              <h6 className="text-projectBlue font-semibold">2018</h6>
+              <div className="flex justify-between mt-3">
+                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 border-projectBlue px-4">
+                  Favorite Movie App{" "}
+                </h4>
+                <Android className="h-6 w-6" />
               </div>
 
-              <p className="text-gray-500  leading-7 border-l-4 -ml-5 border-projectBlue px-4 mt-5 lg:text-sm">
+              <p className="text-gray-600 mt-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tellus elit, duis
                 consectetur aliquam proin metus. A nulla nibh ornare diam
               </p>
@@ -97,18 +101,20 @@ const ProjectsSection: FC = () => {
         {/* End Card 2 */}
 
         {/* Card 3 */}
-        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
+        <div className="xl:h-card lg:h-card relative md:border-r lg:border-r-0 md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
           <div className="">
-            <div className="p-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <h6 className="text-projectBlue font-semibold text-lg">2020</h6>
-              <div className="flex justify-between items-center mt-3">
-                <h4 className="text-gray-600 text-2xl font-semibold">SpaceX Redesign </h4>
-                <Android className="h-7 w-7" />
+            <div className="px-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
+              <h6 className="text-projectBlue font-semibold">2020</h6>
+              <div className="flex justify-between mt-3">
+                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 border-projectBlue px-4">
+                  SpaceX Redesign{" "}
+                </h4>
+                <Android className="h-6 w-6" />
               </div>
 
-              <p className="text-gray-500 leading-7 border-l-4 -ml-5 border-projectBlue px-4 mt-5 lg:text-sm">
+              <p className="text-gray-600 mt-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tellus elit, duis
                 consectetur aliquam proin metus. A nulla nibh ornare diam
               </p>

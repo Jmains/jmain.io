@@ -29,8 +29,8 @@ const ThreeOctagon = ({ ...props }) => {
           y2="177"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9C99EF" stop-opacity="0.25" />
-          <stop offset="1" stop-color="#F2C3D7" stop-opacity="0.25" />
+          <stop stopColor="#9C99EF" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#F2C3D7" stopOpacity="0.25" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -40,8 +40,8 @@ const ThreeOctagon = ({ ...props }) => {
           y2="35"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F6C5D5" />
-          <stop offset="1" stop-color="#9B98EF" />
+          <stop stopColor="#F6C5D5" />
+          <stop offset="1" stopColor="#9B98EF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -51,8 +51,8 @@ const ThreeOctagon = ({ ...props }) => {
           y2="106"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#88F9E8" />
-          <stop offset="1" stop-color="#ABB9E5" />
+          <stop stopColor="#88F9E8" />
+          <stop offset="1" stopColor="#ABB9E5" />
         </linearGradient>
       </defs>
     </svg>

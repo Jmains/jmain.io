@@ -28,17 +28,14 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={cn(
-        " sticky top-0 z-40 transition-all duration-300 ease-in-out xl:bg-gray-bg",
-        {
-          "shadow-md bg-white": hasScrolled,
-        }
-      )}
+      className={cn(" sticky top-0 z-40 transition-all duration-300 ease-in-out", {
+        "shadow-md bg-white": hasScrolled,
+      })}
     >
       {/* Maybe add some navbar scrolling effects later */}
       <div className="w-full mx-auto">
-        <div className="flex items-center justify-between bg-gray-bg h-14 lg:w-4/6 xl:w-11/12 lg:rounded-tr-xl pl-4 pr-2 md:px-6 lg:pl-8 lg:pr-5">
-          <div className="flex items-center">
+        <div className="flex items-center justify-between bg-gray-bg h-14 lg:w-4/6 lg:rounded-tr-md pl-4 pr-2 md:px-6 lg:pl-8 lg:pr-5">
+          <div className="flex items-center max-w-screen-xl">
             <div className="md:block">
               <div className="sm:ml-6 flex items-baseline space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
@@ -143,13 +140,13 @@ const Navbar: FC = () => {
           </div> */}
           <div className="text-gray-400 text-sm xl:px-6">
             <button className="md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
-              projects.
+              projects
             </button>
             <button className="md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
-              skills.
+              skills
             </button>
             <button className="md:mr-3 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
-              about.
+              about
             </button>
           </div>
 

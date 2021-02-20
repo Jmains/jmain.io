@@ -17,10 +17,12 @@ import Link from "next/link";
 
 const HeroSection: FC = () => {
   return (
-    <section className="max-w-screen-xl mx-auto ">
+    <section className="max-w-screen-xl mx-auto">
       <div className={s.container}>
         <Link href="https://github.com/Jmains">
-          <Github className="h-8 w-8 fill-current text-gray-300 absolute top-0 right-0 mt-5 mr-4 md:mr-10 shadow-md cursor-pointer" />
+          <button>
+            <Github className="h-7 w-7 fill-current text-gray-300 absolute top-0 right-0 mt-5 mr-4 md:mr-10 shadow-md cursor-pointer" />
+          </button>
         </Link>
 
         <div className="sm:px-32 lg:px-16 lg:pr-32 xl:pr-48 px-4 pt-24 text-center lg:text-left">
@@ -45,8 +47,8 @@ const HeroSection: FC = () => {
               <Image
                 className="rounded-full object-cover object-center shadow-md"
                 src="/headshot.JPG"
-                height="40"
-                width="40"
+                height="36"
+                width="36"
                 alt="picture of me"
               />
             </div>

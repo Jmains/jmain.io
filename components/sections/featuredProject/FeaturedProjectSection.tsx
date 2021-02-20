@@ -13,20 +13,20 @@ const FeaturedProjectSection: FC = () => {
             <FtProjIcon />
           </div>
 
-          <h2 className="text-purple-400 uppercase font-bold tracking-widest text-2xl md:text-xl mt-4 text-center">
+          <h2 className="text-purple-400 uppercase font-bold tracking-widest text-xl md:text-xl mt-4 text-center">
             Featured Project
           </h2>
           <div className="px-4 text-center">
-            <h3 className="text-2xl font-semibold text-gray-700 mt-2">Kollab</h3>
+            <h3 className="text-xl font-semibold text-gray-700 mt-2">Kollab</h3>
             <Link href="#">
-              <a className=" text-lg text-gray-700 md:text-xl">kollab.com</a>
+              <a className="text-gray-700 md:text-xl">kollab.com</a>
             </Link>
           </div>
           <div className="mt-6">
             <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-1 border-purple-400 px-4">
               Why?
             </h5>
-            <p className="text-gray-600 md:leading-7 mt-2 px-4">
+            <p className="text-gray-600 px-4 mt-2 md:leading-7">
               It's difficult for small artists, musicians, comedians and painters to get
               recognition and promote their original works. This platform provides a way for
               individuals to showcase and promote their original works as well as connect with
@@ -38,10 +38,12 @@ const FeaturedProjectSection: FC = () => {
             <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-1 border-purple-400 px-4">
               What?
             </h5>
-            <p className="mt-2 md:leading-7 text-gray-600 px-4">
-              An online platform to <em>develop</em>, <em>connect</em> and <em>discover</em>{" "}
-              individuals from all avenues of entertainment, such as artists, musicians, audio
-              engineers, comedians and painters.
+            <p className="text-gray-600 px-4 mt-2 md:leading-7">
+              An online platform to <em className="text-purple-400">develop</em>,{" "}
+              <em className="text-purple-400">connect</em> and{" "}
+              <em className="text-purple-400">discover</em> individuals from all avenues of
+              entertainment, such as artists, musicians, audio engineers, comedians and
+              painters.
             </p>
           </div>
           <div className="justify-center hidden md:flex">

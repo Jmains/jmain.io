@@ -22,9 +22,9 @@ const FtProject = ({ ...props }) => {
           width="66.9257"
           height="61.2131"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -44,8 +44,8 @@ const FtProject = ({ ...props }) => {
           y2="33.0824"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7E7CFF" />
-          <stop offset="1" stop-color="#DF9AFF" />
+          <stop stopColor="#7E7CFF" />
+          <stop offset="1" stopColor="#DF9AFF" />
         </linearGradient>
       </defs>
     </svg>

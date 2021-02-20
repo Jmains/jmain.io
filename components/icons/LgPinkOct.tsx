@@ -21,8 +21,8 @@ const LgPinkOct = ({ ...props }) => {
           y2="91"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9796F0" stop-opacity="0.49" />
-          <stop offset="1" stop-color="#FBC7D4" stop-opacity="0.5" />
+          <stop stopColor="#9796F0" stopOpacity="0.49" />
+          <stop offset="1" stopColor="#FBC7D4" stopOpacity="0.5" />
         </linearGradient>
       </defs>
     </svg>

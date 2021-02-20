@@ -14,8 +14,8 @@ const OctagonPink = ({ ...props }) => {
           y2="35"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9796F0" />
-          <stop offset="1" stop-color="#FBC7D4" />
+          <stop stopColor="#9796F0" />
+          <stop offset="1" stopColor="#FBC7D4" />
         </linearGradient>
       </defs>
     </svg>

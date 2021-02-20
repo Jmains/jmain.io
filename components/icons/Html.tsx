@@ -3,10 +3,10 @@ const Html = ({ ...props }) => {
     <svg
       {...props}
       viewBox="221.807 89.47 440 621.061"
-      enable-background="new 221.807 89.47 440 621.061"
+      enableBackground="new 221.807 89.47 440 621.061"
     >
       <filter id="a" width="150%" height="150%" x="-5%" y="-5%">
-        <feFlood flood-color="#000" result="floodFill" flood-opacity=".5" />
+        <feFlood floodColor="#000" result="floodFill" floodOpacity=".5" />
         <feComposite in="floodFill" in2="SourceAlpha" operator="in" result="coloredAlpha" />
         <feGaussianBlur in="coloredAlpha" result="blur" stdDeviation="8" />
         <feComposite in="blur" in2="SourceGraphic" operator="out" result="maskedOffsetBlur" />

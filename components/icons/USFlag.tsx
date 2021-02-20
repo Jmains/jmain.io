@@ -1,6 +1,6 @@
 const USFlag = ({ ...props }) => {
   return (
-    <svg enable-background="new 0 0 2500 1316" viewBox="0 0 2500 1316" {...props}>
+    <svg enableBackground="new 0 0 2500 1316" viewBox="0 0 2500 1316" {...props}>
       <path d="m.3.2h2499.7v1315.6h-2499.7z" fill="#fff" />
       <path d="m.3.2h2499.7v101.2h-2499.7z" fill="#bf0a30" />
       <path d="m.3 202.6h2499.7v101.2h-2499.7z" fill="#bf0a30" />

@@ -1,6 +1,6 @@
 const Email = ({ ...props }) => {
   return (
-    <svg {...props} enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+    <svg {...props} enableBackground="new 0 0 24 24" viewBox="0 0 24 24">
       <g>
         <rect fill="none" height="24" width="24" />
       </g>

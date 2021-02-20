@@ -21,8 +21,8 @@ const OctagonClear = ({ ...props }) => {
           y2="35"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9C99EF" stop-opacity="0.25" />
-          <stop offset="1" stop-color="#F2C3D7" stop-opacity="0.25" />
+          <stop stopColor="#9C99EF" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#F2C3D7" stopOpacity="0.25" />
         </linearGradient>
       </defs>
     </svg>

@@ -17,7 +17,11 @@ const Layout: FC = ({ children }) => {
   // };
 
   return (
-    <div className={cn("h-full bg-white mx-auto transition-colors duration-150")}>
+    <div
+      className={cn(
+        "h-full bg-white mx-auto transition-colors duration-150 font-sans max-w-screen-xl"
+      )}
+    >
       <Navbar />
       {/* <PageHeader /> */}
       <main className="antialiased overflow-hidden">{children}</main>
