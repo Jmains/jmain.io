@@ -5,7 +5,7 @@ import s from "./FooterSection.module.css";
 
 const FooterSection: FC = () => {
   return (
-    <footer className="max-w-screen-xl mx-auto">
+    <footer id="footerSection" className="max-w-screen-xl mx-auto">
       <div className="mx-4 p-4 pb-5 pt-10 border-gray-200 border-l border-r grid grid-cols-1 lg:grid-cols-4">
         <div className="px-3 py-1 rounded-lg bg-gray-bg flex justify-center w-16 mx-auto shadow-md">
           <h4 className={s.gradientText}>JM.</h4>

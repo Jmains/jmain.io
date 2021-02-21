@@ -10,14 +10,88 @@ import {
   ThreeWhiteOct,
   Github,
 } from "@components/icons";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import s from "./HeroSection.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import cn from "classnames";
+import { motion } from "framer-motion";
 
 const HeroSection: FC = () => {
+  const imageVariants = {
+    hidden: { opacity: 0, y: 70 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 0.1,
+      },
+      y: 0,
+    },
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: 70 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+      y: 0,
+    },
+  };
+
+  const subTitleVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.3,
+      },
+      y: 0,
+    },
+  };
+
+  const headlineVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 1.2,
+      },
+    },
+  };
+
+  const callToActionBtnVariants = {
+    hidden: { opacity: 0, x: 0 },
+    visible: {
+      x: [0, 10, -10, 10, 0],
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        delay: 2,
+      },
+      y: 0,
+    },
+  };
+
+  const arrowDownVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 2,
+      },
+      y: 0,
+    },
+  };
+
   return (
-    <section className="max-w-screen-xl mx-auto">
+    <section id="heroSection" className="max-w-screen-xl mx-auto">
       <div className={s.container}>
         <Link href="https://github.com/Jmains">
           <button>
@@ -26,51 +100,85 @@ const HeroSection: FC = () => {
         </Link>
 
         <div className="sm:px-32 lg:px-16 lg:pr-32 xl:pr-48 px-4 pt-24 text-center lg:text-left">
-          <div className="lg:hidden">
-            <Image
+          {/* Profile Pic small screen */}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={imageVariants}
+            className="lg:hidden"
+          >
+            <img
               className="rounded-full object-cover object-center mx-auto shadow-md lg:hidden"
               src="/headshot.JPG"
-              width="96"
-              height="96"
+              width="90"
+              height="90"
               alt="picture of me"
             />
-          </div>
+          </motion.div>
 
-          {/* <img
-            className="rounded-full h-24 w-24 object-cover mx-auto object-center shadow-md lg:hidden"
-            src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
-            alt=""
-          /> */}
-          <h1 className={s.gradientText}>Jackson Main</h1>
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={titleVariants}
+            className={s.gradientText}
+          >
+            Jackson Main
+          </motion.h1>
           <div className="flex mt-3 items-center text-gray-400 justify-center lg:justify-start">
-            <div className="lg:block hidden">
-              <Image
+            {/* Profile Pic large screen */}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={subTitleVariants}
+              className="lg:block hidden"
+            >
+              <img
                 className="rounded-full object-cover object-center shadow-md"
                 src="/headshot.JPG"
-                height="36"
-                width="36"
+                height="40"
+                width="40"
                 alt="picture of me"
               />
-            </div>
+            </motion.div>
             {/* <img
               className="rounded-full h-10 w-10 object-cover object-center shadow-md hidden lg:block"
               src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
               alt=""
             /> */}
-            <h4 className="lg:ml-3 md:text-base text-sm">
+            <motion.h4
+              initial="hidden"
+              animate="visible"
+              variants={subTitleVariants}
+              className="lg:ml-3 md:text-base text-sm"
+            >
               Full Stack Developer | Aspiring UX/UI Designer
-            </h4>
+            </motion.h4>
           </div>
-          <h2 className="md:text-2xl sm:text-lg text-gray-300 tracking-wide mt-10">
+          <motion.h2
+            initial="hidden"
+            animate="visible"
+            variants={headlineVariants}
+            className="md:text-2xl sm:text-lg text-gray-300 tracking-wide mt-10"
+          >
             Striving to provide the most memorable and meaningful user experiences on the web.
-          </h2>
+          </motion.h2>
           <div className="lg:flex lg:items-center">
-            <button className="mt-12 text-semibold text-gray-200 bg-gray-700 bg-opacity-50 px-4 py-2 rounded-lg">
+            <motion.button
+              initial="hidden"
+              animate="visible"
+              variants={callToActionBtnVariants}
+              className="mt-12 text-semibold text-gray-200 bg-gray-700 bg-opacity-50 px-4 py-2 rounded-lg"
+            >
               Let's get to know me!
-            </button>
-            <div className="flex justify-center mt-20 animate-bounce lg:ml-20">
+            </motion.button>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={arrowDownVariants}
+              className="flex justify-center mt-20 animate-bounce lg:ml-20"
+            >
               <ArrowDown className="h-10 w-10 fill-current text-gray-50" />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="absolute right-0 top-0 -mr-20  transform transition-all duration-300 ease-in-out hidden lg:block">
@@ -94,9 +202,9 @@ const HeroSection: FC = () => {
           <ThreeOctagon className="h-44" />
         </div>
         <div className="absolute right-0 bottom-0 -ml-20 hidden lg:block">
-          <OctagonPink className={s.hvrPush} />
-          <OctagonCyan className={s.hvrPush} />
-          <OctagonClear className={s.hvrPush} />
+          <OctagonPink />
+          <OctagonCyan />
+          <OctagonClear />
         </div>
       </div>
     </section>

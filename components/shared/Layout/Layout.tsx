@@ -19,7 +19,7 @@ const Layout: FC = ({ children }) => {
   return (
     <div
       className={cn(
-        "h-full bg-white mx-auto transition-colors duration-150 font-sans max-w-screen-xl"
+        "h-full bg-white mx-auto transition duration-150 font-sans max-w-screen-xl"
       )}
     >
       <Navbar />

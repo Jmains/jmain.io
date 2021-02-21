@@ -5,9 +5,9 @@ import { Android, Eye, Github } from "@components/icons";
 
 const ProjectsSection: FC = () => {
   return (
-    <section className="max-w-screen-xl mx-auto">
+    <section id="projectsSection" className="max-w-screen-xl mx-auto">
       <div className="py-3 bg-gray-bg border-t border-gray-200 shadow-lg">
-        <h2 className={s.gradientText}>Projects.</h2>
+        <h2 className={s.gradientText}>Projects</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l border-r lg:grid-cols-3 pb-10">
         {/* Card 1 */}

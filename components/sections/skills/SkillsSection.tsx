@@ -18,10 +18,10 @@ interface Props {}
 
 const SkillsSection: FC<Props> = () => {
   return (
-    <section className="max-w-screen-xl mx-auto">
+    <section id="skillsSection" className="max-w-screen-xl mx-auto">
       <div className="py-3 border-gray-200 bg-gray-bg shadow-lg">
         <h2 className="px-4 tracking-wide text-purple-300 text-center text-3xl font-semibold uppercase">
-          Skills.
+          Skills
         </h2>
       </div>
 

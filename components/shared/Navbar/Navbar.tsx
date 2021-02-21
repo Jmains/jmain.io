@@ -4,6 +4,7 @@ import cn from "classnames";
 import s from "./Navbar.module.css";
 import { Email } from "@components/icons";
 import Link from "next/link";
+import { useScrollToDispatch, useScrollToState } from "@utils/useScroll";
 // import { AcademicCap } from "@components/icons";
 // import { useUIDispatch } from "@components/ui/context";
 
@@ -16,11 +17,13 @@ const Navbar: FC = () => {
     const handleScroll = throttle(() => {
       const offset = 15;
       const { scrollTop } = document.documentElement;
+
       const scrolled = scrollTop > offset;
       setHasScrolled(scrolled);
     }, 200);
 
     document.addEventListener("scroll", handleScroll);
+
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
@@ -139,13 +142,34 @@ const Navbar: FC = () => {
           {/* </button>
           </div> */}
           <div className="text-gray-400 text-sm xl:px-6">
-            <button className="md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
+            <button
+              onClick={() => {
+                alert("Still thinking of what to do with this button");
+              }}
+              className={cn(
+                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
+              )}
+            >
               projects
             </button>
-            <button className="md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
+            <button
+              onClick={() => {
+                alert("Still thinking of what to do with this button");
+              }}
+              className={cn(
+                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
+              )}
+            >
               skills
             </button>
-            <button className="md:mr-3 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none">
+            <button
+              onClick={() => {
+                alert("Still thinking of what to do with this button");
+              }}
+              className={cn(
+                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
+              )}
+            >
               about
             </button>
           </div>
