@@ -91,7 +91,7 @@ const HeroSection: FC = () => {
   };
 
   return (
-    <section id="heroSection" className="max-w-screen-xl mx-auto">
+    <section id="heroSection">
       <div className={s.container}>
         <Link href="https://github.com/Jmains">
           <button>
@@ -108,10 +108,8 @@ const HeroSection: FC = () => {
             className="lg:hidden"
           >
             <img
-              className="rounded-full object-cover object-center mx-auto shadow-md lg:hidden"
+              className=" h-24 w-24 rounded-full object-cover object-center mx-auto shadow-md lg:hidden"
               src="/headshot.JPG"
-              width="90"
-              height="90"
               alt="picture of me"
             />
           </motion.div>
@@ -133,10 +131,8 @@ const HeroSection: FC = () => {
               className="lg:block hidden"
             >
               <img
-                className="rounded-full object-cover object-center shadow-md"
+                className="h-10 w-10 rounded-full object-cover object-center shadow-md"
                 src="/headshot.JPG"
-                height="40"
-                width="40"
                 alt="picture of me"
               />
             </motion.div>
@@ -158,7 +154,7 @@ const HeroSection: FC = () => {
             initial="hidden"
             animate="visible"
             variants={headlineVariants}
-            className="md:text-2xl sm:text-lg text-gray-300 tracking-wide mt-10"
+            className="md:text-xl sm:text-lg px-1 text-gray-300 tracking-wide mt-10"
           >
             Striving to provide the most memorable and meaningful user experiences on the web.
           </motion.h2>
@@ -167,9 +163,9 @@ const HeroSection: FC = () => {
               initial="hidden"
               animate="visible"
               variants={callToActionBtnVariants}
-              className="mt-12 text-semibold text-gray-200 bg-gray-700 bg-opacity-50 px-4 py-2 rounded-lg"
+              className="mt-12 text-semibold text-gray-200 bg-gray-700 bg-opacity-50 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300 transition duration-200 ease-in-out"
             >
-              Let's get to know me!
+              Let's see my work!
             </motion.button>
             <motion.div
               initial="hidden"

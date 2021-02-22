@@ -17,29 +17,23 @@ const Layout: FC = ({ children }) => {
   // };
 
   return (
-    <div
-      className={cn(
-        "h-full bg-white mx-auto transition duration-150 font-sans max-w-screen-xl"
-      )}
-    >
+    <div className={cn("h-full bg-white mx-auto transition duration-150 font-sans relative")}>
       <Navbar />
+
       {/* <PageHeader /> */}
       <main className="antialiased overflow-hidden">{children}</main>
       <div className="bg-gray-100">
         <FooterSection />
       </div>
-
       {/* <Sidebar open={displaySidebar} onClose={closeSidebar}>
     <CartSidebarView />
   </Sidebar> */}
-
       {/* <Modal open={displayModal} onClose={closeModal}>
         {modalView === modalViews.LOGIN_VIEW && <LoginView />}
         {modalView === modalViews.REGISTER_VIEW && <RegisterView />}
         {modalView === modalViews.FORGOT_PASS_VIEW && <ForgotPassView />} */}
       {/* {modalView === modalViews.CREATE_STUDY_GROUP_VIEW && <CreateStudyGroupView} */}
       {/* </Modal> */}
-
       {/* <FeatureBar
     title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
     hide={acceptedCookies}

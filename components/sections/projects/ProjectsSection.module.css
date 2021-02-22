@@ -1,8 +1,8 @@
 /* Blue gradient */
 .gradientText {
   @apply px-4 tracking-wide text-center text-3xl lg:text-4xl font-bold uppercase;
-  background-image: linear-gradient(90deg, #2bc0e4 0%, #eaecc6 100%);
-  background-image: conic-gradient(90deg, #2bc0e4 0%, #eaecc6 100%);
+  background-image: linear-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
+  background-image: conic-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
   background-clip: text;
   background-size: 100%;
   -webkit-background-clip: text;

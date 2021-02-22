@@ -6,6 +6,8 @@ export { default as Eye } from "./Eye";
 export { default as Olympics } from "./Olympics";
 export { default as USFlag } from "./USFlag";
 export { default as Android } from "./Android";
+export { default as ArrowLeft } from "./ArrowLeft";
+export { default as ArrowRight } from "./ArrowRight";
 
 // Social icons
 export { default as Instagram } from "./Instagram";

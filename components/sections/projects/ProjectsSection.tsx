@@ -5,20 +5,20 @@ import { Android, Eye, Github } from "@components/icons";
 
 const ProjectsSection: FC = () => {
   return (
-    <section id="projectsSection" className="max-w-screen-xl mx-auto">
+    <section id="projectsSection">
       <div className="py-3 bg-gray-bg border-t border-gray-200 shadow-lg">
         <h2 className={s.gradientText}>Projects</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l border-r lg:grid-cols-3 pb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center mx-4 border-gray-200 border-l border-r lg:grid-cols-3 lg:pt-10 lg:pb-16 md:pt-10 md:pb-28">
         {/* Card 1 */}
-        <div className=" xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
+        <div className="lg:px-6 lg:h-card relative md:border-r md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
-          <div className="">
+          <div>
             <div className="px-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <h6 className="text-projectBlue font-semibold">2019</h6>
+              <h6 className="text-purple-400 font-semibold">2019</h6>
               <div className="flex justify-between mt-3">
-                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 border-projectBlue px-4">
+                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 lg:-ml-10 lg:pl-8 border-purple-400 px-4">
                   Contact Manager
                 </h4>
                 <Android className="h-6 w-6" />
@@ -39,6 +39,20 @@ const ProjectsSection: FC = () => {
               />
             </div>
           </div>
+          <div className="flex items-center p-4 space-x-3">
+            <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-sm">#Java</span>
+            </div>
+
+            <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-sm">
+                #Android Studio
+              </span>
+            </div>
+            <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-sm">#Sqlite</span>
+            </div>
+          </div>
           <div className="flex justify-center space-x-10 mt-6">
             <Link href="/">
               <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
@@ -57,14 +71,14 @@ const ProjectsSection: FC = () => {
         {/* End Card 1 */}
 
         {/* Card 2 */}
-        <div className="xl:h-card lg:h-card relative md:border-r md:border-gray-200 my-8">
+        <div className="lg:px-6 lg:h-card relative md:border-r md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
           <div className="">
             <div className="px-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <h6 className="text-projectBlue font-semibold">2018</h6>
+              <h6 className="text-purple-400 font-semibold">2018</h6>
               <div className="flex justify-between mt-3">
-                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 border-projectBlue px-4">
+                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 lg:-ml-10 lg:pl-8 border-purple-400 px-4">
                   Favorite Movie App{" "}
                 </h4>
                 <Android className="h-6 w-6" />
@@ -81,6 +95,18 @@ const ProjectsSection: FC = () => {
                 src={projectsData[1].img}
                 alt=""
               />
+            </div>
+          </div>
+          <div className="flex items-center p-4 space-x-3">
+            <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-sm">#AngularJS</span>
+            </div>
+            <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-sm">#TypeScript</span>
+            </div>
+
+            <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-sm">#Firebase</span>
             </div>
           </div>
           <div className="flex justify-center space-x-10 mt-6">
@@ -101,14 +127,14 @@ const ProjectsSection: FC = () => {
         {/* End Card 2 */}
 
         {/* Card 3 */}
-        <div className="xl:h-card lg:h-card relative md:border-r lg:border-r-0 md:border-gray-200 my-8">
+        <div className="lg:px-6 lg:h-card relative md:border-r lg:border-r-0 md:border-gray-200 my-8">
           {/* <img src={project.img} className="absolute z-0" alt="" /> */}
 
-          <div className="">
+          <div>
             <div className="px-4 rounded-lg my-4 md:h-64 lg:h-56 xl:h-48">
-              <h6 className="text-projectBlue font-semibold">2020</h6>
+              <h6 className="text-purple-400 font-semibold">2020</h6>
               <div className="flex justify-between mt-3">
-                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 border-projectBlue px-4">
+                <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 lg:-ml-10 lg:pl-8 border-purple-400 px-4">
                   SpaceX Redesign{" "}
                 </h4>
                 <Android className="h-6 w-6" />
@@ -125,6 +151,24 @@ const ProjectsSection: FC = () => {
                 src={projectsData[2].img}
                 alt=""
               />
+            </div>
+          </div>
+          <div className="flex items-center p-4 space-x-3">
+            <div className="px-3 py-2 md:py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-xs md:text-sm">
+                #TypeScript
+              </span>
+            </div>
+
+            <div className="px-3 py-2 md:py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-xs md:text-sm">
+                #NextJS
+              </span>
+            </div>
+            <div className="px-3 py-2 md:py-1 rounded-full bg-purple-200 shadow-md">
+              <span className="block text-purple-700 font-semibold text-xs md:text-sm">
+                #TailwindCSS
+              </span>
             </div>
           </div>
           <div className="flex justify-center space-x-10 mt-6">
