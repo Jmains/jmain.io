@@ -10,21 +10,21 @@ const FeaturedProjectSection: FC = () => {
       <div className="grid grid-cols-1 mx-4 border-gray-200 border-l border-r justify-center pt-10 pb-20 md:pb-28 md:pt-24 md:grid-cols-2 lg:grid-cols-12">
         <div className="md:col-span-12">
           <div className="flex justify-center">
-            <FtProjIcon />
+            <FtProjIcon className="h-20 w-20 lg:h-28 lg:w-28" />
           </div>
 
-          <h2 className="text-purple-400 uppercase font-semibold tracking-widest text-xl md:text-3xl lg:text-3xl mt-4 text-center md:text-center md:p-4">
+          <h2 className="text-purple-400 uppercase font-semibold tracking-widest text-xl md:text-3xl lg:text-3xl mt-4 lg:mt-0 text-center md:text-center md:p-4">
             Featured Project
           </h2>
           <div className="px-4 text-center md:text-center">
-            <h3 className="text-xl font-semibold text-gray-700 mt-2 md:text-2xl">Kollab</h3>
+            <h3 className="text-xl font-semibold text-gray-700 mt-2 md:text-2xl">Kollabme</h3>
             <Link href="#">
-              <a className="text-gray-700 md:text-xl">kollab.com</a>
+              <a className="text-gray-700 md:text-xl">kollabme.app</a>
             </Link>
           </div>
 
           <div className="lg:grid lg:grid-cols-2 sm:px-12 md:px-24 lg:px-20 md:text-lg">
-            <div className="mt-16 lg:pr-10 lg:border-r lg:border-gray-200">
+            <div className="mt-16 lg:pt-10 lg:pr-10 lg:border-r lg:border-gray-200">
               <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-1 border-purple-400 px-4">
                 What?
               </h5>
@@ -76,14 +76,16 @@ const FeaturedProjectSection: FC = () => {
             </div>
           </div>
 
-          <button className={s.btnBg}>
-            <span className="text-sm md:text-base text-gray-50 font-semibold tracking-wide">
-              Learn more
-            </span>
-            <div>
-              <ArrowRight className="h-5 w-5 text-white" />
-            </div>
-          </button>
+          <Link href="https://kollab-me.herokuapp.com/community">
+            <a className={s.btnBg}>
+              <span className="text-sm md:text-base text-gray-50 font-semibold tracking-wide">
+                Learn more
+              </span>
+              <div>
+                <ArrowRight className="h-5 w-5 text-white" />
+              </div>
+            </a>
+          </Link>
         </div>
       </div>
 

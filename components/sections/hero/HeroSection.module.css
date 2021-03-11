@@ -12,7 +12,6 @@
 }
 
 .container {
-  @apply lg:w-4/6 relative bg-gray-bg rounded-br-lg rounded-bl-lg lg:rounded-bl-none shadow-lg;
   height: 806px;
 }
 

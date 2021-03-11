@@ -15,7 +15,7 @@ const Navbar: FC = () => {
   // Detect whether user has scrolled down
   useEffect(() => {
     const handleScroll = throttle(() => {
-      const offset = 15;
+      const offset = 10;
       const { scrollTop } = document.documentElement;
 
       const scrolled = scrollTop > offset;
@@ -31,17 +31,16 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={cn(
-        "sticky top-0 z-40 transition-all duration-300 ease-in-out max-w-screen-xl mx-auto",
-        {
-          "shadow-md bg-gray-bg": hasScrolled,
-        }
-      )}
+      className={cn("sticky bg-gray-bg top-0 z-40 transition-all duration-300 ease-in-out", {
+        "shadow-lg": hasScrolled,
+      })}
     >
       {/* Maybe add some navbar scrolling effects later */}
-      <div className="w-full mx-auto">
-        <div className="flex items-center justify-between bg-gray-bg h-14 lg:w-4/6 lg:rounded-tr-md pl-4 pr-2 md:pl-6 lg:pl-8 lg:pr-5">
-          <div className="flex items-center max-w-screen-xl">
+
+      <div className="">
+        <div className="flex items-center lg:rounded-tr-md pl-4 pr-2 md:pl-6 lg:px-6 justify-between max-w-screen-xl mx-auto relative">
+          {/* Navbar Logo */}
+          <div className="flex items-center">
             <div className="md:block">
               <div className="sm:ml-6 flex items-baseline space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
@@ -51,6 +50,8 @@ const Navbar: FC = () => {
               </div>
             </div>
           </div>
+          {/* End Navbar Logo */}
+
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
               {/* Profile dropdown  */}
@@ -170,31 +171,33 @@ const Navbar: FC = () => {
                 alert("Still thinking of what to do with this button");
               }}
               className={cn(
-                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
+                "mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
               )}
             >
               about
             </button>
           </div>
 
-          <span
-            className={
-              hasScrolled
-                ? " absolute right-0 mr-24 text-sm text-gray-400 hidden hover:text-red-300 transition duration-300 ease-in-out cursor-pointer lg:block"
-                : "hidden"
-            }
-          >
-            Let's Talk.
-          </span>
-          <button
-            className={
-              hasScrolled
-                ? " absolute right-0 mr-12 focus:outline-none text-red-400 fill-current hidden lg:block"
-                : "hidden"
-            }
-          >
-            <Email className="h-7 w-7" />
-          </button>
+          {/* <div className="flex items-center absolute right-0">
+            <span
+              className={
+                hasScrolled
+                  ? "  text-sm text-gray-400 hidden hover:text-red-300 transition duration-300 ease-in-out cursor-pointer lg:block"
+                  : "hidden"
+              }
+            >
+              Let's Talk.
+            </span>
+            <button
+              className={
+                hasScrolled
+                  ? " focus:outline-none text-red-400 fill-current hidden lg:block"
+                  : "hidden"
+              }
+            >
+              <Email className="h-7 w-7" />
+            </button>
+          </div> */}
         </div>
       </div>
 
