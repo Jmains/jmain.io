@@ -36,6 +36,4 @@ export { default as LgPinkOct } from "./LgPinkOct";
 
 export { default as OctagonPink } from "./OctagonPink";
 export { default as OctagonClear } from "./OctagonClear";
-export { default as OctagonBlack } from "./OctagonBlack";
-export { default as OctagonWhite } from "./OctagonWhite";
 export { default as OctagonCyan } from "./OctagonCyan";

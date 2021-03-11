@@ -20,6 +20,7 @@ module.exports = {
         fph: "400px",
         card: "40rem",
         heroBg: "806px",
+        heroSectionHeight: "960px",
       },
       width: {
         fpw: "500px",
