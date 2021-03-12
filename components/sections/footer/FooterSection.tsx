@@ -6,28 +6,34 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer id="footerSection" className="max-w-screen-xl mx-auto">
-      <div className="mx-4 p-4 pb-5 pt-10 border-gray-200 border-l border-r grid grid-cols-1 lg:grid-cols-4">
-        <div className="px-3 py-1 rounded-lg bg-gray-bg flex justify-center w-16 mx-auto shadow-md">
-          <h4 className={s.gradientText}>JM.</h4>
+      <div className="mx-4 p-4 pb-5 pt-10 border-gray-200 border-l border-r px-10">
+        {/* First col */}
+        <div className="">
+          <div className="px-3 py-1 rounded-lg bg-gray-bg flex justify-center w-16  shadow-md">
+            <Link href="/">
+              <a className={s.gradientText} href="">
+                JM.
+              </a>
+            </Link>
+          </div>
+          <p className="text-2xl text-gray-700 font-medium mt-7">
+            Jackson's Portfolio Website
+          </p>
+        </div>
+        {/* End First Col */}
+
+        <div className="grid grid-cols-2 gap-x-32  md:text-left lg:grid-cols-4 mt-6 grid-flow-row gap-y-3 text-gray-500">
+          <span className="block ">Projects</span>
+          <span className="block ">About</span>
+          <span className="block ">Twitter</span>
+          <span className="block ">Skills</span>
+          <span className="block">Instagram</span>
+          <span className="block">Github</span>
+          <span className="block ">Contact</span>
+          <span className="block ">Facebook</span>
         </div>
 
-        <div className="flex justify-center space-x-2 font-light text-gray-500 text-sm mt-6">
-          <span className="">projects</span>
-          <span>&bull;</span>
-          <span>skills </span>
-          <span>&bull;</span>
-          <span>about</span>
-          <span>&bull;</span>
-          <span>contact</span>
-        </div>
-
-        {/* <div className="flex justify-center mt-5 space-x-6">
-        <Instagram className="h-7 w-7 fill-current text-gray-500" />
-        <Linkedin className="h-7 w-7 fill-current text-gray-500" />
-        <Twitter className="h-7 w-7 fill-current text-gray-500" />
-      </div> */}
-
-        <div className="flex justify-center">
+        <div className="mt-12">
           <Link href="https://github.com/Jmains/jmain.io">
             <button className="px-3 py-1 flex items-center bg-gray-300 text-gray-800 rounded-md mt-4 text-xs shadow-md focus:outline-none">
               <span>
@@ -37,7 +43,8 @@ const FooterSection: FC = () => {
             </button>
           </Link>
         </div>
-        <span className="block text-xs text-gray-400 font-light text-center mt-7">
+
+        <span className="block text-xs text-gray-400 font-light text-left mt-5">
           &copy; Jackson Main 2021. All Rights Reserved.
         </span>
       </div>

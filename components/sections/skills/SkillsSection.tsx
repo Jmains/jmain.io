@@ -32,7 +32,9 @@ const SkillsSection: FC<Props> = () => {
 
       <div className="grid grid-cols-1 mx-4 border-gray-200 border-l border-r md:grid-cols-1 lg:grid-cols-3 pt-10 pb-16 lg:pt-10 lg:pb-20">
         <div className="mt-10 pt-10">
-          <h3 className="text-gray-700 tracking-wide px-4 text-center">Languages</h3>
+          <h3 className="text-gray-700 tracking-wide px-4 text-center lg:text-lg">
+            Languages
+          </h3>
           <div className="grid grid-cols-3 px-4 md:grid-cols-3 grid-flow-row mt-10 gap-y-16 border-gray-200 lg:border-r">
             <Typescript className="h-10 w-10 mx-auto" />
             <Javascript className="h-10 w-10 rounded-md mx-auto" />
@@ -44,7 +46,7 @@ const SkillsSection: FC<Props> = () => {
         </div>
 
         <div className="mt-10 lg:mt-0 border-gray-100 border-t-2 sm:border-none pt-10">
-          <h3 className="text-gray-700 tracking-wide px-4 text-center pt-10">
+          <h3 className="text-gray-700 tracking-wide px-4 text-center pt-10 lg:text-lg">
             Frameworks & Libraries
           </h3>
           <div className="grid grid-cols-3 px-4 md:grid-cols-3 grid-flow-row mt-10 gap-y-14 border-gray-200 lg:border-r">
@@ -57,7 +59,7 @@ const SkillsSection: FC<Props> = () => {
           </div>
         </div>
         <div className="mt-10 lg:mt-0 border-gray-100 border-t-2 sm:border-none pt-10">
-          <h3 className="text-gray-700 tracking-wide px-4 text-center pt-10">
+          <h3 className="text-gray-700 tracking-wide px-4 text-center pt-10 lg:text-lg">
             Tools & Databases
           </h3>
           <div className="grid grid-cols-3 px-4 md:grid-cols-3 grid-flow-row mt-10 lg:mt-5 gap-y-6">
@@ -69,18 +71,6 @@ const SkillsSection: FC<Props> = () => {
             <Git className="h-16 w-16 mx-auto mt-8" />
           </div>
         </div>
-
-        {/* <div className="mt-10">
-          <h3 className="text-gray-700 tracking-wide px-4">Tools & Databases</h3>
-          <div className="grid grid-cols-3 md:grid-cols-3 grid-flow-row mt-5">
-            <Reactjs className="h-10 w-10 " />
-            <Nextjs className="h-10 w-10 " />
-            <Graphql className="h-10 w-10 " />
-            <Tailwind className="h-10 w-10 " />
-            <Apollo className="h-10 w-10 " />
-            <Express className="h-10 w-10 " />
-          </div>
-        </div> */}
       </div>
     </section>
   );
