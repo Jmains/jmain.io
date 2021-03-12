@@ -32,7 +32,7 @@ const Navbar: FC = () => {
   return (
     <nav
       className={cn("sticky bg-gray-bg top-0 z-40 transition-all duration-300 ease-in-out", {
-        "shadow-lg": hasScrolled,
+        " shadow-lg": hasScrolled,
       })}
     >
       {/* Maybe add some navbar scrolling effects later */}

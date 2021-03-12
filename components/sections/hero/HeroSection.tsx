@@ -263,7 +263,6 @@ const HeroSection: FC = () => {
               <Twitter className="h-7 w-7 fill-current text-blue-400" />
             </div>
           </div>
-          <div className={s.purpleGradientBlur}></div>
         </div>
       </div>
     </section>
