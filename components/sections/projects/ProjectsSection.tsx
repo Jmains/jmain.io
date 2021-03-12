@@ -9,21 +9,23 @@ const ProjectsSection: FC = () => {
       <div className="py-3 rounded-sm bg-gray-bg border-t border-gray-200 shadow-lg">
         <h2 className={s.gradientText}>Projects</h2>
       </div>
-      <div className="grid grid-cols-1 justify-center mx-4 border-gray-200 border-l border-r lg:pt-10 lg:pb-40 md:pt-10 md:pb-32">
+      <div className="grid grid-cols-1 justify-center mx-4 border-gray-200 border-l border-r pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
         {/* Card 1 */}
         <div className="lg:px-6 relative mt-20">
           <div>
             <div className="md:flex block">
               <div className="px-4 md:w-1/2 rounded-lg my-4">
-                <h6 className="text-purple-400 font-semibold md:pl-5 lg:pl-7">March, 2020</h6>
+                <h6 className="text-purple-500 font-semibold md:pl-5 lg:pl-7 xl:text-lg">
+                  March, 2020
+                </h6>
                 <div className="flex justify-between mt-3">
-                  <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 lg:-ml-10 md:pl-9 lg:pl-16 border-purple-400 px-4">
+                  <h4 className="text-gray-600 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-10 md:pl-9 lg:pl-16 border-purple-400 px-4">
                     Contact Manager
                   </h4>
                   <Android className="h-6 w-6" />
                 </div>
 
-                <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg">
+                <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:text-xl xl:leading-9">
                   An android app that mimics the functionality of a contact manager in either
                   Android or iOS phones. Users can view their list of contacts sorted in
                   alphabetical order, view their location, and also add, edit, and remove a
@@ -37,8 +39,8 @@ const ProjectsSection: FC = () => {
                     alt=""
                   />
                 </div>
-
-                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7">
+                {/* Start Technologies used section */}
+                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
                   <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
                     <span className="block text-purple-700 font-semibold text-sm">#Java</span>
                   </div>
@@ -54,6 +56,8 @@ const ProjectsSection: FC = () => {
                     </span>
                   </div>
                 </div>
+                {/* End Technologies used section */}
+                {/* Start Project Links */}
                 <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
                   <Link href="/">
                     <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
@@ -68,6 +72,7 @@ const ProjectsSection: FC = () => {
                     </div>
                   </Link>
                 </div>
+                {/* End Project Links */}
               </div>
               <div className="hidden md:block rounded-lg p-7 mx-auto">
                 <img
@@ -82,7 +87,7 @@ const ProjectsSection: FC = () => {
         {/* End Card 1 */}
 
         {/* Card 2 */}
-        <div className="lg:px-6 relative mt-20 lg:mt-40">
+        <div className="lg:px-6 relative mt-20 lg:mt-32">
           <div>
             <div className="md:flex block">
               <div className="hidden md:block rounded-lg p-7 mx-auto">
@@ -93,15 +98,17 @@ const ProjectsSection: FC = () => {
                 />
               </div>
               <div className="px-4 md:border-l border-gray-200 md:w-1/2 my-4">
-                <h6 className="text-purple-400 font-semibold md:pl-5 lg:pl-7">May, 2019</h6>
+                <h6 className="text-purple-500 font-semibold md:pl-5 lg:pl-7 xl:text-lg">
+                  May, 2019
+                </h6>
                 <div className="flex justify-between mt-3">
-                  <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 lg:-ml-15 md:pl-9 lg:pl-11 border-purple-400 px-4">
+                  <h4 className="text-gray-600 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-15 md:pl-9 lg:pl-11 border-purple-400 px-4">
                     Favorite Movie Collection
                   </h4>
                   <Android className="h-6 w-6" />
                 </div>
 
-                <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg">
+                <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:text-xl xl:leading-9">
                   An web app to store your own personal favorite movie collection. User's can
                   rate of 5 and write a short description about why they liked the movie.
                   Movies can be created, updated, and deleted.
@@ -115,7 +122,7 @@ const ProjectsSection: FC = () => {
                   />
                 </div>
 
-                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7">
+                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
                   <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
                     <span className="block text-purple-700 font-semibold text-sm">
                       #Angular
@@ -154,19 +161,21 @@ const ProjectsSection: FC = () => {
         {/* End Card 2 */}
 
         {/* Card 3 */}
-        <div className="lg:px-6 relative mt-20 lg:mt-40">
+        <div className="lg:px-6 relative mt-20 lg:mt-32">
           <div>
             <div className="md:flex block">
               <div className="px-4 md:w-1/2 rounded-lg my-4">
-                <h6 className="text-purple-400 font-semibold md:pl-5 lg:pl-7">April, 2021</h6>
+                <h6 className="text-purple-500 font-semibold md:pl-5 lg:pl-7 xl:text-lg">
+                  April, 2021
+                </h6>
                 <div className="flex justify-between mt-3">
-                  <h4 className="text-gray-600 text-xl font-semibold border-l-4 -ml-5 lg:-ml-10 md:pl-9 lg:pl-16 border-purple-400 px-4">
+                  <h4 className="text-gray-600 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-10 md:pl-9 lg:pl-16 border-purple-400 px-4">
                     SpaceX Redesign
                   </h4>
                   <Android className="h-6 w-6" />
                 </div>
 
-                <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg">
+                <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:text-xl xl:leading-9">
                   An improved version of the SpaceX website. Coming soon...
                 </p>
 
@@ -178,7 +187,7 @@ const ProjectsSection: FC = () => {
                   />
                 </div>
 
-                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7">
+                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
                   <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
                     <span className="block text-purple-700 font-semibold text-sm">
                       #TypeScript

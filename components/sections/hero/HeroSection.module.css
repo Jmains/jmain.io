@@ -15,6 +15,12 @@
   height: 806px;
 }
 
+.purpleGradientBlur {
+  @apply h-32 absolute bottom-0 right-0 left-0 lg:m-0 -mb-20 z-0;
+  background: linear-gradient(180deg, #9d9aee 0%, #e8c7db 100%);
+  filter: blur(50px);
+}
+
 /* Push */
 @-webkit-keyframes hvrPush {
   50% {

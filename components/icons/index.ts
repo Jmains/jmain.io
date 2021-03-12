@@ -28,6 +28,13 @@ export { default as Nodejs } from "./Nodejs";
 export { default as Html } from "./Html";
 export { default as Css } from "./Css";
 
+// Tools & Databases Icons
+export { default as MongoDb } from "./MongoDb";
+export { default as Webpack } from "./Webpack";
+export { default as Git } from "./Git";
+export { default as Postgres } from "./Postgres";
+export { default as AndroidStudio } from "./AndroidStudio";
+
 export { default as ThreeWhiteOct } from "./ThreeWhiteOct";
 export { default as ThreeBlackOct } from "./ThreeBlackOct";
 export { default as ThreeOctagon } from "./ThreeOctagon";

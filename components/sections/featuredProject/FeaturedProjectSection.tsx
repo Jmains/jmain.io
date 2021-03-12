@@ -13,7 +13,7 @@ const FeaturedProjectSection: FC = () => {
             <FtProjIcon className="h-20 w-20 lg:h-28 lg:w-28" />
           </div>
 
-          <h2 className="text-purple-400 uppercase font-semibold tracking-widest text-xl md:text-3xl lg:text-3xl mt-4 lg:mt-0 text-center md:text-center md:p-4">
+          <h2 className="text-purple-500 uppercase font-semibold tracking-widest text-xl md:text-3xl lg:text-3xl mt-4 lg:mt-0 text-center md:text-center md:p-4">
             Featured Project
           </h2>
           <div className="px-4 text-center md:text-center">
@@ -23,15 +23,15 @@ const FeaturedProjectSection: FC = () => {
             </Link>
           </div>
 
-          <div className="lg:grid lg:grid-cols-2 sm:px-12 md:px-24 lg:px-20 md:text-lg">
+          <div className="lg:grid lg:grid-cols-2 sm:px-12 md:px-24 lg:px-20 md:text-lg xl:text-xl ">
             <div className="mt-16 lg:pt-10 lg:pr-10 lg:border-r lg:border-gray-200">
               <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-1 border-purple-400 px-4">
                 What?
               </h5>
-              <p className="text-gray-600 px-4 mt-2 md:leading-7 lg:h-36">
-                An online platform to <em className="text-purple-400">develop</em>,{" "}
-                <em className="text-purple-400">connect</em> and{" "}
-                <em className="text-purple-400">discover</em> individuals from all avenues of
+              <p className="text-gray-600 px-4 mt-2 md:leading-7 xl:leading-9 lg:h-36">
+                An online platform to <em className="text-purple-500">develop</em>,{" "}
+                <em className="text-purple-500">connect</em> and{" "}
+                <em className="text-purple-500">discover</em> individuals from all avenues of
                 entertainment, such as artists, musicians, audio engineers, comedians and
                 painters.
               </p>
@@ -60,7 +60,7 @@ const FeaturedProjectSection: FC = () => {
               <h5 className="text-gray-600 md:leading-7 font-semibold border-l-4 -ml-1 border-purple-400 px-4">
                 Why?
               </h5>
-              <p className="text-gray-600 px-4 mt-2 md:leading-7 lg:h-36">
+              <p className="text-gray-600 px-4 mt-2 md:leading-7 lg:h-36 xl:leading-9">
                 It's difficult for small artists, musicians, comedians and painters to get
                 recognition and promote their original works. This platform provides a way for
                 individuals to showcase and promote their original works as well as connect
