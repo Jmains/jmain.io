@@ -16,13 +16,13 @@ const FooterSection: FC = () => {
               </a>
             </Link>
           </div>
-          <p className="text-2xl text-gray-700 font-medium mt-7">
+          <p className="md:text-2xl text-gray-700 font-medium mt-7 text-lg">
             Jackson's Portfolio Website
           </p>
         </div>
         {/* End First Col */}
 
-        <div className="grid grid-cols-2 gap-x-32  md:text-left lg:grid-cols-4 mt-6 grid-flow-row gap-y-3 text-gray-500">
+        <div className="grid grid-cols-2 gap-x-32  md:text-left md:grid-cols-3 lg:grid-cols-4 mt-6 grid-flow-row gap-y-3 text-gray-500">
           <span className="block ">Projects</span>
           <span className="block ">About</span>
           <span className="block ">Twitter</span>

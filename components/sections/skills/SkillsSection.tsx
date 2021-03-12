@@ -30,8 +30,8 @@ const SkillsSection: FC<Props> = () => {
         <h2 className={s.gradientText}>Skills</h2>
       </div>
 
-      <div className="grid grid-cols-1 mx-4 border-gray-200 border-l border-r md:grid-cols-1 lg:grid-cols-3 pt-10 pb-16 lg:pt-10 lg:pb-20">
-        <div className="mt-10 pt-10">
+      <div className="grid grid-cols-1 mx-4 border-gray-200 border-l border-r md:grid-cols-1 lg:grid-cols-3 pt-10 pb-16 lg:pt- lg:pb-20">
+        <div className="mt-10 md:pt-6">
           <h3 className="text-gray-700 tracking-wide px-4 text-center lg:text-lg">
             Languages
           </h3>

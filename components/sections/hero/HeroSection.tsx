@@ -104,7 +104,7 @@ const HeroSection: FC = () => {
   return (
     <section id="heroSection">
       <div className="grid grid-cols-1 lg:grid-cols-12 max-w-screen-xl lg:border-r lg:mr-4  border-gray-200">
-        <div className="bg-gray-bg rounded-br-sm rounded-bl-sm lg:rounded-bl-none lg:col-span-8  col-span-1 h-heroBg lg:h-screen max-h-heroBg relative">
+        <div className="  bg-gray-bg rounded-br-sm rounded-bl-sm lg:rounded-bl-none lg:col-span-8  col-span-1 h-heroBg lg:h-screen max-h-heroBg relative">
           <Link href="https://github.com/Jmains">
             <button>
               <Github className="h-7 w-7 lg:hidden fill-current text-gray-300 absolute top-0 right-0 mt-5 mr-4 md:mr-10 shadow-md cursor-pointer" />
@@ -134,6 +134,7 @@ const HeroSection: FC = () => {
             >
               Jackson Main
             </motion.h1>
+
             <div className="flex mt-3 items-center text-gray-400 justify-center lg:justify-start">
               {/* Profile Pic large screen */}
               <motion.div
@@ -143,7 +144,7 @@ const HeroSection: FC = () => {
                 className="lg:block hidden"
               >
                 <img
-                  className="h-10 w-10 rounded-full object-cover object-center shadow-md"
+                  className="h-12 w-12 rounded-full object-cover object-center shadow-md"
                   src="/headshot.JPG"
                   alt="picture of me"
                 />
@@ -157,7 +158,7 @@ const HeroSection: FC = () => {
                 initial="hidden"
                 animate="show"
                 variants={subTitleVariants}
-                className="lg:ml-3 md:text-base text-sm"
+                className="lg:ml-3 text-sm md:text-base lg:text-lg lg:text-gray-400"
               >
                 Full Stack Developer | Aspiring UX/UI Designer
               </motion.h4>
@@ -166,7 +167,7 @@ const HeroSection: FC = () => {
               initial="hidden"
               animate="show"
               variants={headlineVariants}
-              className="md:text-xl sm:text-lg px-1 text-gray-300 tracking-wide mt-10"
+              className="sm:text-lg md:text-xl lg:text-2xl   px-1 text-gray-300 tracking-wide mt-10"
             >
               Striving to provide the most memorable and meaningful user experiences on the
               web.

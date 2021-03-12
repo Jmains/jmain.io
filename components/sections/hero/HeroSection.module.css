@@ -1,5 +1,5 @@
 .gradientText {
-  @apply text-4xl sm:text-5xl md:text-6xl font-semibold tracking-wide text-white mt-6;
+  @apply text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-semibold tracking-wide text-white mt-6;
   background-image: linear-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
   background-image: conic-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
   background-clip: text;
@@ -18,7 +18,9 @@
 .purpleGradientBlur {
   @apply h-32 absolute bottom-0 right-0 left-0 lg:m-0 -mb-20 z-0;
   background: linear-gradient(180deg, #9d9aee 0%, #e8c7db 100%);
+  background: conic-gradient(180deg, #9d9aee 0%, #e8c7db 100%);
   filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
 /* Push */
