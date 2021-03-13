@@ -2,11 +2,7 @@ import { useState, useEffect, FC } from "react";
 import throttle from "lodash.throttle";
 import cn from "classnames";
 import s from "./Navbar.module.css";
-import { Email } from "@components/icons";
 import Link from "next/link";
-import { useScrollToDispatch, useScrollToState } from "@utils/useScroll";
-// import { AcademicCap } from "@components/icons";
-// import { useUIDispatch } from "@components/ui/context";
 
 const Navbar: FC = () => {
   // const uiDispatch = useUIDispatch();
