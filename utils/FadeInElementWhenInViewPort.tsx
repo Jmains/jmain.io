@@ -27,12 +27,9 @@ export const FadeInElementWhenInViewPort: FC = ({ children }) => {
 
   return (
     <div
-      className={cn(
-        "opacity-0 duration-700 translate-x-20 transition-all transform-transition transform ease-in-out",
-        {
-          "opacity-100 transform-none": isVisible,
-        }
-      )}
+      className={cn("opacity-0 duration-700 transition transform-gpu ease-in-out", {
+        "opacity-100 ": isVisible,
+      })}
       ref={nodeRef}
     >
       {children}
