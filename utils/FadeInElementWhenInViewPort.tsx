@@ -23,12 +23,12 @@ export const FadeInElementWhenInViewPort: FC = ({ children }) => {
     return () => {
       if (nodeRef.current) observer.unobserve(nodeRef.current);
     };
-  }, [isVisible]);
+  }, []);
 
   return (
     <div
-      className={cn("opacity-0 duration-700 translate-x-20 transform ease-in-out", {
-        "opacity-100 transform-none": isVisible,
+      className={cn("opacity-0 duration-700 translate-x-20 transition transform ease-in-out", {
+        "opacity-100 translate-x-0 transform transition": isVisible,
       })}
       ref={nodeRef}
     >
