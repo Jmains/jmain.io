@@ -6,7 +6,7 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer id="footerSection" className="max-w-screen-xl mx-auto">
-      <div className="mx-4 p-4 pb-5 pt-10 border-gray-700 border-l border-r px-10">
+      <div className="mx-4 p-4 pb-5 pt-10 border-gray-700 border-l border-r md:border-none px-10">
         {/* First col */}
         <div className="">
           <Link href="/">
