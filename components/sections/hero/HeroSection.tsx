@@ -309,7 +309,7 @@ const HeroSection: FC = () => {
           </div> */}
         </div>
         <div className="col-span-5 ml-10 mr-5 mt-10 hidden lg:block">
-          <img className=" " src="/heroillustration.svg" alt="illustration" />
+          <img className=" " src="/heroIllustration.svg" alt="illustration" />
         </div>
       </div>
     </section>
