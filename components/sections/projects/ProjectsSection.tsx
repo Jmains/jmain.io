@@ -58,7 +58,7 @@ const ProjectsSection: FC = () => {
               {/* Start Project Links */}
               <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
                 <Link href="/">
-                  <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
+                  <div className="shadow-md px-4 py-1 text-gray-400 rounded-md">
                     <Github className="h-6 w-6 mx-auto fill-current" />
                     <span className="block font-bold text-xs mt-1">Github</span>
                   </div>
@@ -66,7 +66,7 @@ const ProjectsSection: FC = () => {
                 <Link href="/">
                   <div className="shadow-md px-5 py-1 rounded-md">
                     <Eye className="h-6 w-6 fill-current text-red-500" />
-                    <span className="block font-bold text-xs text-gray-500 mt-1">Live</span>
+                    <span className="block font-bold text-xs text-gray-400 mt-1">Live</span>
                   </div>
                 </Link>
               </div>
@@ -142,7 +142,7 @@ const ProjectsSection: FC = () => {
                 </div>
                 <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
                   <Link href="/">
-                    <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
+                    <div className="shadow-md px-4 py-1 text-gray-400 rounded-md">
                       <Github className="h-6 w-6 mx-auto fill-current" />
                       <span className="block font-bold text-xs mt-1">Github</span>
                     </div>
@@ -150,7 +150,7 @@ const ProjectsSection: FC = () => {
                   <Link href="/">
                     <div className="shadow-md px-5 py-1 rounded-md">
                       <Eye className="h-6 w-6 fill-current text-red-500" />
-                      <span className="block font-bold text-xs text-gray-500 mt-1">Live</span>
+                      <span className="block font-bold text-xs text-gray-400 mt-1">Live</span>
                     </div>
                   </Link>
                 </div>
@@ -211,7 +211,7 @@ const ProjectsSection: FC = () => {
                 </div>
                 <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
                   <Link href="/">
-                    <div className="shadow-md px-4 py-1 text-gray-500 bg-gray-100 rounded-md">
+                    <div className="shadow-md px-4 py-1 text-gray-400 rounded-md">
                       <Github className="h-6 w-6 mx-auto fill-current" />
                       <span className="block font-bold text-xs mt-1">Github</span>
                     </div>
@@ -219,7 +219,7 @@ const ProjectsSection: FC = () => {
                   <Link href="/">
                     <div className="shadow-md px-5 py-1 rounded-md">
                       <Eye className="h-6 w-6 fill-current text-red-500" />
-                      <span className="block font-bold text-xs text-gray-500 mt-1">Live</span>
+                      <span className="block font-bold text-xs text-gray-400 mt-1">Live</span>
                     </div>
                   </Link>
                 </div>
