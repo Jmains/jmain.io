@@ -8,7 +8,7 @@ import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort"
 const FeaturedProjectSection: FC = () => {
   return (
     <section id="ftProjSection">
-      <div className="mx-auto pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 grid grid-cols-1">
+      <div className="mx-4 md:mx-auto pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 grid grid-cols-1 border-l border-r border-gray-200 md:border-none">
         <div className="md:mt-32 mt-14">
           <div className="flex justify-center">
             <FtProjIcon className="h-20 w-20 lg:h-28 lg:w-28" />
@@ -27,8 +27,8 @@ const FeaturedProjectSection: FC = () => {
           </div>
         </div>
 
-        <div className="mx-auto mt-20 px-4 xl:text-lg">
-          <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark pl-4">
+        <div className="mx-auto mt-20 xl:text-lg">
+          <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark md:border-none pl-4 md:-ml-6 md:pl-8">
             What?
           </span>
 
@@ -60,8 +60,8 @@ const FeaturedProjectSection: FC = () => {
           </button>
         </div>
 
-        <div className="lg:mt-28 mt-20 px-4 mx-auto xl:text-lg">
-          <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark px-4">
+        <div className="lg:mt-28 mt-20 mx-auto xl:text-lg">
+          <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark md:border-none px-4 md:-ml-6 md:pl-8">
             Why?
           </span>
 

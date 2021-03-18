@@ -1,6 +1,6 @@
 /* Purple gradient */
 .gradientText {
-  @apply pt-20 tracking-wide px-7 sm:px-12 lg:ml-0 lg:text-left text-4xl sm:text-5xl font-bold uppercase;
+  @apply pt-20 tracking-wide px-4 sm:px-8 lg:ml-0 lg:text-left text-4xl sm:text-5xl font-bold uppercase;
   background-image: linear-gradient(90deg, #645bff 0%, #000000 100%);
   background-image: conic-gradient(90deg, #645bff 0%, #000000 100%);
   background-clip: text;
