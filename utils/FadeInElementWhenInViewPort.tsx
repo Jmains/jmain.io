@@ -1,13 +1,13 @@
 import { FC, useEffect, useRef, useState } from "react";
 import cn from "classnames";
-import { motion } from "framer-motion";
 
 export const FadeInElementWhenInViewPort: FC = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
   const nodeRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
+      (entries: any) => {
+        console.log("Intersection observer fired");
         if (entries[0].isIntersecting) {
           setVisible(true);
           if (nodeRef.current) {
@@ -27,17 +27,13 @@ export const FadeInElementWhenInViewPort: FC = ({ children }) => {
   }, []);
 
   return (
-    <motion.div
-      animate={isVisible}
-      className={cn(
-        "opacity-0 duration-700 transition translate-x-20 transform-gpu ease-in-out",
-        {
-          "opacity-100 transform-none": isVisible,
-        }
-      )}
+    <div
+      className={cn("opacity-0 duration-700 transform-gpu translate-x-20 ease-in-out", {
+        "opacity-100 transform-none": isVisible,
+      })}
       ref={nodeRef}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };

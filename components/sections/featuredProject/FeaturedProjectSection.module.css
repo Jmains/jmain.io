@@ -1,4 +1,1 @@
-.btnBg {
-  @apply px-3 py-2 flex justify-center items-center mt-24 w-36 space-x-1 mx-auto lg:mt-36 rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-purple-300 transition duration-200 ease-in-out cursor-pointer;
-  background: linear-gradient(90deg, #7e7cff 0%, #df9aff 100%);
-}
+

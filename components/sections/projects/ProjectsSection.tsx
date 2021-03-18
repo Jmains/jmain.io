@@ -7,245 +7,232 @@ import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort"
 const ProjectsSection: FC = () => {
   return (
     <section id="projectsSection">
-      <div className="py-3 rounded-sm bg-gray-bg border-t border-gray-200 shadow-lg">
-        <h2 className={s.gradientText}>Projects</h2>
-      </div>
-      <div className="grid grid-cols-1 justify-center mx-4 border-gray-200 border-l border-r pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
+      <h2 className={s.gradientText}>Projects</h2>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 grid-flow-row justify-center md:border-none mx-4 pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
         {/* Card 1 */}
-        <FadeInElementWhenInViewPort>
-          <div className="lg:px-6 relative mt-20">
-            <div>
-              <div className="md:flex block">
-                <div className="px-4 md:w-1/2 rounded-lg my-4">
-                  <h6 className="text-purple-500 font-semibold md:pl-5 lg:pl-7 xl:text-lg">
-                    March, 2020
-                  </h6>
-                  <div className="flex justify-between mt-3">
-                    <h4 className="text-gray-600 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-10 md:pl-9 lg:pl-16 border-purple-400 px-4">
-                      Contact Manager
-                    </h4>
-                    <Android className="h-6 w-6" />
-                  </div>
+        {/* <FadeInElementWhenInViewPort> */}
+        <div className="lg:px-6 lg:col-span-11 lg:row-span-1 relative mt-20">
+          <div className="md:flex block">
+            <div className="px-4 lg:px-0 md:w-1/2 my-4">
+              <h6 className="text-primaryLight font-semibold md:pl-5 lg:pl-7 xl:text-lg">
+                March, 2020
+              </h6>
+              <div className="flex justify-between mt-3">
+                <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-1 md:pl-9 lg:pl-6 border-primaryLight px-4">
+                  Contact Manager
+                </h4>
+                <Android className="h-6 w-6" />
+              </div>
 
-                  <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:text-xl xl:leading-9">
-                    An android app that mimics the functionality of a contact manager in either
-                    Android or iOS phones. Users can view their list of contacts sorted in
-                    alphabetical order, view their location, and also add, edit, and remove a
-                    contact from the contact list.
-                  </p>
+              <p className="text-gray-400 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:leading-9">
+                An android app that mimics the functionality of a contact manager in either
+                Android or iOS phones. Users can view their list of contacts sorted in
+                alphabetical order, view their location, and also add, edit, and remove a
+                contact from the contact list.
+              </p>
 
-                  <div className="block md:hidden rounded-lg mt-9 mx-auto max-w-sm">
-                    <img
-                      className="object-center object-cover rounded-lg w-full h-56 shadow-xl"
-                      src={projectsData[0].img}
-                      alt=""
-                    />
-                  </div>
-                  {/* Start Technologies used section */}
-                  <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #Java
-                      </span>
-                    </div>
-
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #Android Studio
-                      </span>
-                    </div>
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #Sqlite
-                      </span>
-                    </div>
-                  </div>
-                  {/* End Technologies used section */}
-                  {/* Start Project Links */}
-                  <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
-                    <Link href="/">
-                      <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
-                        <Github className="h-6 w-6 mx-auto fill-current" />
-                        <span className="block font-bold text-xs mt-1">Github</span>
-                      </div>
-                    </Link>
-                    <Link href="/">
-                      <div className="shadow-md px-5 py-1 rounded-md">
-                        <Eye className="h-6 w-6 fill-current text-red-500" />
-                        <span className="block font-bold text-xs text-gray-500 mt-1">
-                          Live
-                        </span>
-                      </div>
-                    </Link>
-                  </div>
-                  {/* End Project Links */}
+              <div className="block md:hidden rounded-lg mt-9 mx-auto ">
+                <img
+                  className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl"
+                  src={projectsData[0].img}
+                  alt=""
+                />
+              </div>
+              {/* Start Technologies used section */}
+              <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
+                <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                  <span className="block text-purple-700 font-semibold text-sm">#Java</span>
                 </div>
 
-                <div className="hidden md:block rounded-lg p-7 mx-auto">
-                  <img
-                    className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
-                    src={projectsData[0].img}
-                    alt=""
-                  />
+                <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                  <span className="block text-purple-700 font-semibold text-sm">
+                    #Android Studio
+                  </span>
+                </div>
+                <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                  <span className="block text-purple-700 font-semibold text-sm">#Sqlite</span>
                 </div>
               </div>
+              {/* End Technologies used section */}
+              {/* Start Project Links */}
+              <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
+                <Link href="/">
+                  <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
+                    <Github className="h-6 w-6 mx-auto fill-current" />
+                    <span className="block font-bold text-xs mt-1">Github</span>
+                  </div>
+                </Link>
+                <Link href="/">
+                  <div className="shadow-md px-5 py-1 rounded-md">
+                    <Eye className="h-6 w-6 fill-current text-red-500" />
+                    <span className="block font-bold text-xs text-gray-500 mt-1">Live</span>
+                  </div>
+                </Link>
+              </div>
+              {/* End Project Links */}
+            </div>
+
+            <div className="hidden md:block rounded-lg p-7 mx-auto">
+              <img
+                className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
+                src={projectsData[0].img}
+                alt=""
+              />
             </div>
           </div>
-        </FadeInElementWhenInViewPort>
+        </div>
+        {/* </FadeInElementWhenInViewPort> */}
         {/* End Card 1 */}
 
         {/* Card 2 */}
-        <FadeInElementWhenInViewPort>
-          <div className="lg:px-6 relative mt-20 lg:mt-32">
-            <div>
-              <div className="md:flex block">
-                <div className="hidden md:block rounded-lg p-7 mx-auto">
+        {/* <FadeInElementWhenInViewPort> */}
+        <div className="lg:px-6 lg:col-span-11 relative mt-20 lg:mt-32">
+          <div>
+            <div className="md:flex block">
+              <div className="hidden md:block rounded-lg p-7 mx-auto">
+                <img
+                  className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
+                  src={projectsData[1].img}
+                  alt=""
+                />
+              </div>
+              <div className="px-4 lg:px-0  md:w-1/2 my-4">
+                <h6 className="text-primaryLight font-semibold md:pl-5 lg:pl-7 xl:text-lg">
+                  May, 2019
+                </h6>
+                <div className="flex justify-between mt-3">
+                  <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-1 md:pl-9 lg:pl-6 border-primaryLight px-4">
+                    Favorite Movie Collection
+                  </h4>
+                  <Android className="h-6 w-6" />
+                </div>
+
+                <p className="text-gray-400 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:leading-9">
+                  An web app to store your own personal favorite movie collection. User's can
+                  rate of 5 and write a short description about why they liked the movie.
+                  Movies can be created, updated, and deleted.
+                </p>
+
+                <div className="block md:hidden rounded-lg mt-9 mx-auto">
                   <img
-                    className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
+                    className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl"
                     src={projectsData[1].img}
                     alt=""
                   />
                 </div>
-                <div className="px-4 md:border-l border-gray-200 md:w-1/2 my-4">
-                  <h6 className="text-purple-500 font-semibold md:pl-5 lg:pl-7 xl:text-lg">
-                    May, 2019
-                  </h6>
-                  <div className="flex justify-between mt-3">
-                    <h4 className="text-gray-600 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-15 md:pl-9 lg:pl-11 border-purple-400 px-4">
-                      Favorite Movie Collection
-                    </h4>
-                    <Android className="h-6 w-6" />
+
+                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
+                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                    <span className="block text-purple-700 font-semibold text-sm">
+                      #Angular
+                    </span>
                   </div>
 
-                  <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:text-xl xl:leading-9">
-                    An web app to store your own personal favorite movie collection. User's can
-                    rate of 5 and write a short description about why they liked the movie.
-                    Movies can be created, updated, and deleted.
-                  </p>
-
-                  <div className="block md:hidden rounded-lg mt-9 mx-auto max-w-sm">
-                    <img
-                      className="object-center object-cover rounded-lg w-full h-56 shadow-xl"
-                      src={projectsData[1].img}
-                      alt=""
-                    />
+                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                    <span className="block text-purple-700 font-semibold text-sm">
+                      #TypeScript
+                    </span>
                   </div>
-
-                  <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #Angular
-                      </span>
+                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                    <span className="block text-purple-700 font-semibold text-sm">
+                      #Firebase
+                    </span>
+                  </div>
+                </div>
+                <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
+                  <Link href="/">
+                    <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
+                      <Github className="h-6 w-6 mx-auto fill-current" />
+                      <span className="block font-bold text-xs mt-1">Github</span>
                     </div>
-
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #TypeScript
-                      </span>
+                  </Link>
+                  <Link href="/">
+                    <div className="shadow-md px-5 py-1 rounded-md">
+                      <Eye className="h-6 w-6 fill-current text-red-500" />
+                      <span className="block font-bold text-xs text-gray-500 mt-1">Live</span>
                     </div>
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #Firebase
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
-                    <Link href="/">
-                      <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
-                        <Github className="h-6 w-6 mx-auto fill-current" />
-                        <span className="block font-bold text-xs mt-1">Github</span>
-                      </div>
-                    </Link>
-                    <Link href="/">
-                      <div className="shadow-md px-5 py-1 rounded-md">
-                        <Eye className="h-6 w-6 fill-current text-red-500" />
-                        <span className="block font-bold text-xs text-gray-500 mt-1">
-                          Live
-                        </span>
-                      </div>
-                    </Link>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-        </FadeInElementWhenInViewPort>
+        </div>
+        {/* </FadeInElementWhenInViewPort> */}
         {/* End Card 2 */}
 
         {/* Card 3 */}
-        <FadeInElementWhenInViewPort>
-          <div className="lg:px-6 relative mt-20 lg:mt-32">
-            <div>
-              <div className="md:flex block">
-                <div className="px-4 md:w-1/2 rounded-lg my-4">
-                  <h6 className="text-purple-500 font-semibold md:pl-5 lg:pl-7 xl:text-lg">
-                    April, 2021
-                  </h6>
-                  <div className="flex justify-between mt-3">
-                    <h4 className="text-gray-600 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-10 md:pl-9 lg:pl-16 border-purple-400 px-4">
-                      SpaceX Redesign
-                    </h4>
-                    <Android className="h-6 w-6" />
-                  </div>
-
-                  <p className="text-gray-600 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:text-xl xl:leading-9">
-                    An improved version of the SpaceX website. Coming soon...
-                  </p>
-
-                  <div className="block md:hidden rounded-lg mt-9 mx-auto max-w-sm">
-                    <img
-                      className="object-center object-cover rounded-lg w-full h-56 shadow-xl"
-                      src={projectsData[2].img}
-                      alt=""
-                    />
-                  </div>
-
-                  <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #TypeScript
-                      </span>
-                    </div>
-
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #NextJS
-                      </span>
-                    </div>
-                    <div className="px-3 py-1 rounded-full bg-purple-200 shadow-md">
-                      <span className="block text-purple-700 font-semibold text-sm">
-                        #TailwindCSS
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
-                    <Link href="/">
-                      <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
-                        <Github className="h-6 w-6 mx-auto fill-current" />
-                        <span className="block font-bold text-xs mt-1">Github</span>
-                      </div>
-                    </Link>
-                    <Link href="/">
-                      <div className="shadow-md px-5 py-1 rounded-md">
-                        <Eye className="h-6 w-6 fill-current text-red-500" />
-                        <span className="block font-bold text-xs text-gray-500 mt-1">
-                          Live
-                        </span>
-                      </div>
-                    </Link>
-                  </div>
+        {/* <FadeInElementWhenInViewPort> */}
+        <div className="lg:px-6 lg:col-span-11 relative mt-20 lg:mt-32">
+          <div>
+            <div className="md:flex block">
+              <div className="px-4 lg:px-0 md:w-1/2 my-4">
+                <h6 className="text-primaryLight font-semibold md:pl-5 lg:pl-7 xl:text-lg">
+                  April, 2021
+                </h6>
+                <div className="flex justify-between mt-3">
+                  <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 lg:-ml-1 md:pl-9 lg:pl-6 border-primaryLight px-4">
+                    SpaceX Redesign
+                  </h4>
+                  <Android className="h-6 w-6" />
                 </div>
-                <div className="hidden md:block rounded-lg p-7 max-w-4xl mx-auto">
+
+                <p className="text-gray-400 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:leading-9">
+                  An improved version of the SpaceX website. Coming soon...
+                </p>
+
+                <div className="block md:hidden rounded-lg mt-9 mx-auto">
                   <img
-                    className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
+                    className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl"
                     src={projectsData[2].img}
                     alt=""
                   />
                 </div>
+
+                <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
+                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                    <span className="block text-purple-700 font-semibold text-sm">
+                      #TypeScript
+                    </span>
+                  </div>
+
+                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                    <span className="block text-purple-700 font-semibold text-sm">
+                      #NextJS
+                    </span>
+                  </div>
+                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
+                    <span className="block text-purple-700 font-semibold text-sm">
+                      #TailwindCSS
+                    </span>
+                  </div>
+                </div>
+                <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
+                  <Link href="/">
+                    <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
+                      <Github className="h-6 w-6 mx-auto fill-current" />
+                      <span className="block font-bold text-xs mt-1">Github</span>
+                    </div>
+                  </Link>
+                  <Link href="/">
+                    <div className="shadow-md px-5 py-1 rounded-md">
+                      <Eye className="h-6 w-6 fill-current text-red-500" />
+                      <span className="block font-bold text-xs text-gray-500 mt-1">Live</span>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="hidden md:block rounded-lg p-7 max-w-4xl mx-auto">
+                <img
+                  className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
+                  src={projectsData[2].img}
+                  alt=""
+                />
               </div>
             </div>
           </div>
-        </FadeInElementWhenInViewPort>
+        </div>
+        {/* </FadeInElementWhenInViewPort> */}
         {/* End Card 3 */}
       </div>
     </section>

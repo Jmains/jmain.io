@@ -44,8 +44,8 @@ const FtProject = ({ ...props }) => {
           y2="33.0824"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#7E7CFF" />
-          <stop offset="1" stopColor="#DF9AFF" />
+          <stop stopColor="#645BFF" />
+          <stop offset="1" stopColor="#E1A8FF" />
         </linearGradient>
       </defs>
     </svg>

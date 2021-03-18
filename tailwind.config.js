@@ -13,14 +13,18 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        "gray-bg": "#1C1C1C",
-        projectBlue: "#34C2E3",
+        primaryBgDark: "#121212",
+        primaryBgGrey: "#F6F9FC",
+        secondaryBgDark: "#111927",
+        secondaryDark: "#24D3ED",
+        primaryDark: "#645BFF",
+        primaryLight: "#E0A8FF",
       },
       height: {
         fph: "400px",
         card: "40rem",
         heroBg: "806px",
-        heroSectionHeight: "960px",
+        heroSectionHeight: "700px",
       },
       width: {
         fpw: "500px",

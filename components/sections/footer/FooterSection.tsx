@@ -9,20 +9,18 @@ const FooterSection: FC = () => {
       <div className="mx-4 p-4 pb-5 pt-10 border-gray-200 border-l border-r px-10">
         {/* First col */}
         <div className="">
-          <div className="px-3 py-1 rounded-lg bg-gray-bg flex justify-center w-16  shadow-md">
-            <Link href="/">
-              <a className={s.gradientText} href="">
-                JM.
-              </a>
-            </Link>
-          </div>
-          <p className="md:text-2xl text-gray-700 font-medium mt-7 text-lg">
-            Jackson's Portfolio Website
-          </p>
+          <Link href="/">
+            <a className={s.gradientText} href="">
+              JM.
+            </a>
+          </Link>
+
+          <p className="md:text-xl text-gray-900 font-medium mt-7 text-lg">Jackson Main</p>
+          <p className=" text-gray-700 font-medium mt-2 text-sm">jacksonmain9@gmail.com</p>
         </div>
         {/* End First Col */}
 
-        <div className="grid grid-cols-2 gap-x-32  md:text-left md:grid-cols-3 lg:grid-cols-4 mt-6 grid-flow-row gap-y-3 text-gray-500">
+        <div className="grid grid-cols-2 gap-x-32 md:text-left lg:grid-cols-2 mt-6 grid-flow-row gap-y-3 text-gray-600 text-sm ">
           <span className="block ">Projects</span>
           <span className="block ">About</span>
           <span className="block ">Twitter</span>
@@ -44,7 +42,7 @@ const FooterSection: FC = () => {
           </Link>
         </div>
 
-        <span className="block text-xs text-gray-400 font-light text-left mt-5">
+        <span className="block text-xs text-gray-500 font-light text-left mt-5">
           &copy; Jackson Main 2021. All Rights Reserved.
         </span>
       </div>

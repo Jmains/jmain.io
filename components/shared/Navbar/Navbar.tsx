@@ -27,9 +27,12 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={cn("sticky bg-gray-bg top-0 z-40 transition-all duration-300 ease-in-out", {
-        " shadow-lg": hasScrolled,
-      })}
+      className={cn(
+        "sticky bg-primaryBgDark top-0 z-40 transition-all duration-300 ease-in-out",
+        {
+          "shadow-lg": hasScrolled,
+        }
+      )}
     >
       {/* Maybe add some navbar scrolling effects later */}
 
@@ -96,7 +99,7 @@ const Navbar: FC = () => {
             </div>
           </div>
 
-          <div className="text-gray-400 text-sm">
+          <div className="text-gray-400 text-sm lg:mr-2">
             <button
               onClick={() => {
                 alert("Still thinking of what to do with this button");

@@ -103,15 +103,15 @@ const HeroSection: FC = () => {
 
   return (
     <section id="heroSection">
-      <div className="grid grid-cols-1 lg:grid-cols-12 max-w-screen-xl lg:border-r lg:mr-4  border-gray-200">
-        <div className="  bg-gray-bg rounded-br-sm rounded-bl-sm lg:rounded-bl-none lg:col-span-8  col-span-1 h-heroBg lg:h-screen max-h-heroBg relative">
+      <div className="grid grid-cols-1 lg:grid-cols-12 max-w-screen-xl lg:mr-4">
+        <div className="rounded-br-sm rounded-bl-sm lg:rounded-bl-none lg:col-span-7 col-span-1 h-heroBg lg:h-heroSectionHeight max-h-heroBg relative">
           <Link href="https://github.com/Jmains">
             <button>
               <Github className="h-7 w-7 lg:hidden fill-current text-gray-300 absolute top-0 right-0 mt-5 mr-4 md:mr-10 shadow-md cursor-pointer" />
             </button>
           </Link>
 
-          <div className="sm:px-32 lg:px-16 lg:pr-32 xl:pr-48 px-4 pt-24 text-center lg:text-left">
+          <div className="sm:px-32 px-4 pt-24 text-center lg:text-left lg:absolute lg:px-14 lg:py-0 lg:top-auto lg:mt-20">
             {/* Profile Pic small screen */}
             <motion.div
               initial="hidden"
@@ -167,7 +167,7 @@ const HeroSection: FC = () => {
               initial="hidden"
               animate="show"
               variants={headlineVariants}
-              className="sm:text-lg md:text-xl lg:text-2xl   px-1 text-gray-300 tracking-wide mt-10"
+              className="sm:text-lg md:text-xl lg:text-2xl px-1 text-gray-300 tracking-wide mt-10 max-w-2xl"
             >
               Striving to provide the most memorable and meaningful user experiences on the
               web.
@@ -177,7 +177,7 @@ const HeroSection: FC = () => {
                 initial="hidden"
                 animate="show"
                 variants={callToActionBtnVariants}
-                className="mt-12 text-semibold text-gray-200 bg-gray-700 bg-opacity-50 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300 transition duration-200 ease-in-out"
+                className={s.callToAction}
               >
                 Let's see my work!
               </motion.button>
@@ -191,7 +191,8 @@ const HeroSection: FC = () => {
               </motion.div>
             </div>
           </div>
-          {offset < -1 && (
+
+          {/* {offset < -1 && (
             <div className="absolute right-0 bottom-0 -mr-20 transform transition-all duration-300 ease-in-out hidden lg:block">
               <motion.div
                 initial={{ opacity: 1, y: offset }}
@@ -203,9 +204,9 @@ const HeroSection: FC = () => {
                 <OctagonPink />
               </motion.div>
             </div>
-          )}
+          )} */}
 
-          {offset < -1 && (
+          {/* {offset < -1 && (
             <div className="absolute right-0 bottom-0 lg:block hidden">
               <motion.div
                 initial={{ opacity: 1, y: offset }}
@@ -215,9 +216,26 @@ const HeroSection: FC = () => {
                 <ThreeWhiteOct />
               </motion.div>
             </div>
-          )}
+          )} */}
 
-          {offset < -1 && (
+          {/* {offset < -1 && (
+            <div className="absolute right-0 bottom-0 -mr-20 lg:block hidden">
+              <motion.div
+                initial={{ opacity: 1, y: offset }}
+                animate={{ opacity: 0, y: 0 }}
+                transition={{
+                  delay: 8,
+                  duration: 12,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
+              >
+                <ThreeBlackOct />
+              </motion.div>
+            </div>
+          )} */}
+
+          {/* {offset < -1 && (
             <div className="absolute right-0 bottom-0 -mr-20 lg:block hidden">
               <motion.div
                 initial={{ opacity: 1, y: offset }}
@@ -232,8 +250,8 @@ const HeroSection: FC = () => {
                 <ThreeBlackOct />
               </motion.div>
             </div>
-          )}
-          {offset < -1 && (
+          )} */}
+          {/* {offset < -1 && (
             <div className="absolute right-0 bottom-0 -ml-20 hidden lg:block">
               <motion.div
                 initial={{ opacity: 1, y: offset }}
@@ -245,7 +263,33 @@ const HeroSection: FC = () => {
                 <OctagonPink />
               </motion.div>
             </div>
-          )}
+          )} */}
+
+          {/* {offset < -1 && (
+            <div className="absolute right-0 bottom-0 -mr-40 hidden lg:block">
+              <motion.div
+                initial={{ opacity: 1, y: offset }}
+                animate={{ opacity: 0, y: 0 }}
+                transition={{ delay: 0, duration: 12, repeat: Infinity, repeatType: "loop" }}
+              >
+                <OctagonClear />
+                <OctagonCyan />
+                <OctagonPink />
+              </motion.div>
+            </div>
+          )} */}
+          {/* 
+          {offset < -1 && (
+            <div className="absolute right-0 bottom-0 -mr-40 lg:block hidden">
+              <motion.div
+                initial={{ opacity: 1, y: offset }}
+                animate={{ opacity: 0, y: 0 }}
+                transition={{ delay: 4, duration: 12, repeat: Infinity, repeatType: "mirror" }}
+              >
+                <ThreeWhiteOct />
+              </motion.div>
+            </div>
+          )} */}
 
           {/* small screen octagon on left side */}
           <div className="absolute left-0 opacity-70 bottom-0 -ml-2 lg:hidden">
@@ -256,13 +300,16 @@ const HeroSection: FC = () => {
             <ThreeOctagon className="h-44" />
           </div>
           {/* pl-16 pb-5 */}
-          <div className="absolute bottom-0 right-0 hidden lg:block -mr-80 xl:-mr-96 xl:px-6 pb-16">
+          {/* <div className="absolute bottom-0 right-0 hidden lg:block -mr-80 xl:-mr-96 xl:px-6 pb-16">
             <div className="flex space-x-16 ">
               <Github className="h-7 w-7 fill-current text-gray-500" />
               <Instagram className="h-7 w-7" />
               <Twitter className="h-7 w-7 fill-current text-blue-400" />
             </div>
-          </div>
+          </div> */}
+        </div>
+        <div className="col-span-5 ml-10 mr-5 mt-10 hidden lg:block">
+          <img className=" " src="/heroillustration.svg" alt="illustration" />
         </div>
       </div>
     </section>

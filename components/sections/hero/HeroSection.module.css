@@ -1,7 +1,7 @@
 .gradientText {
   @apply text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-semibold tracking-wide text-white mt-6;
-  background-image: linear-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
-  background-image: conic-gradient(90deg, #fbc7d4 0%, #9796f0 100%);
+  background-image: linear-gradient(90deg, #edc7fb 0%, #645bff 100%);
+  background-image: conic-gradient(90deg, #edc7fb 0%, #645bff 100%);
   background-clip: text;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -9,6 +9,10 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   background-repeat: repeat;
+}
+
+.callToAction {
+  @apply mt-12 text-white font-semibold bg-primaryDark px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300 hover:text-white hover:bg-purple-600 transition duration-200 ease-in-out;
 }
 
 .container {
