@@ -27,7 +27,7 @@ const FeaturedProjectSection: FC = () => {
           </div>
         </div>
 
-        <div className="mx-auto mt-20 px-4">
+        <div className="mx-auto mt-20 px-4 xl:text-lg">
           <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark pl-4">
             What?
           </span>
@@ -60,12 +60,12 @@ const FeaturedProjectSection: FC = () => {
           </button>
         </div>
 
-        <div className="lg:mt-28 mt-20 px-4 mx-auto">
+        <div className="lg:mt-28 mt-20 px-4 mx-auto xl:text-lg">
           <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark px-4">
             Why?
           </span>
 
-          <p className="text-gray-600 px-4 mt-2 md:leading-7 xl:leading-9 max-w-2xl mx-auto">
+          <p className="text-gray-600 px-4 mt-2 md:leading-7 xl:leading-9 max-w-2xl  mx-auto">
             It's difficult for small artists, musicians, comedians and painters to get
             recognition and promote their original works. This platform provides a way for
             individuals to showcase and promote their original works as well as connect with

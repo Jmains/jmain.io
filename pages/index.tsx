@@ -27,7 +27,7 @@ export default function Home() {
       {/* bg-gradient-to-t from-gray-100 to-white */}
       <div className="bg-transparent relative">
         <div className="absolute top-0 mx-auto">
-          <TopWaveSolid className="w-screen max-h-40" />
+          <TopWaveSolid className="w-screen max-h-40 -mt-1" />
         </div>
         <div className="absolute top-0 mx-auto">
           <TopWaveClear className="w-screen max-h-40" />
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="absolute bottom-0 mx-auto -mb-1">
           <BottomWaveSolid className="w-screen" />
         </div>
-        <div className="absolute bottom-0 mx-auto">
+        <div className="absolute bottom-0 mx-auto -mb-2">
           <BottomWaveClear className="w-screen" />
         </div>
         <div className="max-w-screen-xl mx-auto">
@@ -47,15 +47,20 @@ export default function Home() {
       {/* bg-gradient-to-b from-gray-100 to-white */}
       <div className="bg-primaryBgDark w-full relative">
         <img
-          className="top-0 right-0 absolute w-5/12 mr-32 max-h-full mt-20 hidden lg:block"
+          className="top-0 right-0 absolute md:w-48 md:mt-10 xl:w-4/12 md:mr-16 xl:mr-32 max-h-full mt-20 hidden md:block"
           src="/projectIllustration.svg"
-          alt=""
+          alt="project illustration"
         />
         <div className="max-w-screen-xl mx-auto">
           <ProjectsSection />
         </div>
       </div>
-      <div className="bg-white w-full">
+      <div className="bg-white w-full relative">
+        <img
+          className="top-0 right-0 absolute md:w-64 md:mt-10 xl:w-3/12 md:mr-24 xl:mr-64 max-h-full mt-20 hidden md:block"
+          src="/Lightbulb.svg"
+          alt="lightbulb illustration"
+        />
         <div className="max-w-screen-xl mx-auto">
           <SkillsSection />
         </div>

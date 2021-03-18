@@ -13,12 +13,13 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primaryBgDark: "#121212",
+        primaryBgDark: "#161616",
         primaryBgGrey: "#F6F9FC",
         secondaryBgDark: "#111927",
         secondaryDark: "#24D3ED",
         primaryDark: "#645BFF",
         primaryLight: "#E0A8FF",
+        darkGray: "#2e2e2e",
       },
       height: {
         fph: "400px",

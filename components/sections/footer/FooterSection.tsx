@@ -6,7 +6,7 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer id="footerSection" className="max-w-screen-xl mx-auto">
-      <div className="mx-4 p-4 pb-5 pt-10 border-gray-200 border-l border-r px-10">
+      <div className="mx-4 p-4 pb-5 pt-10 border-gray-700 border-l border-r px-10">
         {/* First col */}
         <div className="">
           <Link href="/">
@@ -15,12 +15,12 @@ const FooterSection: FC = () => {
             </a>
           </Link>
 
-          <p className="md:text-xl text-gray-900 font-medium mt-7 text-lg">Jackson Main</p>
-          <p className=" text-gray-700 font-medium mt-2 text-sm">jacksonmain9@gmail.com</p>
+          <p className="md:text-xl text-gray-200 font-medium mt-7 text-lg">Jackson Main</p>
+          <p className=" text-gray-300 font-medium mt-2 text-sm">jacksonmain9@gmail.com</p>
         </div>
         {/* End First Col */}
 
-        <div className="grid grid-cols-2 gap-x-32 md:text-left lg:grid-cols-2 mt-6 grid-flow-row gap-y-3 text-gray-600 text-sm ">
+        <div className="grid grid-cols-2 gap-x-32 md:text-left lg:grid-cols-2 mt-6 grid-flow-row gap-y-3 text-gray-400 text-sm ">
           <span className="block ">Projects</span>
           <span className="block ">About</span>
           <span className="block ">Twitter</span>

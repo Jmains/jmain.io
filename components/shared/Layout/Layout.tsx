@@ -21,7 +21,7 @@ const Layout: FC = ({ children }) => {
       <Navbar />
 
       <main className="antialiased overflow-hidden">{children}</main>
-      <div className="bg-gray-100">
+      <div className="bg-primaryBgDark">
         <FooterSection />
       </div>
       {/* <Sidebar open={displaySidebar} onClose={closeSidebar}>

@@ -41,17 +41,17 @@ const ProjectsSection: FC = () => {
               </div>
               {/* Start Technologies used section */}
               <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
-                <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                  <span className="block text-purple-700 font-semibold text-sm">#Java</span>
+                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                  <span className="block text-purple-300 font-semibold text-sm">#Java</span>
                 </div>
 
-                <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                  <span className="block text-purple-700 font-semibold text-sm">
+                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                  <span className="block text-purple-300 font-semibold text-sm">
                     #Android Studio
                   </span>
                 </div>
-                <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                  <span className="block text-purple-700 font-semibold text-sm">#Sqlite</span>
+                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                  <span className="block text-purple-300 font-semibold text-sm">#Sqlite</span>
                 </div>
               </div>
               {/* End Technologies used section */}
@@ -87,10 +87,10 @@ const ProjectsSection: FC = () => {
 
         {/* Card 2 */}
         {/* <FadeInElementWhenInViewPort> */}
-        <div className="lg:px-6 lg:col-span-11 relative mt-20 lg:mt-32">
+        <div className="lg:pr-6 lg:col-span-11 relative mt-20 lg:mt-28">
           <div>
             <div className="md:flex block">
-              <div className="hidden md:block rounded-lg p-7 mx-auto">
+              <div className="hidden md:block rounded-lg pt-6 xl:pr-10 mx-auto">
                 <img
                   className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
                   src={projectsData[1].img}
@@ -109,7 +109,7 @@ const ProjectsSection: FC = () => {
                 </div>
 
                 <p className="text-gray-400 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:leading-9">
-                  An web app to store your own personal favorite movie collection. User's can
+                  A web app to store your own personal favorite movie collection. User's can
                   rate of 5 and write a short description about why they liked the movie.
                   Movies can be created, updated, and deleted.
                 </p>
@@ -123,19 +123,19 @@ const ProjectsSection: FC = () => {
                 </div>
 
                 <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
-                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                    <span className="block text-purple-700 font-semibold text-sm">
+                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                    <span className="block text-purple-300 font-semibold text-sm">
                       #Angular
                     </span>
                   </div>
 
-                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                    <span className="block text-purple-700 font-semibold text-sm">
+                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                    <span className="block text-purple-300 font-semibold text-sm">
                       #TypeScript
                     </span>
                   </div>
-                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                    <span className="block text-purple-700 font-semibold text-sm">
+                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                    <span className="block text-purple-300 font-semibold text-sm">
                       #Firebase
                     </span>
                   </div>
@@ -178,7 +178,9 @@ const ProjectsSection: FC = () => {
                 </div>
 
                 <p className="text-gray-400 mt-5 md:pl-5 lg:pl-7 lg:text-lg xl:leading-9">
-                  An improved version of the SpaceX website. Coming soon...
+                  A web app to store your own personal favorite movie collection. User's can
+                  rate of 5 and write a short description about why they liked the movie.
+                  Movies can be created, updated, and deleted.
                 </p>
 
                 <div className="block md:hidden rounded-lg mt-9 mx-auto">
@@ -190,26 +192,26 @@ const ProjectsSection: FC = () => {
                 </div>
 
                 <div className="flex items-center mt-10 space-x-3 md:pl-4 lg:ml-7 lg:p-0">
-                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                    <span className="block text-purple-700 font-semibold text-sm">
+                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                    <span className="block text-purple-300 font-semibold text-sm">
                       #TypeScript
                     </span>
                   </div>
 
-                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                    <span className="block text-purple-700 font-semibold text-sm">
+                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                    <span className="block text-purple-300 font-semibold text-sm">
                       #NextJS
                     </span>
                   </div>
-                  <div className="px-3 py-1 rounded-full bg-purple-100 shadow-md">
-                    <span className="block text-purple-700 font-semibold text-sm">
+                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
+                    <span className="block text-purple-300 font-semibold text-sm">
                       #TailwindCSS
                     </span>
                   </div>
                 </div>
                 <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
                   <Link href="/">
-                    <div className="shadow-md px-4 py-1 text-gray-500 rounded-md">
+                    <div className="shadow-md px-4 py-1 text-gray-500 bg-gray-100 rounded-md">
                       <Github className="h-6 w-6 mx-auto fill-current" />
                       <span className="block font-bold text-xs mt-1">Github</span>
                     </div>
