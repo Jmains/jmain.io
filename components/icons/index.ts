@@ -9,6 +9,9 @@ export { default as Android } from "./Android";
 export { default as ArrowLeft } from "./ArrowLeft";
 export { default as ArrowRight } from "./ArrowRight";
 
+// Loading Spinner
+export { default as LoadingSpinner } from "./LoadingSpinner";
+
 // Social icons
 export { default as Instagram } from "./Instagram";
 export { default as Linkedin } from "./Linkedin";

@@ -6,7 +6,7 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer id="footerSection" className="max-w-screen-xl mx-auto">
-      <div className="mx-4 px-4 pb-5 pt-10 border-gray-800 border-l border-r md:border-none">
+      <div className="mx-4 px-4 pb-8 pt-10 border-gray-800 border-l border-r md:border-none">
         <div className="">
           <Link href="/">
             <a className={s.gradientText} href="">
