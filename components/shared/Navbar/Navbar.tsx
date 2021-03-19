@@ -30,7 +30,7 @@ const Navbar: FC = () => {
       className={cn(
         "sticky bg-primaryBgDark top-0 z-40 transition-all duration-300 ease-in-out",
         {
-          "shadow-lg": hasScrolled,
+          "shadow-md": hasScrolled,
         }
       )}
     >

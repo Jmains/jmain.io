@@ -7,7 +7,7 @@ import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort"
 const ProjectsSection: FC = () => {
   return (
     <section id="projectsSection">
-      <div className="grid grid-cols-1 lg:grid-cols-12 grid-flow-row border-l border-r border-gray-700 md:border-none justify-center mx-4 pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
+      <div className="grid grid-cols-1 lg:grid-cols-12 grid-flow-row border-l border-r border-gray-800 md:border-none justify-center mx-4 pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
         <h2 className={s.gradientText}>Projects</h2>
         {/* Card 1 */}
         {/* <FadeInElementWhenInViewPort> */}
@@ -37,7 +37,7 @@ const ProjectsSection: FC = () => {
                 />
               </div>
               {/* Start Technologies used section */}
-              <div className="flex items-center mt-10 space-x-3 lg:p-0">
+              <div className="flex items-center flex-wrap space-y-1 mt-10 space-x-3 lg:p-0">
                 <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
                   <span className="block text-purple-300 font-semibold text-sm">#Java</span>
                 </div>
@@ -117,7 +117,7 @@ const ProjectsSection: FC = () => {
                   />
                 </div>
 
-                <div className="flex items-center mt-10 space-x-3">
+                <div className="flex items-center mt-10 flex-wrap space-y-1 space-x-3">
                   <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
                     <span className="block text-purple-300 font-semibold text-sm">
                       #Angular

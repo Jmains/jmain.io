@@ -18,7 +18,7 @@ const BottomWaveClear = ({ ...props }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#655CFF" />
-          <stop offset="1" stopColor="#655CFF" stop-opacity="0" />
+          <stop offset="1" stopColor="#655CFF" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

@@ -6,8 +6,7 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer id="footerSection" className="max-w-screen-xl mx-auto">
-      <div className="mx-4 p-4 pb-5 pt-10 border-gray-700 border-l border-r md:border-none px-10">
-        {/* First col */}
+      <div className="mx-4 px-4 pb-5 pt-10 border-gray-800 border-l border-r md:border-none">
         <div className="">
           <Link href="/">
             <a className={s.gradientText} href="">
@@ -15,12 +14,24 @@ const FooterSection: FC = () => {
             </a>
           </Link>
 
-          <p className="md:text-xl text-gray-200 font-medium mt-7 text-lg">Jackson Main</p>
-          <p className=" text-gray-300 font-medium mt-2 text-sm">jacksonmain9@gmail.com</p>
+          <p className="md:text-xl text-gray-200 font-medium mt-7 text-lg lg:text-xl max-w-md">
+            Jackson Main
+          </p>
+        </div>
+
+        <div className="flex items-end flex-wrap space-x-3 space-y-2">
+          <p className=" text-gray-300 font-medium text-sm lg:text-base ">
+            jacksonmain9@gmail.com
+          </p>
+          <div className="pl-5">
+            <button className="px-2 py-1 bg-primaryDark rounded-md text-sm text-white">
+              Contact
+            </button>
+          </div>
         </div>
         {/* End First Col */}
 
-        <div className="grid grid-cols-2 gap-x-32 md:text-left lg:grid-cols-2 mt-6 grid-flow-row gap-y-3 text-gray-400 text-sm ">
+        <div className="grid grid-cols-2 gap-x-32 md:text-left lg:grid-cols-2 mt-6 grid-flow-row gap-y-3 text-gray-400 text-sm lg:text-base ">
           <span className="block ">Projects</span>
           <span className="block ">About</span>
           <span className="block ">Twitter</span>

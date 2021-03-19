@@ -6,6 +6,7 @@ import {
   SkillsSection,
   AboutSection,
 } from "@components/sections";
+import ContactSection from "@components/sections/contact/ContactSection";
 import {
   TopWaveSolid,
   TopWaveClear,
@@ -25,7 +26,7 @@ export default function Home() {
       </div>
 
       {/* bg-gradient-to-t from-gray-100 to-white */}
-      <div className="bg-transparent relative">
+      <div className="relative">
         <div className="absolute top-0 mx-auto">
           <TopWaveSolid className="w-screen max-h-40 -mt-1" />
         </div>
@@ -56,13 +57,20 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-white w-full relative">
-        <img
-          className="top-0 right-0 absolute md:w-64 md:mt-10 xl:w-3/12 md:mr-24 xl:mr-64 max-h-full mt-20 hidden md:block"
-          src="/Lightbulb.svg"
-          alt="lightbulb illustration"
-        />
+        <div className="absolute top-0 mx-auto">
+          <TopWaveSolid className="w-screen max-h-40 -mt-1" />
+        </div>
+        <div className="absolute top-0 mx-auto">
+          <TopWaveClear className="w-screen max-h-40" />
+        </div>
         <div className="max-w-screen-xl mx-auto">
           <SkillsSection />
+        </div>
+      </div>
+
+      <div className="bg-primaryDark w-full relative">
+        <div className="max-w-screen-xl mx-auto">
+          <ContactSection />
         </div>
       </div>
 
