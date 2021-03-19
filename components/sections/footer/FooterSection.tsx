@@ -6,7 +6,7 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer id="footerSection" className="max-w-screen-xl mx-auto">
-      <div className="mx-4 px-4 pb-8 pt-10 border-gray-800 border-l border-r md:border-none">
+      <div className="mx-4 px-4 sm:px-10 pb-8 pt-10 border-gray-800 border-l border-r md:border-none">
         <div className="">
           <Link href="/">
             <a className={s.gradientText} href="">
@@ -20,9 +20,12 @@ const FooterSection: FC = () => {
         </div>
 
         <div className="flex items-end flex-wrap space-x-3 space-y-2">
-          <p className=" text-gray-300 font-medium text-sm lg:text-base ">
+          <a
+            href="mailto:jacksonmain9@gmail.com"
+            className=" text-purple-300 font-medium text-sm lg:text-base underline"
+          >
             jacksonmain9@gmail.com
-          </p>
+          </a>
           <div className="pl-5">
             <button className="px-2 py-1 bg-primaryDark rounded-md text-sm text-white">
               Contact

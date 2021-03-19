@@ -14,7 +14,7 @@ import {
   BottomWaveClear,
 } from "@components/waves";
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   return (

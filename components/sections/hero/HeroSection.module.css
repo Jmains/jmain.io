@@ -12,7 +12,7 @@
 }
 
 .callToAction {
-  @apply mt-12 text-white font-semibold bg-primaryDark px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300 hover:text-white hover:bg-purple-600 transition duration-200 ease-in-out;
+  @apply mt-12 text-white font-semibold bg-primaryDark px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300 hover:text-white hover:bg-opacity-50 transition duration-200 ease-in-out;
 }
 
 .container {

@@ -26,6 +26,15 @@ const HeroSection: FC = () => {
     }
   }, []);
 
+  const scrollToElement = (selector: string) => {
+    const element = document.getElementById(selector);
+    element
+      ? element.scrollIntoView({
+          behavior: "smooth",
+        })
+      : null;
+  };
+
   const imageVariants = {
     hidden: { opacity: 0, y: -70 },
     show: {
@@ -178,6 +187,9 @@ const HeroSection: FC = () => {
                 animate="show"
                 variants={callToActionBtnVariants}
                 className={s.callToAction}
+                onClick={() => {
+                  scrollToElement("ftProjSection");
+                }}
               >
                 Let's see my work!
               </motion.button>
@@ -187,7 +199,12 @@ const HeroSection: FC = () => {
                 variants={arrowDownVariants}
                 className="flex justify-center mt-20 animate-bounce lg:ml-20"
               >
-                <ArrowDown className="h-10 w-10 fill-current text-gray-50" />
+                <ArrowDown
+                  onClick={() => {
+                    scrollToElement("ftProjSection");
+                  }}
+                  className="h-10 w-10 fill-current text-gray-50 cursor-pointer"
+                />
               </motion.div>
             </div>
           </div>

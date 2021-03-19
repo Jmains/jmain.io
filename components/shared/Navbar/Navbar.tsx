@@ -25,6 +25,15 @@ const Navbar: FC = () => {
     };
   }, []);
 
+  const scrollToElement = (selector: string) => {
+    const element = document.getElementById(selector);
+    element
+      ? element.scrollIntoView({
+          behavior: "smooth",
+        })
+      : null;
+  };
+
   return (
     <nav
       className={cn(
@@ -37,7 +46,7 @@ const Navbar: FC = () => {
       {/* Maybe add some navbar scrolling effects later */}
 
       <div className="">
-        <div className="flex items-center lg:rounded-tr-md pl-4 pr-2 md:pl-6 lg:px-6 justify-between max-w-screen-xl mx-auto relative">
+        <div className="flex items-center lg:rounded-tr-md pl-6 pr-2 md:pl-6 lg:px-6 justify-between max-w-screen-xl mx-auto relative">
           {/* Navbar Logo */}
           <div className="flex items-center">
             <div className="md:block">
@@ -102,7 +111,7 @@ const Navbar: FC = () => {
           <div className="text-gray-400 text-sm lg:mr-2">
             <button
               onClick={() => {
-                alert("Still thinking of what to do with this button");
+                scrollToElement("projectsSection");
               }}
               className={cn(
                 "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
@@ -112,7 +121,7 @@ const Navbar: FC = () => {
             </button>
             <button
               onClick={() => {
-                alert("Still thinking of what to do with this button");
+                scrollToElement("skillsSection");
               }}
               className={cn(
                 "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
@@ -122,13 +131,13 @@ const Navbar: FC = () => {
             </button>
             <button
               onClick={() => {
-                alert("Still thinking of what to do with this button");
+                scrollToElement("contactSection");
               }}
               className={cn(
                 "mr-1 xl:mr-8 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
               )}
             >
-              about
+              contact
             </button>
           </div>
         </div>

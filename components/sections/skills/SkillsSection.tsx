@@ -28,7 +28,7 @@ const SkillsSection: FC<Props> = () => {
     <section id="skillsSection">
       <div className="grid grid-cols-1 mx-4 md:grid-cols-1 lg:grid-cols-1 border-l border-r border-gray-200 md:border-none pt-10 pb-16 lg:pb-32 lg:pt-16">
         <h2 className={s.gradientText}>Skills</h2>
-        <div className="mt-16 px-4 sm:px-10">
+        <div className="mt-16 px-4 sm:px-11">
           <h3 className="text-gray-800 tracking-wide md:text-left sm:text-lg lg:text-2xl font-medium">
             Languages
           </h3>
@@ -42,7 +42,7 @@ const SkillsSection: FC<Props> = () => {
           </div>
         </div>
 
-        <div className=" lg:mt-0 pt-10 px-4 sm:px-10">
+        <div className=" lg:mt-0 pt-10 px-4 sm:px-11">
           <h3 className="text-gray-800 tracking-wide md:text-left mt-10 sm:text-lg lg:text-2xl font-medium">
             Frameworks & Libraries
           </h3>
@@ -55,7 +55,7 @@ const SkillsSection: FC<Props> = () => {
             <Apollo className="h-14 w-14" />
           </div>
         </div>
-        <div className=" lg:mt-0 pt-10 px-4 sm:px-10">
+        <div className=" lg:mt-0 pt-10 px-4 sm:px-11">
           <h3 className="text-gray-800 tracking-wide md:text-left mt-10 sm:text-lg lg:text-2xl font-medium">
             Tools & Databases
           </h3>
