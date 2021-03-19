@@ -15,8 +15,13 @@ import {
 } from "@components/waves";
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
+import smoothscroll from "smoothscroll-polyfill";
 
 export default function Home() {
+  useEffect(() => {
+    smoothscroll.polyfill();
+  }, []);
+
   return (
     <div>
       <div className="bg-primaryBgDark ">

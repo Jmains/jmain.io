@@ -208,6 +208,11 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
+"@types/smoothscroll-polyfill@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@types/smoothscroll-polyfill/-/smoothscroll-polyfill-0.3.1.tgz#77fb3a6e116bdab4a5959122e3b8e201224dcd49"
+  integrity sha512-+KkHw4y+EyeCtVXET7woHUhIbfWFCflc0E0mZnSV+ZdjPQeHt/9KPEuT7gSW/kFQ8O3EG30PLO++YhChDt8+Ag==
+
 abort-controller@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
@@ -2252,6 +2257,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
 
 source-map-support@~0.5.19:
   version "0.5.19"
