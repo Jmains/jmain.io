@@ -8,7 +8,7 @@ import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort"
 const FeaturedProjectSection: FC = () => {
   return (
     <section id="ftProjSection">
-      <div className="mx-4 md:mx-auto pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 grid grid-cols-1 border-l border-r border-gray-200 md:border-none">
+      <div className="mx-4 md:mx-auto pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 xl:pb-72 xl:pt-24 grid grid-cols-1 border-l border-r border-gray-200 md:border-none">
         <div className="md:mt-32 mt-14">
           <div className="flex justify-center">
             <FtProjIcon className="h-20 w-20 lg:h-28 lg:w-28" />
@@ -21,13 +21,17 @@ const FeaturedProjectSection: FC = () => {
             <h3 className="text-xl font-semibold text-gray-900 md:text-2xl lg:text-4xl">
               KollabMe
             </h3>
-            <Link href="#">
-              <a className="text-gray-600 md:text-xl">kollabme.app</a>
-            </Link>
+            <div className="mt-2">
+              <Link href="https://kollab-me.herokuapp.com/community">
+                <a className="text-gray-600 md:text-xl focus:outline-none focus:ring-2 focus:ring-purple-400 rounded-md px-2 py-1">
+                  kollabme.app
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="mx-auto mt-20 xl:text-lg">
+        <div className="mx-auto mt-20 lg:text-lg">
           <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark md:border-none pl-4 md:-ml-6 md:pl-8">
             What?
           </span>
@@ -43,7 +47,7 @@ const FeaturedProjectSection: FC = () => {
         <div className="mx-4 mt-16 md:mt-24 lg:mt-16 sm:mx-auto justify-center flex items-center sm:space-x-14">
           <button
             aria-label="previous featured project image"
-            className="shadow-md rounded-md px-1 hidden sm:block focus:outline-none focus:ring-2 focus:ring-purple-300 transition duration-300 ease-in-out"
+            className="shadow-md rounded-md px-1 hidden sm:block focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-300 ease-in-out"
           >
             <ArrowLeft className="h-8 w-8 text-gray-500" />
           </button>
@@ -54,13 +58,13 @@ const FeaturedProjectSection: FC = () => {
           />
           <button
             aria-label="next featured project image"
-            className="shadow-md rounded-md px-1 ml-8 hidden sm:block focus:outline-none focus:ring-2 focus:ring-purple-300 transition duration-300 ease-in-out"
+            className="shadow-md rounded-md px-1 ml-8 hidden sm:block focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-300 ease-in-out"
           >
             <ArrowRight className="h-8 w-8 text-gray-500 " />
           </button>
         </div>
 
-        <div className="lg:mt-28 mt-20 mx-auto xl:text-lg">
+        <div className="lg:mt-28 mt-20 mx-auto lg:text-lg">
           <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark md:border-none px-4 md:-ml-6 md:pl-8">
             Why?
           </span>
@@ -74,13 +78,9 @@ const FeaturedProjectSection: FC = () => {
         </div>
         <div className="pb-10">
           <Link href="https://kollab-me.herokuapp.com/community">
-            <a className="px-3 py-2 flex bg-primaryDark justify-center items-center mt-24 w-36 space-x-1 mx-auto lg:mt-36 rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-purple-300 transition duration-200 ease-in-out cursor-pointer">
-              <span className="text-sm md:text-base text-gray-50 font-semibold tracking-wide">
-                Learn more
-              </span>
-              <div>
-                <ArrowRight className="h-5 w-5 text-white" />
-              </div>
+            <a className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 w-32  space-x-1 mx-auto lg:mt-36 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer">
+              Learn more
+              <ArrowRight className="h-5 w-5 text-white" />
             </a>
           </Link>
         </div>

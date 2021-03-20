@@ -1,29 +1,69 @@
-import { useState, useEffect, FC } from "react";
+import { useState, useEffect, FC, useRef } from "react";
 import throttle from "lodash.throttle";
 import cn from "classnames";
 import s from "./Navbar.module.css";
 import Link from "next/link";
 
+const getSectionDimension = (element: HTMLElement) => {
+  const { height, top } = element.getBoundingClientRect();
+  const offsetTop = window.pageYOffset + top;
+  const offsetBottom = offsetTop + height;
+  return {
+    height,
+    offsetTop,
+    offsetBottom,
+  };
+};
+
 const Navbar: FC = () => {
   // const uiDispatch = useUIDispatch();
+  const navRef = useRef<HTMLElement | null>(null);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [sectionIsVisibleName, setSectionIsVisibleName] = useState("");
 
-  // Detect whether user has scrolled down
   useEffect(() => {
+    const projectsSection = document.getElementById("projectsSection");
+    const skillsSection = document.getElementById("skillsSection");
+    const contactSection = document.getElementById("contactSection");
+
+    const sections = [
+      { section: projectsSection, name: "projectsSection" },
+      { section: skillsSection, name: "skillsSection" },
+      { section: contactSection, name: "contactSection" },
+    ];
+
     const handleScroll = throttle(() => {
+      if (navRef.current) {
+        const { height: navbarHeight } = getSectionDimension(navRef.current);
+        const scrollPosition = window.scrollY + navbarHeight;
+        const selected = sections.find(({ section }) => {
+          if (section) {
+            const { offsetTop, offsetBottom } = getSectionDimension(section);
+            return scrollPosition > offsetTop && scrollPosition < offsetBottom;
+          }
+        });
+
+        if (selected && selected.name !== sectionIsVisibleName) {
+          setSectionIsVisibleName(selected?.name);
+        } else if (!selected && sectionIsVisibleName) {
+          setSectionIsVisibleName("");
+        }
+      }
+
       const offset = 10;
       const { scrollTop } = document.documentElement;
 
       const scrolled = scrollTop > offset;
       setHasScrolled(scrolled);
-    }, 200);
+    }, 100);
 
+    handleScroll();
     document.addEventListener("scroll", handleScroll);
 
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [sectionIsVisibleName]);
 
   const scrollToElement = (selector: string) => {
     const element = document.getElementById(selector);
@@ -36,6 +76,7 @@ const Navbar: FC = () => {
 
   return (
     <nav
+      ref={navRef}
       className={cn(
         "sticky bg-primaryBgDark top-0 z-40 transition-all duration-300 ease-in-out",
         {
@@ -75,14 +116,14 @@ const Navbar: FC = () => {
 
                 {/* TODO: remove hidden attribute at the end */}
                 <div
-                  className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 hidden"
+                  className="origin-top-right text-sm md:text-base lg:text-lg absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 hidden"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="user-menu"
                 >
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2  text-gray-700 hover:bg-gray-100"
                     role="menuitem"
                   >
                     projects.
@@ -90,7 +131,7 @@ const Navbar: FC = () => {
 
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     role="menuitem"
                   >
                     skills.
@@ -98,7 +139,7 @@ const Navbar: FC = () => {
 
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     role="menuitem"
                   >
                     about.
@@ -108,13 +149,16 @@ const Navbar: FC = () => {
             </div>
           </div>
 
-          <div className="text-gray-400 text-sm lg:mr-2">
+          <div className="text-gray-400 text-sm lg:text-base lg:mr-2">
             <button
               onClick={() => {
                 scrollToElement("projectsSection");
               }}
               className={cn(
-                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
+                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-white transition duration-300 ease-in-out focus:outline-none focus:text-white",
+                {
+                  "text-white": sectionIsVisibleName == "projectsSection",
+                }
               )}
             >
               projects
@@ -124,7 +168,10 @@ const Navbar: FC = () => {
                 scrollToElement("skillsSection");
               }}
               className={cn(
-                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
+                "md:mr-8 mr-1 tracking-wide px-2 py-1 hover:text-white transition duration-300 ease-in-out focus:outline-none focus:text-white",
+                {
+                  "text-white": sectionIsVisibleName == "skillsSection",
+                }
               )}
             >
               skills
@@ -134,7 +181,10 @@ const Navbar: FC = () => {
                 scrollToElement("contactSection");
               }}
               className={cn(
-                "mr-1 xl:mr-8 tracking-wide px-2 py-1 hover:text-gray-100 transition duration-300 ease-in-out focus:outline-none"
+                "mr-1 xl:mr-8 tracking-wide px-2 py-1 hover:text-white transition duration-300 ease-in-out focus:outline-none focus:text-white",
+                {
+                  "text-white": sectionIsVisibleName == "contactSection",
+                }
               )}
             >
               contact

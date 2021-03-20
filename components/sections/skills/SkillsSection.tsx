@@ -26,7 +26,7 @@ interface Props {}
 const SkillsSection: FC<Props> = () => {
   return (
     <section id="skillsSection">
-      <div className="grid grid-cols-1 mx-4 md:grid-cols-1 lg:grid-cols-1 border-l border-r border-gray-200 md:border-none pt-10 pb-16 lg:pb-32 lg:pt-16">
+      <div className="grid grid-cols-1 mx-4 md:grid-cols-1 lg:grid-cols-1 border-l border-r border-gray-200 md:border-none py-16 lg:pb-32 lg:pt-32">
         <h2 className={s.gradientText}>Skills</h2>
         <div className="mt-16 px-4 sm:px-11">
           <h3 className="text-gray-800 tracking-wide md:text-left sm:text-lg lg:text-2xl font-medium">

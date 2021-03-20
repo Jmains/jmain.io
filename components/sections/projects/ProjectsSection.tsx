@@ -38,18 +38,18 @@ const ProjectsSection: FC = () => {
               </div>
               {/* Start Technologies used section */}
               <div className="flex items-center flex-wrap space-y-1 mt-10 space-x-3 lg:p-0">
-                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                  <span className="block text-purple-300 font-semibold text-sm">#Java</span>
-                </div>
-
-                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                  <span className="block text-purple-300 font-semibold text-sm">
-                    #Android Studio
-                  </span>
-                </div>
-                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                  <span className="block text-purple-300 font-semibold text-sm">#Sqlite</span>
-                </div>
+                <a
+                  className={s.tag}
+                  href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html"
+                >
+                  #Java
+                </a>
+                <a className={s.tag} href="https://developer.android.com/studio">
+                  #Android Studio
+                </a>
+                <a className={s.tag} href="https://www.sqlite.org/index.html">
+                  #SQLite
+                </a>
               </div>
               {/* End Technologies used section */}
               {/* Start Project Links */}
@@ -118,22 +118,15 @@ const ProjectsSection: FC = () => {
                 </div>
 
                 <div className="flex items-center mt-10 flex-wrap space-y-1 space-x-3">
-                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                    <span className="block text-purple-300 font-semibold text-sm">
-                      #Angular
-                    </span>
-                  </div>
-
-                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                    <span className="block text-purple-300 font-semibold text-sm">
-                      #TypeScript
-                    </span>
-                  </div>
-                  <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                    <span className="block text-purple-300 font-semibold text-sm">
-                      #Firebase
-                    </span>
-                  </div>
+                  <a className={s.tag} href="https://angular.io/">
+                    #Angular
+                  </a>
+                  <a className={s.tag} href="https://www.typescriptlang.org/">
+                    #TypeScript
+                  </a>
+                  <a className={s.tag} href="https://firebase.google.com/">
+                    #Firebase
+                  </a>
                 </div>
                 <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
                   <Link href="/">
@@ -186,20 +179,15 @@ const ProjectsSection: FC = () => {
               </div>
               {/* Start Technologies used section */}
               <div className="flex items-center mt-10 space-x-3 lg:p-0">
-                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                  <span className="block text-purple-300 font-semibold text-sm">
-                    #TypeScript
-                  </span>
-                </div>
-
-                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                  <span className="block text-purple-300 font-semibold text-sm">#NextJS</span>
-                </div>
-                <div className="px-3 py-1 rounded-full bg-darkGray shadow-md">
-                  <span className="block text-purple-300 font-semibold text-sm">
-                    #TailwindCSS
-                  </span>
-                </div>
+                <a className={s.tag} href="https://www.typescriptlang.org/">
+                  #TypeScript
+                </a>
+                <a className={s.tag} href="https://nextjs.org/">
+                  #NextJS
+                </a>
+                <a className={s.tag} href="https://tailwindcss.com/">
+                  #TailwindCSS
+                </a>
               </div>
               {/* End Technologies used section */}
               {/* Start Project Links */}
