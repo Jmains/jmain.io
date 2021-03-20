@@ -1,13 +1,73 @@
 import { LoadingSpinner } from "@components/icons";
-import { EventHandler, FC, FormEvent, FormEventHandler, useState } from "react";
+import { FC, FormEvent, useState } from "react";
+import emailjs from "emailjs-com";
+import { useUIDispatch } from "@components/ui/context";
 
 const ContactSection: FC = () => {
+  const uiDispatch = useUIDispatch();
+  const [fromEmail, setFromEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [recaptchaLoad, setRecaptcahLoad] = useState(false);
+  const [isVerified, setIsVerified] = useState(false);
   const [error, setError] = useState(null);
 
-  const onSubmit = (ev: FormEvent<HTMLFormElement>) => {
+  // const recaptchaLoaded = () => {
+  //   setRecaptchaLoad(true);
+  // }
+
+  // const verifiedRecaptcha = (response) => {
+  //   if (response) {
+  //     setIsVerified(true);
+  //   }
+  // }
+
+  const sendContactMail = async (fromEmail: string, message: string) => {
+    const templateParams = {
+      from_email: fromEmail,
+      message,
+    };
+
+    try {
+      const res = await emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
+      );
+      return res;
+    } catch (err) {
+      console.error(err);
+      return err;
+    }
+
+    // if (recaptchaLoad && isVerified) {
+    //   emailjs.send(
+    //     process.env.NEXT_PUBLIC_SERVICE_ID,
+    //     process.env.NEXT_PUBLIC_TEMPLATE_ID,
+    //     data,
+    //     process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
+    //   )
+    // }
+  };
+
+  const onSubmit = async (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
+    uiDispatch({
+      type: "SET_TOAST_TEXT",
+      text: "Success! ✅ Your email was sent to Jackson.",
+    });
+    uiDispatch({ type: "OPEN_TOAST" });
+    return;
     setLoading(true);
+    try {
+      const res = await sendContactMail(fromEmail, message);
+      // reset form fields
+      // Dispatch toast message
+      console.log(res);
+    } catch (err) {
+      console.error(err);
+    }
     // Send message
     setLoading(false);
   };
@@ -29,6 +89,7 @@ const ContactSection: FC = () => {
           />
         </div>
         <form
+          name="contact"
           onSubmit={onSubmit}
           className="mt-2 sm:mt-16 sm:col-span-1 z-10 transition duration-200 ease-in-out"
         >
@@ -37,8 +98,12 @@ const ContactSection: FC = () => {
               Your email
             </label>
             <input
+              onChange={(ev) => {
+                setFromEmail(ev.target.value);
+              }}
               name="email"
               required
+              autoComplete="email"
               className="rounded-md shadow-md w-full mt-2 h-10 px-2 outline-none focus:ring-2 focus:ring-purple-400 focus-within:ring-purple-300 lg:text-lg"
               type="email"
               placeholder="legolas.greenleaf@gmail.com"
@@ -49,6 +114,9 @@ const ContactSection: FC = () => {
               Message
             </label>
             <textarea
+              onChange={(ev) => {
+                setMessage(ev.target.value);
+              }}
               placeholder="Just wanted to say hi!"
               required
               maxLength={8000}
@@ -65,6 +133,13 @@ const ContactSection: FC = () => {
             {loading && <LoadingSpinner className="h-6 w-6 mr-2" />}
             {loading ? "sending..." : "Send now"}
           </button>
+
+          {/* <Recaptcha
+  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+  render="explicit"
+  onloadCallback={recaptchaLoaded}
+  verifyCallback={verifiedRecaptcha}
+/> */}
         </form>
       </div>
     </section>

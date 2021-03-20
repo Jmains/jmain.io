@@ -8,6 +8,7 @@ export { default as USFlag } from "./USFlag";
 export { default as Android } from "./Android";
 export { default as ArrowLeft } from "./ArrowLeft";
 export { default as ArrowRight } from "./ArrowRight";
+export { default as X } from "./X";
 
 // Loading Spinner
 export { default as LoadingSpinner } from "./LoadingSpinner";
