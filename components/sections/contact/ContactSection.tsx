@@ -67,6 +67,11 @@ const ContactSection: FC = () => {
       uiDispatch({ type: "OPEN_TOAST" });
       console.log(res);
     } catch (err) {
+      uiDispatch({
+        type: "SET_TOAST_TEXT",
+        text: "Error: Failed to send email 🙁.",
+      });
+      uiDispatch({ type: "OPEN_TOAST" });
       console.error(err);
     }
     // Send message
