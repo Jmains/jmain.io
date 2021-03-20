@@ -53,17 +53,18 @@ const ContactSection: FC = () => {
 
   const onSubmit = async (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
-    uiDispatch({
-      type: "SET_TOAST_TEXT",
-      text: "Success! ✅ Your email was sent to Jackson.",
-    });
-    uiDispatch({ type: "OPEN_TOAST" });
-    return;
     setLoading(true);
     try {
       const res = await sendContactMail(fromEmail, message);
       // reset form fields
+      setFromEmail("");
+      setMessage("");
       // Dispatch toast message
+      uiDispatch({
+        type: "SET_TOAST_TEXT",
+        text: "Success! ✅ Your email was sent to Jackson.",
+      });
+      uiDispatch({ type: "OPEN_TOAST" });
       console.log(res);
     } catch (err) {
       console.error(err);
