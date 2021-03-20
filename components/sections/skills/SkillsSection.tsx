@@ -17,7 +17,7 @@ import {
   Github,
   Git,
   Postgres,
-  AndroidStudio,
+  Android,
 } from "@components/icons";
 import { FC } from "react";
 import s from "./SkillsSection.module.css";
@@ -26,46 +26,142 @@ interface Props {}
 const SkillsSection: FC<Props> = () => {
   return (
     <section id="skillsSection">
-      <div className="grid grid-cols-1 mx-4 md:grid-cols-1 lg:grid-cols-1 border-l border-r border-gray-200 md:border-none py-16 lg:pb-32 lg:pt-32">
+      <div className="grid grid-cols-1 mx-4 md:grid-cols-1 lg:grid-cols-1 border-l border-r border-gray-300 md:border-none pt-16 pb-20 lg:pb-32 lg:pt-32">
         <h2 className={s.gradientText}>Skills</h2>
+
         <div className="mt-16 px-4 sm:px-11">
-          <h3 className="text-gray-800 tracking-wide md:text-left sm:text-lg lg:text-2xl font-medium">
+          <h3 className="text-gray-900 tracking-wide md:text-left text-lg lg:text-2xl font-medium">
             Languages
           </h3>
-          <div className="grid grid-cols-3 pl-2 sm:pl-0 md:w-1/2 lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-16 lg:gap-y-24 pb-16">
-            <Typescript className="h-10 w-10" />
-            <Javascript className="h-10 w-10 rounded-md" />
-            <Java className="h-10 w-10" />
-            <Nodejs className="h-14 w-14 pt-3" />
-            <Html className="h-10 w-10" />
-            <Css className="h-10 w-10" />
+          <div className="grid grid-cols-3 pl-2 sm:pl-0 lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-16 lg:gap-y-24 pb-16">
+            <div>
+              <Typescript className="h-10 w-10 sm:h-12 sm:w-12 shadow-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                TypeScript
+              </span>
+            </div>
+
+            <div>
+              <Javascript className="h-10 w-10 sm:h-12 sm:w-12 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                JavaScript
+              </span>
+            </div>
+
+            <div>
+              <Java className="h-10 w-10 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Java
+              </span>
+            </div>
+            <div>
+              <Nodejs className="h-12 w-12 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                NodeJS
+              </span>
+            </div>
+
+            <div>
+              <Html className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Html
+              </span>
+            </div>
+
+            <div>
+              <Css className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                CSS
+              </span>
+            </div>
           </div>
         </div>
 
         <div className=" lg:mt-0 pt-10 px-4 sm:px-11">
-          <h3 className="text-gray-800 tracking-wide md:text-left mt-10 sm:text-lg lg:text-2xl font-medium">
+          <h3 className="text-gray-800 tracking-wide md:text-left mt-8 text-lg lg:text-2xl font-medium">
             Frameworks & Libraries
           </h3>
-          <div className="grid grid-cols-3 pl-2 sm:pl-0 md:w-1/2 lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-14 lg:gap-y-24 pb-16">
-            <Reactjs className="h-10 w-10" />
-            <Nextjs className="h-12 w-12" />
-            <Graphql className="h-10 w-10" />
-            <Express className="h-14 w-14" />
-            <Tailwind className="h-10 w-10" />
-            <Apollo className="h-14 w-14" />
+          <div className="grid grid-cols-3 pl-2 sm:pl-0 lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-14 lg:gap-y-24 pb-16">
+            <div>
+              <Reactjs className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                ReactJS
+              </span>
+            </div>
+            <div>
+              <Nextjs className="h-12 w-12 sm:h-16 sm:w-16 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                NextJS
+              </span>
+            </div>
+            <div>
+              <Graphql className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                GraphQL
+              </span>
+            </div>
+            <div>
+              <Express className="h-12 w-12 sm:w-16 sm:h-16 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Express
+              </span>
+            </div>
+            <div>
+              <Tailwind className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                TailwindCSS
+              </span>
+            </div>
+            <div>
+              <Apollo className="h-12 w-12 sm:w-16 sm:h-16 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Apollo
+              </span>
+            </div>
           </div>
         </div>
         <div className=" lg:mt-0 pt-10 px-4 sm:px-11">
-          <h3 className="text-gray-800 tracking-wide md:text-left mt-10 sm:text-lg lg:text-2xl font-medium">
+          <h3 className="text-gray-800 tracking-wide md:text-left mt-10 text-lg lg:text-2xl font-medium">
             Tools & Databases
           </h3>
-          <div className="grid grid-cols-3 pl-2 sm:pl-0 w-full md:w-1/2 lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-y-6 gap-x-12">
-            <MongoDb className="h-20 w-20" />
-            <Webpack className="h-12 w-12 ml-3 mt-4" />
-            <Git className="h-16 w-16 mt-8" />
-            <Postgres className="h-10 w-10 mt-6" />
-            <AndroidStudio className="h-24 w-24 -ml-3" />
-            <Github className="h-9 w-9 mt-6 ml-6" />
+          <div className="grid grid-cols-3 pl-2 sm:pl-0 w-full lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-y-14 lg:gap-y-24 gap-x-12">
+            <div>
+              <MongoDb className="h-12 w-12 sm:w-14 sm:h-14 shadow-md p-1 rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                MongoDB
+              </span>
+            </div>
+            <div>
+              <Webpack className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Webpack
+              </span>
+            </div>
+
+            <div>
+              <Git className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Git
+              </span>
+            </div>
+            <div>
+              <Postgres className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Postgres
+              </span>
+            </div>
+            <div>
+              <Android className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Android Studio
+              </span>
+            </div>
+            <div>
+              <Github className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+              <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
+                Github
+              </span>
+            </div>
           </div>
         </div>
       </div>

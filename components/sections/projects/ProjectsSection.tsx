@@ -152,7 +152,7 @@ const ProjectsSection: FC = () => {
         {/* Card 3 */}
         {/* <FadeInElementWhenInViewPort> */}
 
-        <div className="lg:px-10 lg:col-span-11 lg:row-span-1 relative mt-20 lg:mt-32">
+        <div className="lg:pl-10 lg:col-span-11 lg:row-span-1 relative mt-20 lg:mt-32">
           <div className="md:flex block">
             <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
               <h6 className="text-primaryLight font-semibold xl:text-lg">April, 2021</h6>

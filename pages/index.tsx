@@ -61,7 +61,8 @@ export default function Home() {
           <ProjectsSection />
         </div>
       </div>
-      <div className="bg-white w-full relative">
+
+      <div className="bg-gray-200 w-full relative">
         <div className="absolute top-0 mx-auto">
           <TopWaveSolid className="w-screen max-h-40 -mt-1" />
         </div>

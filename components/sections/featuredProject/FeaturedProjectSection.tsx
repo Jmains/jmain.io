@@ -23,7 +23,7 @@ const FeaturedProjectSection: FC = () => {
             </h3>
             <div className="mt-2">
               <Link href="https://kollab-me.herokuapp.com/community">
-                <a className="text-gray-600 md:text-xl focus:outline-none focus:ring-2 focus:ring-purple-400 rounded-md px-2 py-1">
+                <a className="text-gray-600 md:text-xl focus:outline-none focus:ring-2 focus:ring-purple-400 rounded-md px-2 py-1 hover:underline">
                   kollabme.app
                 </a>
               </Link>
