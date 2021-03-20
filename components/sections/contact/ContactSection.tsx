@@ -53,9 +53,6 @@ const ContactSection: FC = () => {
 
   const onSubmit = async (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
-    setFromEmail("");
-    setMessage("");
-    return;
     setLoading(true);
     try {
       const res = await sendContactMail(fromEmail, message);
