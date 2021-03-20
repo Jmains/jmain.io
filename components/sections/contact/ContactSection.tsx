@@ -53,6 +53,9 @@ const ContactSection: FC = () => {
 
   const onSubmit = async (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
+    setFromEmail("");
+    setMessage("");
+    return;
     setLoading(true);
     try {
       const res = await sendContactMail(fromEmail, message);
@@ -102,6 +105,7 @@ const ContactSection: FC = () => {
               onChange={(ev) => {
                 setFromEmail(ev.target.value);
               }}
+              value={fromEmail}
               name="email"
               required
               autoComplete="email"
@@ -120,6 +124,7 @@ const ContactSection: FC = () => {
               }}
               placeholder="Just wanted to say hi!"
               required
+              value={message}
               maxLength={8000}
               className="shadow-md rounded-md w-full mt-2 h-64 lg:h-80 p-2 outline-none focus:ring-2 focus:ring-purple-400 focus-within:ring-purple-400 lg:text-lg"
               name="message"
