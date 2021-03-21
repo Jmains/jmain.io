@@ -6,7 +6,7 @@ import s from "./FooterSection.module.css";
 const FooterSection: FC = () => {
   return (
     <footer id="footerSection" className="max-w-screen-xl mx-auto">
-      <div className="mx-4 px-4 sm:px-10 py-16 border-gray-800 border-l border-r md:border-none">
+      <div className="mx-4 px-4 sm:px-10 pt-16 pb-10 border-gray-800 border-l border-r md:border-none">
         <div className="">
           <Link href="/">
             <a className={s.gradientText}>JM.</a>
@@ -32,15 +32,26 @@ const FooterSection: FC = () => {
         </div>
         {/* End First Col */}
 
-        <div className="grid grid-cols-2 gap-x-32 md:text-left lg:grid-cols-2 mt-6 grid-flow-row gap-y-3 text-gray-400 text-sm lg:text-base ">
-          <span className="block ">Projects</span>
-          <span className="block">Instagram</span>
-          <span className="block ">About</span>
-          <span className="block ">Twitter</span>
-          <span className="block ">Skills</span>
-          <span className="block">Github</span>
-          <span className="block ">Contact</span>
-          <span className="block ">Facebook</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-32 md:text-left lg:grid-cols-2 mt-6 grid-flow-row gap-y-4 text-gray-400 text-sm lg:text-base ">
+          <div className="">
+            <span className="text-white">Resources</span>
+            <div className="space-y-2 mt-3">
+              <span className="block ">Projects</span>
+              <span className="block">Skills</span>
+              <span className="block ">Contact</span>
+              <span className="block ">About</span>
+            </div>
+          </div>
+
+          <div className="">
+            <span className="text-white">Socials</span>
+            <div className="space-y-2 mt-3">
+              <span className="block ">Instagram</span>
+              <span className="block">Twitter</span>
+              <span className="block ">Github</span>
+              <span className="block ">Facebook</span>
+            </div>
+          </div>
         </div>
 
         <div className="mt-12">

@@ -101,7 +101,7 @@ const ContactSection: FC = () => {
         >
           <div className="">
             <label className="block font-bold text-white lg:text-lg" htmlFor="email">
-              Your email
+              Your Email
             </label>
             <input
               onChange={(ev) => {
@@ -113,7 +113,7 @@ const ContactSection: FC = () => {
               autoComplete="email"
               className="rounded-md shadow-md w-full mt-2 h-10 px-2 outline-none focus:ring-2 focus:ring-purple-400 focus-within:ring-purple-300 lg:text-lg"
               type="email"
-              placeholder="legolas.greenleaf@gmail.com"
+              placeholder="luke.skywalker@gmail.com"
             />
           </div>
           <div className="mt-8">
@@ -139,7 +139,7 @@ const ContactSection: FC = () => {
             disabled={loading}
           >
             {loading && <LoadingSpinner className="h-6 w-6 mr-2" />}
-            {loading ? "sending..." : "Send now"}
+            {loading ? "sending..." : "Send Now"}
           </button>
 
           {/* <Recaptcha

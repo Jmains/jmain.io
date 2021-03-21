@@ -105,8 +105,8 @@ const ProjectsSection: FC = () => {
 
                 <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9">
                   A web app to store your own personal favorite movie collection. User's can
-                  rate of 5 and write a short description about why they liked the movie.
-                  Movies can be created, updated, and deleted.
+                  rate their movie out of 5 and write a short description about why they liked
+                  the movie. Movies can be created, updated, and deleted from their list.
                 </p>
 
                 <div className="block md:hidden rounded-lg mt-9 mx-auto md:pl-10">

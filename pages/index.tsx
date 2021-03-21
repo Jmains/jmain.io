@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-200 w-full relative">
+      <div className=" bg-gradient-to-bl from-white to-gray-200 w-full relative">
         <div className="absolute top-0 mx-auto">
           <TopWaveSolid className="w-screen max-h-40 -mt-1" />
         </div>
