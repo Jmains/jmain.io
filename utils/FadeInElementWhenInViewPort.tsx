@@ -17,7 +17,7 @@ interface ToastProps {
 
 export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
   children,
-  fadeInDirection = "translate-x-20",
+  fadeInDirection = "",
   className,
 }) => {
   const [isVisible, setVisible] = useState(false);
