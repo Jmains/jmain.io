@@ -1,4 +1,4 @@
-import { Github, Instagram, Twitter } from "@components/icons";
+require("intersection-observer");
 import {
   FeaturedProjectSection,
   ProjectsSection,
