@@ -19,7 +19,7 @@ const ProjectsSection: FC = () => {
             <h2 className={s.gradientText}>Projects</h2>
             {/* Card 1 */}
             <div className="lg:px-10 lg:col-span-11 lg:row-span-1 relative mt-20">
-              <FadeInElementWhenInViewPort>
+              <FadeInElementWhenInViewPort fadeInDirection="translate-y-32">
                 <div className="md:flex block">
                   <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
                     <h6 className="text-primaryLight font-semibold xl:text-lg">March, 2020</h6>

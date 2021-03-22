@@ -11,9 +11,10 @@ import cn from "classnames";
 
 interface ToastProps {
   children: ReactNode | ReactNode[] | Component[];
+  fadeInDirection?: string;
 }
 
-export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children }) => {
+export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children, fadeInDirection }) => {
   const [isVisible, setVisible] = useState(false);
   const nodeRef = useRef() as MutableRefObject<HTMLDivElement>;
   useEffect(() => {
@@ -38,10 +39,10 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children }) => {
     };
   }, []);
 
-  const rootClassName = cn("transition-all transform ease-in-out duration-700", {
+  const rootClassName = cn("transition-all ease-in-out duration-700", {
     transform: true,
-    "opacity-100 translate-x-0": isVisible,
-    "opacity-0 translate-x-20": !isVisible,
+    "opacity-100 translate-x-0 animate-pulse": isVisible,
+    [`opacity-0 ${fadeInDirection ? fadeInDirection : "translate-x-20"}`]: !isVisible,
   });
 
   return (
