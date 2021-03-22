@@ -10,7 +10,7 @@ import {
 import cn from "classnames";
 
 interface ToastProps {
-  children: ReactNode[] | Component[];
+  children: ReactNode | ReactNode[] | Component[];
 }
 
 export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children }) => {
