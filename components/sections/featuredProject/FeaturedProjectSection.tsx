@@ -27,31 +27,30 @@ const FeaturedProjectSection: FC = () => {
       </div>
 
       <div className="max-w-screen-xl mx-auto">
-        <FadeInElementWhenInViewPort fadeInDirection="translate-y-24">
-          <section id="ftProjSection">
-            <div className="mx-4 md:mx-auto pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 xl:pb-72 xl:pt-24 grid grid-cols-1 border-l border-r border-gray-200 md:border-none">
-              <div className="md:mt-32 mt-14">
-                <div className="flex justify-center">
-                  <FtProjIcon className="h-20 w-20 lg:h-28 lg:w-28" />
-                </div>
-                <h2 className="text-primaryDark uppercase font-bold tracking-widest text-2xl md:text-3xl lg:text-4xl mt-4 lg:mt-6 text-center">
-                  Featured Project
-                </h2>
+        <section id="ftProjSection">
+          <div className="mx-4 md:mx-auto pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 xl:pb-72 xl:pt-24 grid grid-cols-1 border-l border-r border-gray-200 md:border-none">
+            <div className="md:mt-32 mt-14">
+              <div className="flex justify-center">
+                <FtProjIcon className="h-20 w-20 lg:h-28 lg:w-28" />
+              </div>
+              <h2 className="text-primaryDark uppercase font-bold tracking-widest text-2xl md:text-3xl lg:text-4xl mt-4 lg:mt-6 text-center">
+                Featured Project
+              </h2>
 
-                <div className="text-center mt-5 lg:mt-8">
-                  <h3 className="text-xl font-semibold text-gray-900 md:text-2xl lg:text-4xl">
-                    KollabMe
-                  </h3>
-                  <div className="mt-2">
-                    <Link href="https://kollab-me.herokuapp.com/community">
-                      <a className="text-gray-600 md:text-xl focus:outline-none focus:ring-2 focus:ring-purple-400 rounded-md px-2 py-1 hover:underline">
-                        kollabme.app
-                      </a>
-                    </Link>
-                  </div>
+              <div className="text-center mt-5 lg:mt-8">
+                <h3 className="text-xl font-semibold text-gray-900 md:text-2xl lg:text-4xl">
+                  KollabMe
+                </h3>
+                <div className="mt-2">
+                  <Link href="https://kollab-me.herokuapp.com/community">
+                    <a className="text-gray-600 md:text-xl focus:outline-none focus:ring-2 focus:ring-purple-400 rounded-md px-2 py-1 hover:underline">
+                      kollabme.app
+                    </a>
+                  </Link>
                 </div>
               </div>
-
+            </div>
+            <FadeInElementWhenInViewPort fadeInDirection="translate-y-24">
               <div className="mx-auto mt-20 lg:text-lg">
                 <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark md:border-none pl-4 md:-ml-6 md:pl-8">
                   What?
@@ -106,13 +105,13 @@ const FeaturedProjectSection: FC = () => {
                   </a>
                 </Link>
               </div>
-            </div>
+            </FadeInElementWhenInViewPort>
+          </div>
 
-            {/* <div className="absolute top-0 right-0 mt-96 ">
+          {/* <div className="absolute top-0 right-0 mt-96 ">
         <LgPinkOct className="z-0 h-16 w-16" />
       </div> */}
-          </section>
-        </FadeInElementWhenInViewPort>
+        </section>
       </div>
     </div>
   );
