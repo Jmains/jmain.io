@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import smoothscroll from "smoothscroll-polyfill";
-smoothscroll.polyfill();
 
 import {
   FeaturedProjectSection,
@@ -11,6 +10,10 @@ import {
 } from "@components/sections";
 
 export default function Home() {
+  useEffect(() => {
+    smoothscroll.polyfill();
+  }, []);
+
   return (
     <>
       <HeroSection />
