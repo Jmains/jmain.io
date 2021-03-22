@@ -45,7 +45,7 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
   }, [isVisible]);
 
   const rootClassName = cn(
-    "transition-all ease-in duration-300",
+    "transition-all ease-in duration-300 md:duration-500",
     {
       transform: true,
       "opacity-100": isVisible,
