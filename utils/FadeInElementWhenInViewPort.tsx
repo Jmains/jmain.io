@@ -12,9 +12,14 @@ import cn from "classnames";
 interface ToastProps {
   children: ReactNode | ReactNode[] | Component[];
   fadeInDirection?: string;
+  className?: string;
 }
 
-export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children, fadeInDirection }) => {
+export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
+  children,
+  fadeInDirection = "translate-x-20",
+  className,
+}) => {
   const [isVisible, setVisible] = useState(false);
   const nodeRef = useRef() as MutableRefObject<HTMLDivElement>;
   useEffect(() => {
@@ -37,13 +42,17 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children, fadeInDi
     return () => {
       if (nodeRef.current) observer.unobserve(nodeRef.current);
     };
-  }, []);
+  }, [isVisible]);
 
-  const rootClassName = cn("transition-all ease-in-out duration-500", {
-    transform: true,
-    "translate-x-0 opacity-100": isVisible,
-    [`${fadeInDirection ? fadeInDirection : "translate-x-20"} opacity-0`]: !isVisible,
-  });
+  const rootClassName = cn(
+    "transition-all ease-in duration-300",
+    {
+      transform: true,
+      "translate-x-0 opacity-100": isVisible,
+      [`${fadeInDirection} opacity-0`]: !isVisible,
+    },
+    className
+  );
 
   return (
     <div className={rootClassName} ref={nodeRef}>
