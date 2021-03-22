@@ -39,10 +39,12 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children, fadeInDi
     };
   }, []);
 
-  const rootClassName = cn("transition-all ease-in-out duration-700", {
+  const rootClassName = cn("transition-all ease-in-out duration-500", {
     transform: true,
-    "opacity-100 translate-x-0 animate-pulse": isVisible,
-    [`opacity-0 ${fadeInDirection ? fadeInDirection : "translate-x-20"}`]: !isVisible,
+    "transform opacity-100 translate-x-0 transition-all ease-in-out duration-500": isVisible,
+    [`transform opacity-0 transition-all ease-in-out duration-500 ${
+      fadeInDirection ? fadeInDirection : "translate-x-20"
+    }`]: !isVisible,
   });
 
   return (
