@@ -19,7 +19,7 @@ const ProjectsSection: FC = () => {
             <h2 className={s.gradientText}>Projects</h2>
             {/* Card 1 */}
             <div className="lg:px-10 lg:col-span-11 lg:row-span-1 relative mt-20">
-              <FadeInElementWhenInViewPort fadeInDirection="translate-y-32">
+              <FadeInElementWhenInViewPort fadeInDirection="translate-y-24">
                 <div className="md:flex block">
                   <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
                     <h6 className="text-primaryLight font-semibold xl:text-lg">March, 2020</h6>
@@ -96,7 +96,7 @@ const ProjectsSection: FC = () => {
             {/* Card 2 */}
 
             <div className="lg:pl-6 lg:col-span-11 relative mt-20 lg:mt-28">
-              <FadeInElementWhenInViewPort>
+              <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div>
                   <div className="md:flex block">
                     <div className="hidden md:block rounded-lg pl-10 pt-6 lg:pl-6 xl:pr-10">
@@ -167,7 +167,7 @@ const ProjectsSection: FC = () => {
             {/* Card 3 */}
 
             <div className="lg:pl-10 lg:col-span-11 lg:row-span-1 relative mt-20 lg:mt-32">
-              <FadeInElementWhenInViewPort>
+              <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="md:flex block">
                   <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
                     <h6 className="text-primaryLight font-semibold xl:text-lg">April, 2021</h6>
