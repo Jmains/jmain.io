@@ -1,13 +1,21 @@
-import { FC, ReactChild, ReactNode, useEffect, useRef, useState } from "react";
+import {
+  Component,
+  FC,
+  MutableRefObject,
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import cn from "classnames";
 
 interface ToastProps {
-  children: ReactChild;
+  children: ReactNode[] | Component[];
 }
 
 export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
-  const nodeRef = useRef<HTMLDivElement>(null);
+  const nodeRef = useRef() as MutableRefObject<HTMLDivElement>;
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries: any) => {
@@ -30,10 +38,10 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children }) => {
     };
   }, []);
 
-  const rootClassName = cn("transition-all ease-in-out duration-700", {
+  const rootClassName = cn("transition-all transform ease-in-out duration-700", {
     transform: true,
-    "opacity-100 translate-x-none": isVisible,
-    "opacity-0 translate-x-64": !isVisible,
+    "opacity-100 translate-x-0": isVisible,
+    "opacity-0 translate-x-20": !isVisible,
   });
 
   return (

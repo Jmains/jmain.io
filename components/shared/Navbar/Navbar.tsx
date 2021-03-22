@@ -1,4 +1,4 @@
-import { useState, useEffect, FC, useRef } from "react";
+import { useState, useEffect, FC, useRef, MutableRefObject } from "react";
 import throttle from "lodash.throttle";
 import cn from "classnames";
 import s from "./Navbar.module.css";
@@ -18,7 +18,9 @@ const getSectionDimension = (element: HTMLElement) => {
 
 const Navbar: FC = () => {
   // const uiDispatch = useUIDispatch();
-  const navRef = useRef<HTMLElement | null>(null);
+  // const navRef = useRef<HTMLElement | null>(null);
+  const navRef = useRef() as MutableRefObject<HTMLElement>;
+
   const [hasScrolled, setHasScrolled] = useState(false);
   const [sectionIsVisibleName, setSectionIsVisibleName] = useState("");
 

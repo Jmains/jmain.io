@@ -3,6 +3,7 @@ import s from "./ProjectsSection.module.css";
 import Link from "next/link";
 import { Android, Eye, Github } from "@components/icons";
 import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort";
+import { Marquee } from "@components/shared/ Marquee";
 
 const ProjectsSection: FC = () => {
   return (

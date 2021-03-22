@@ -140,7 +140,7 @@ const ContactSection: FC = () => {
 
               <button
                 name="send now"
-                className="flex items-center px-4 py-1 font-semibold text-white bg-primaryBgDark rounded-md mt-10 focus:ring-2 focus:outline-none focus:ring-purple-400"
+                className="flex items-center px-4 py-1 font-semibold text-white bg-primaryBgDark rounded-md mt-10 hover:bg-opacity-70 focus:ring-2 focus:outline-none focus:ring-purple-400 transition duration-200 ease-in-out"
                 type="submit"
                 disabled={loading}
               >

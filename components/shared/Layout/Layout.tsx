@@ -21,14 +21,13 @@ const Layout: FC = ({ children }) => {
   return (
     <div className={cn("h-full mx-auto font-sans")}>
       <Navbar />
-
       <main className="antialiased overflow-hidden">{children}</main>
-      <div className="bg-primaryBgDark">
-        <FooterSection />
-      </div>
+      <FooterSection />
+
       {/* <Sidebar open={displaySidebar} onClose={closeSidebar}>
-    <CartSidebarView />
+    <SideMenuView />
   </Sidebar> */}
+
       {/* <Modal open={displayModal} onClose={closeModal}>
         {modalView === modalViews.LOGIN_VIEW && <LoginView />}
         {modalView === modalViews.REGISTER_VIEW && <RegisterView />}
@@ -36,32 +35,7 @@ const Layout: FC = ({ children }) => {
       {/* {modalView === modalViews.CREATE_STUDY_GROUP_VIEW && <CreateStudyGroupView} */}
       {/* </Modal> */}
 
-      <Toast
-        hide={!displayToast}
-        title={toastText}
-        description=""
-        action={
-          <button
-            onClick={() => {
-              uiDispatch({ type: "CLOSE_TOAST" });
-            }}
-            className="px-2 py-1 bg-white rounded-full"
-          >
-            X
-          </button>
-        }
-      />
-
-      {/* <FeatureBar
-    title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
-    hide={acceptedCookies}
-    action={
-      <Button className="mx-5" onClick={() => onAcceptCookies()}>
-        Accept cookies
-      </Button>
-    }
-  /> */}
-      {/* <Footer /> */}
+      <Toast hide={!displayToast} text={toastText} />
     </div>
   );
 };

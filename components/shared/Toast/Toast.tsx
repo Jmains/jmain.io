@@ -5,13 +5,12 @@ import { ReactNode, FC, useEffect } from "react";
 
 interface ToastProps {
   className?: string;
-  title: string;
-  description?: string;
+  text: string;
   hide?: boolean;
   action?: ReactNode;
 }
 
-const Toast: FC<ToastProps> = ({ title, description, className, action, hide }) => {
+const Toast: FC<ToastProps> = ({ text, className, action, hide }) => {
   const uiDispatch = useUIDispatch();
   const { displayToast } = useUIState();
 
@@ -34,7 +33,7 @@ const Toast: FC<ToastProps> = ({ title, description, className, action, hide }) 
   );
   return (
     <dialog className={rootClassName}>
-      <span className="block">{title}</span>
+      <span className="block">{text}</span>
       <button
         type="button"
         name="close toast message"
