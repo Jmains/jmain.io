@@ -1,7 +1,11 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, ReactChild, ReactNode, useEffect, useRef, useState } from "react";
 import cn from "classnames";
 
-export const FadeInElementWhenInViewPort: FC = ({ children }) => {
+interface ToastProps {
+  children: ReactChild;
+}
+
+export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
   const nodeRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -26,13 +30,14 @@ export const FadeInElementWhenInViewPort: FC = ({ children }) => {
     };
   }, []);
 
+  const rootClassName = cn("transition-all ease-in-out duration-700", {
+    transform: true,
+    "opacity-100 translate-x-none": isVisible,
+    "opacity-0 translate-x-64": !isVisible,
+  });
+
   return (
-    <div
-      className={cn("opacity-0 duration-700 transform-gpu translate-x-20 ease-in-out", {
-        "opacity-100 transform-none": isVisible,
-      })}
-      ref={nodeRef}
-    >
+    <div className={rootClassName} ref={nodeRef}>
       {children}
     </div>
   );

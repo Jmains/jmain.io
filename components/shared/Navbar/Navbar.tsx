@@ -3,6 +3,7 @@ import throttle from "lodash.throttle";
 import cn from "classnames";
 import s from "./Navbar.module.css";
 import Link from "next/link";
+import { scrollToElement } from "@utils/scrollToElement";
 
 const getSectionDimension = (element: HTMLElement) => {
   const { height, top } = element.getBoundingClientRect();
@@ -64,15 +65,6 @@ const Navbar: FC = () => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, [sectionIsVisibleName]);
-
-  const scrollToElement = (selector: string) => {
-    const element = document.getElementById(selector);
-    element
-      ? element.scrollIntoView({
-          behavior: "smooth",
-        })
-      : null;
-  };
 
   return (
     <nav

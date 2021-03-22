@@ -99,7 +99,7 @@ const ContactSection: FC = () => {
           onSubmit={onSubmit}
           className="mt-2 sm:mt-16 sm:col-span-1 z-10 transition duration-200 ease-in-out"
         >
-          <div className="">
+          <div>
             <label className="block font-bold text-white lg:text-lg" htmlFor="email">
               Your Email
             </label>
@@ -108,6 +108,7 @@ const ContactSection: FC = () => {
                 setFromEmail(ev.target.value);
               }}
               value={fromEmail}
+              id="email"
               name="email"
               required
               autoComplete="email"
@@ -116,6 +117,7 @@ const ContactSection: FC = () => {
               placeholder="luke.skywalker@gmail.com"
             />
           </div>
+
           <div className="mt-8">
             <label className="block font-bold text-white lg:text-lg" htmlFor="message">
               Message
@@ -133,7 +135,9 @@ const ContactSection: FC = () => {
               id="message"
             ></textarea>
           </div>
+
           <button
+            name="send now"
             className="flex items-center px-4 py-1 font-semibold text-white bg-primaryBgDark rounded-md mt-10 focus:ring-2 focus:outline-none focus:ring-purple-400"
             type="submit"
             disabled={loading}

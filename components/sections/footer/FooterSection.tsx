@@ -1,4 +1,5 @@
 import { Github, Instagram, Linkedin, Twitter } from "@components/icons";
+import { scrollToElement } from "@utils/scrollToElement";
 import Link from "next/link";
 import { FC } from "react";
 import s from "./FooterSection.module.css";
@@ -36,10 +37,31 @@ const FooterSection: FC = () => {
           <div className="">
             <span className="text-white">Resources</span>
             <div className="space-y-2 mt-3">
-              <span className="block ">Projects</span>
-              <span className="block">Skills</span>
-              <span className="block ">Contact</span>
-              <span className="block ">About</span>
+              <a
+                onClick={() => {
+                  scrollToElement("projectsSection");
+                }}
+                className="block "
+              >
+                Projects
+              </a>
+              <a
+                onClick={() => {
+                  scrollToElement("skillsSection");
+                }}
+                className="block"
+              >
+                Skills
+              </a>
+              <a
+                onClick={() => {
+                  scrollToElement("contactSection");
+                }}
+                className="block "
+              >
+                Contact
+              </a>
+              <a className="block ">About</a>
             </div>
           </div>
 
