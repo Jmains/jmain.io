@@ -33,7 +33,7 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
           }
         }
       },
-      { threshold: 0.35 }
+      { threshold: 0.25 }
     );
 
     if (nodeRef.current) {
@@ -45,7 +45,7 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
   }, [isVisible]);
 
   const rootClassName = cn(
-    "transition-all ease-in-out duration-100",
+    "transition-all ease-in-out duration-500",
     {
       transform: true,
       "opacity-100": isVisible,
