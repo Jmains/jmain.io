@@ -41,10 +41,8 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({ children, fadeInDi
 
   const rootClassName = cn("transition-all ease-in-out duration-500", {
     transform: true,
-    "transform opacity-100 translate-x-0 transition-all ease-in-out duration-500": isVisible,
-    [`transform opacity-0 transition-all ease-in-out duration-500 ${
-      fadeInDirection ? fadeInDirection : "translate-x-20"
-    }`]: !isVisible,
+    "translate-x-0 opacity-100": isVisible,
+    [`${fadeInDirection ? fadeInDirection : "translate-x-20"} opacity-0`]: !isVisible,
   });
 
   return (
