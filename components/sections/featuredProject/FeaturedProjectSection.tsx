@@ -11,7 +11,7 @@ import {
 
 const FeaturedProjectSection: FC = () => {
   return (
-    <div className="relative bg-gradient-to-br from-white to-gray-300">
+    <div className="relative bg-white">
       <div className="absolute top-0 mx-auto">
         <TopWaveSolid className="w-screen max-h-40 -mt-1" />
       </div>
@@ -29,11 +29,11 @@ const FeaturedProjectSection: FC = () => {
       <div className="max-w-screen-xl mx-auto">
         <section id="ftProjSection">
           <div className="mx-4 pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 xl:pb-96 xl:pt-32 grid grid-cols-12 border-l border-r border-gray-200 md:border-none">
-            <div className="hidden md:block col-span-8 lg:col-span-7 mt-28 lg:mt-16 -ml-16 lg:-ml-24">
-              <img src="./ftProjMockup2.svg" className="" alt="" />
+            <div className="hidden md:block col-span-8 lg:col-span-7 mt-28 md:mt-48 lg:mt-36 -ml-16 md:-ml-36 lg:-ml-24">
+              <img src="./ftProjMockup.svg" className="" alt="" />
             </div>
 
-            <div className="col-span-12 md:col-span-4 lg:col-span-5 lg:pr-10 md:-ml-28">
+            <div className="col-span-12 md:col-span-4 lg:col-span-5 lg:pr-10 md:-ml-36">
               <div className="md:mt-24 mt-14 px-4 lg:px-0">
                 <div className="flex items-center justify-center">
                   <FtProjIcon className="h-20 w-20 lg:h-24 lg:w-24 lg:mt-6 ml-6 mt-5" />
@@ -56,9 +56,10 @@ const FeaturedProjectSection: FC = () => {
                 </div>
               </div>
 
-              <div className="mx-auto md:mx-0 mt-10 lg:text-lg">
-                <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark md:border-none pl-4 lg:pl-4 md:-ml-5 md:pl-8">
+              <div className="mx-auto md:mx-0 mt-16 md:mt-10 lg:text-lg">
+                <span className="block text-gray-800 font-semibold px-3 lg:px-0 relative">
                   What?
+                  <div className="md:hidden h-6 border-l-4 border-primaryDark absolute top-0 left-0 -ml-1"></div>
                 </span>
 
                 <p className="text-gray-600 px-4 lg:px-0 mt-2 md:leading-7 xl:leading-9 max-w-2xl">
@@ -70,29 +71,33 @@ const FeaturedProjectSection: FC = () => {
                 </p>
               </div>
 
-              <div className="md:hidden mx-4 mt-16 md:mt-24 lg:mt-16 w-full sm:mx-auto justify-center flex items-center sm:space-x-14">
+              <div className="md:hidden mt-12 w-full">
                 <img
-                  className="mx-auto ml-7 rounded-lg object-center object-cover"
-                  src="./ftProjMockup2.svg"
+                  className=" object-center object-cover"
+                  src="./smFtProjMockup.svg"
                   alt=""
                 />
               </div>
 
-              <div className="lg:mt-16 mt-20 mx-auto lg:text-lg">
-                <span className="block text-gray-800 font-semibold border-l-4 -ml-1 border-primaryDark md:border-none px-4 lg:pl-5 md:-ml-6 md:pl-8">
+              <div className="-mt-6 sm:-mt-28 md:mt-16 lg:mt-16 mx-auto lg:text-lg">
+                <span className="block text-gray-800 font-semibold px-3 lg:px-0 relative">
                   Why?
+                  <div className="md:hidden h-6 border-l-4 border-primaryDark absolute top-0 left-0 -ml-1"></div>
                 </span>
 
-                <p className="text-gray-600 px-4 md:px-0 mt-2 md:leading-7 xl:leading-9 max-w-2xl">
+                <p className="text-gray-600 px-4 lg:px-0 mt-2 md:leading-7 xl:leading-9 max-w-2xl">
                   It's difficult for amateur artists, musicians, comedians and painters to
-                  recieve recognition and promote their original works. This platform provides
-                  a way for those individuals to <em className="text-primaryDark">showcase</em>{" "}
-                  and promote their craft as well as connect with others in adjacent fields.{" "}
+                  recieve recognition and promote their original creations. This platform
+                  provides a way for those individuals to{" "}
+                  <em className="text-primaryDark">showcase</em> and promote their craft as
+                  well as <em className="text-primaryDark">follow</em> and{" "}
+                  <em className="text-primaryDark">collaborate</em> with others in adjacent
+                  fields.{" "}
                 </p>
               </div>
               <div className="pb-10">
                 <Link href="https://kollab-me.herokuapp.com/community">
-                  <a className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 w-32  space-x-1 mx-auto md:mx-0 lg:mt-24 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer">
+                  <a className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 md:mt-16 w-32  space-x-1 mx-auto md:mx-0 lg:mt-20 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer">
                     Learn more
                     <ArrowRight className="h-5 w-5 text-white" />
                   </a>

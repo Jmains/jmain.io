@@ -29,6 +29,7 @@ module.exports = {
       },
       width: {
         fpw: "500px",
+        smallMockUp: "550px",
       },
     },
   },
