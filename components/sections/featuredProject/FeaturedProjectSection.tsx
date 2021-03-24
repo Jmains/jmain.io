@@ -29,7 +29,7 @@ const FeaturedProjectSection: FC = () => {
       <div className="max-w-screen-xl mx-auto">
         <section id="ftProjSection">
           <div className="mx-4 pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 xl:pb-96 xl:pt-32 grid grid-cols-12 border-l border-r border-gray-200 md:border-none">
-            <div className="hidden md:block col-span-8 lg:col-span-7 mt-28 md:mt-48 lg:mt-36 -ml-16 md:-ml-36 lg:-ml-24">
+            <div className="hidden md:block col-span-8 lg:col-span-7 mt-28 md:mt-48 lg:mt-36 -ml-16 md:-ml-36 lg:-ml-44">
               <img src="./ftProjMockup.svg" className="" alt="" />
             </div>
 
