@@ -72,15 +72,15 @@ const FeaturedProjectSection: FC = () => {
                 </p>
               </div>
 
-              <div className="md:hidden mt-12 w-full">
+              <div className="md:hidden mt-12 w-full relative">
                 <img
-                  className=" object-center object-cover"
+                  className="object-center object-cover "
                   src="./smFtProjMockup.svg"
                   alt=""
                 />
               </div>
 
-              <div className="-mt-6 sm:-mt-28 md:mt-16 lg:mt-16 mx-auto lg:text-lg">
+              <div className="-mt-10 sm:-mt-28 md:mt-16 lg:mt-16 mx-auto lg:text-lg">
                 <span className="block text-gray-800 font-semibold px-3 lg:px-0 relative">
                   Why?
                   <div className="md:hidden h-6 border-l-4 border-primaryDark absolute top-0 left-0 -ml-1"></div>
@@ -97,44 +97,52 @@ const FeaturedProjectSection: FC = () => {
                 </p>
               </div>
 
-              <div className="flex flex-wrap -ml-3 mt-10 px-4 lg:px-0">
-                <a target="_blank" className={s.tag} href="https://www.typescriptlang.org/">
-                  #React
-                </a>
-                <a target="_blank" className={s.tag} href="https://angular.io/">
-                  #JavaScript
-                </a>
-                <a target="_blank" className={s.tag} href="https://firebase.google.com/">
-                  #GraphQL
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #NodeJS
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #Redis
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #AWS
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #Webpack
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #Apollo
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #TailwindCSS
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #Express
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #Heroku
-                </a>
-                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
-                  #MongoDB
-                </a>
+              <div className="mt-10 px-4 lg:px-0">
+                <span className="font-semibold text-gray-800">Technologies:</span>
+                <div className="flex flex-wrap mt-2 -ml-3">
+                  <a target="_blank" className={s.tag} href="https://reactjs.org/">
+                    #React
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://www.javascript.com/">
+                    #JavaScript
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://graphql.org/">
+                    #GraphQL
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://nodejs.org/en/">
+                    #NodeJS
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://redis.io/">
+                    #Redis
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://aws.amazon.com/">
+                    #AWS
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://webpack.js.org/">
+                    #Webpack
+                  </a>
+                  <a
+                    target="_blank"
+                    className={s.tag}
+                    href="https://www.apollographql.com/docs/react/"
+                  >
+                    #Apollo
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://tailwindcss.com/">
+                    #TailwindCSS
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://expressjs.com/">
+                    #ExpressJS
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://www.heroku.com/">
+                    #Heroku
+                  </a>
+                  <a target="_blank" className={s.tag} href="https://www.mongodb.com/">
+                    #MongoDB
+                  </a>
+                </div>
               </div>
+
               <div className="pb-10 px-4 lg:px-0">
                 <Link href="https://kollab-me.herokuapp.com/community">
                   <a
@@ -146,46 +154,6 @@ const FeaturedProjectSection: FC = () => {
                 </Link>
               </div>
             </div>
-
-            {/* <div className="px-4 mt-20 mx-auto w-7/12">
-              <p className="text-gray-600">Technologies Used:</p>
-              <div className="flex flex-wrap items-center mx-auto w-full max-w-72">
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  ReactJS
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  JavaScript
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  GraphQL
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  Webpack
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  TailwindCSS
-                </span>
-
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  NodeJS
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  MongoDB
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  Apollo
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  Redis
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  AWS
-                </span>
-                <span className="block bg-purple-100 px-3 mr-2 mt-2 text-sm md:text-base py-1 text-purple-700 rounded-full font-medium">
-                  Express
-                </span>
-              </div>
-            </div> */}
           </div>
 
           {/* <div className="absolute top-0 right-0 mt-96 ">

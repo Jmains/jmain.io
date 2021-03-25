@@ -112,7 +112,7 @@ const SkillsSection: FC<Props> = () => {
                 <div>
                   <Express className="h-12 w-12 sm:w-16 sm:h-16 p-1 shadow-md rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
-                    Express
+                    ExpressJS
                   </span>
                 </div>
                 <div>
