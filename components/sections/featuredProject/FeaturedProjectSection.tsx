@@ -2,6 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, FtProjIcon } from "@components/icons";
 import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort";
+import s from "./FeaturedProjectSection.module.css";
 import {
   TopWaveSolid,
   TopWaveClear,
@@ -28,7 +29,7 @@ const FeaturedProjectSection: FC = () => {
 
       <div className="max-w-screen-xl mx-auto">
         <section id="ftProjSection">
-          <div className="mx-4 pt-10 pb-28 md:pt-12 sm:pb-40 md:pb-48 xl:pb-96 xl:pt-32 grid grid-cols-12 border-l border-r border-gray-200 md:border-none">
+          <div className="mx-4 pt-10 pb-28 md:pt-24 sm:pb-40 md:pb-48 lg:pb-28 xl:pb-32 lg:pt-32 xl:pt-32 grid grid-cols-12 border-l border-r border-gray-200 md:border-none">
             <div className="hidden md:block col-span-8 lg:col-span-7 mt-28 md:mt-48 lg:mt-36 -ml-16 md:-ml-36 lg:-ml-44">
               <img src="./ftProjMockup.svg" className="" alt="" />
             </div>
@@ -95,11 +96,52 @@ const FeaturedProjectSection: FC = () => {
                   fields.{" "}
                 </p>
               </div>
-              <div className="pb-10">
+
+              <div className="flex flex-wrap -ml-3 mt-10 px-4 lg:px-0">
+                <a target="_blank" className={s.tag} href="https://www.typescriptlang.org/">
+                  #React
+                </a>
+                <a target="_blank" className={s.tag} href="https://angular.io/">
+                  #JavaScript
+                </a>
+                <a target="_blank" className={s.tag} href="https://firebase.google.com/">
+                  #GraphQL
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #NodeJS
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #Redis
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #AWS
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #Webpack
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #Apollo
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #TailwindCSS
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #Express
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #Heroku
+                </a>
+                <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                  #MongoDB
+                </a>
+              </div>
+              <div className="pb-10 px-4 lg:px-0">
                 <Link href="https://kollab-me.herokuapp.com/community">
-                  <a className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 md:mt-16 w-32  space-x-1 mx-auto md:mx-0 lg:mt-20 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer">
-                    Learn more
-                    <ArrowRight className="h-5 w-5 text-white" />
+                  <a
+                    target="_blank"
+                    className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 md:mt-16 w-32  space-x-1 mx-auto md:mx-0 lg:mt-20 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer"
+                  >
+                    Check it out
                   </a>
                 </Link>
               </div>

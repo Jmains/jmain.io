@@ -22,12 +22,17 @@ const FooterSection: FC = () => {
           <div className="flex items-end flex-wrap space-x-3 space-y-2">
             <a
               href="mailto:jacksonmain9@gmail.com"
-              className=" text-purple-300 font-medium text-sm lg:text-base underline"
+              className=" text-purple-300 font-medium text-sm lg:text-base underline focus:outline-none focus:ring-1 focus:ring-purple-400"
             >
               jacksonmain9@gmail.com
             </a>
             <div className="pl-5">
-              <button className="px-2 py-1 bg-primaryDark rounded-md text-sm text-white">
+              <button
+                onClick={() => {
+                  scrollToElement("contactSection");
+                }}
+                className="px-2 py-1 bg-primaryDark rounded-md text-sm text-white hover:bg-opacity-70 focus:outline-none focus:ring-2 transition duration-200 ease-out focus:ring-purple-400"
+              >
                 Contact
               </button>
             </div>
@@ -38,53 +43,79 @@ const FooterSection: FC = () => {
             <div className="">
               <span className="text-white">Resources</span>
               <div className="space-y-2 mt-3">
-                <a
+                <button
                   onClick={() => {
                     scrollToElement("projectsSection");
                   }}
-                  className="block "
+                  className="block hover:text-white hover:underline cursor-pointer focus:outline-none focus:ring-1 focus:ring-purple-400"
                 >
                   Projects
-                </a>
-                <a
+                </button>
+                <button
                   onClick={() => {
                     scrollToElement("skillsSection");
                   }}
-                  className="block"
+                  className="block hover:text-white hover:underline cursor-pointer focus:outline-none focus:ring-1 focus:ring-purple-400"
                 >
                   Skills
-                </a>
-                <a
+                </button>
+                <button
                   onClick={() => {
                     scrollToElement("contactSection");
                   }}
-                  className="block "
+                  className="block hover:text-white hover:underline cursor-pointer focus:outline-none focus:ring-1 focus:ring-purple-400"
                 >
                   Contact
-                </a>
-                <a className="block ">About</a>
+                </button>
+                <button className="block hover:text-white hover:underline cursor-pointer focus:outline-none focus:ring-1 focus:ring-purple-400">
+                  About
+                </button>
               </div>
             </div>
 
             <div className="">
               <span className="text-white">Socials</span>
               <div className="space-y-2 mt-3">
-                <span className="block ">Instagram</span>
-                <span className="block">Twitter</span>
-                <span className="block ">Github</span>
-                <span className="block ">Facebook</span>
+                <a
+                  href="https://www.instagram.com/jermain_18/"
+                  target="_blank"
+                  className="block w-24 hover:text-white hover:underline focus:outline-none focus:ring-1 focus:ring-purple-400"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://twitter.com/jacksonmain9"
+                  className="block w-24 hover:text-white hover:underline focus:outline-none focus:ring-1 focus:ring-purple-400"
+                >
+                  Twitter
+                </a>
+                <a
+                  href="https://github.com/Jmains"
+                  className="block w-24 hover:text-white hover:underline focus:outline-none focus:ring-2 focus:ring-purple-400"
+                >
+                  Github
+                </a>
+                <a
+                  href="https://www.facebook.com/jackson.main9"
+                  className="block w-24 hover:text-white hover:underline focus:outline-none focus:ring-1 focus:ring-purple-400"
+                >
+                  Facebook
+                </a>
               </div>
             </div>
           </div>
 
           <div className="mt-12">
             <Link href="https://github.com/Jmains/jmain.io">
-              <button className="px-3 py-1 flex items-center bg-gray-300 text-gray-800 rounded-md mt-4 text-xs shadow-md focus:outline-none focus:ring-2 focus:ring-purple-400">
+              <a
+                target="_blank"
+                className="px-3 w-36 py-1 flex items-center bg-gray-300 text-gray-800 rounded-md mt-4 text-xs shadow-md hover:bg-opacity-70 transition duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-purple-400"
+              >
                 <span>
                   View on <span className="font-bold">Github</span>
                 </span>
                 <Github className="h-6 w-6 ml-1" />
-              </button>
+              </a>
             </Link>
           </div>
 

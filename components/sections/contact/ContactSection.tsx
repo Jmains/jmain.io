@@ -114,7 +114,7 @@ const ContactSection: FC = () => {
                   name="email"
                   required
                   autoComplete="email"
-                  className="rounded-md shadow-md w-full mt-2 h-10 px-2 outline-none focus:ring-2 focus:ring-purple-400 focus-within:ring-purple-300 lg:text-lg"
+                  className="rounded-md shadow-md w-full mt-2 h-10 px-2 outline-none focus:ring-2 focus:ring-gray-900 focus-within:ring-gray-900 lg:text-lg"
                   type="email"
                   placeholder="luke.skywalker@gmail.com"
                 />
@@ -132,7 +132,7 @@ const ContactSection: FC = () => {
                   required
                   value={message}
                   maxLength={8000}
-                  className="shadow-md rounded-md w-full mt-2 h-64 lg:h-80 p-2 outline-none focus:ring-2 focus:ring-purple-400 focus-within:ring-purple-400 lg:text-lg"
+                  className="shadow-md rounded-md w-full mt-2 h-64 lg:h-80 p-2 outline-none focus:ring-2 focus:ring-gray-900 focus-within:ring-gray-900 lg:text-lg"
                   name="message"
                   id="message"
                 ></textarea>

@@ -1,9 +1,8 @@
 import { FC, useEffect, useRef, useState } from "react";
 import s from "./ProjectsSection.module.css";
 import Link from "next/link";
-import { Android, Eye, Github } from "@components/icons";
+import { Android, Eye, Github, Globe } from "@components/icons";
 import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort";
-import { Marquee } from "@components/shared/ Marquee";
 
 const ProjectsSection: FC = () => {
   return (
@@ -18,23 +17,24 @@ const ProjectsSection: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 grid-flow-row border-l border-r border-gray-800 md:border-none justify-center mx-4 pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
             <h2 className={s.gradientText}>Projects</h2>
             {/* Card 1 */}
-            <div className="lg:px-10 lg:col-span-11 lg:row-span-1 relative mt-20">
+            <div className="lg:px-10 lg:col-span-12 lg:row-span-1 relative mt-20">
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="md:flex block">
                   <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
-                    <h6 className="text-primaryLight font-semibold xl:text-lg">March, 2020</h6>
+                    <h6 className="text-primaryLight font-semibold xl:text-lg">
+                      Currently Working On
+                    </h6>
                     <div className="flex justify-between mt-3">
                       <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:-ml-0 border-primaryLight md:border-none px-4 md:px-0">
-                        Contact Manager
+                        Study Addicts
                       </h4>
-                      <Android className="h-6 w-6" />
+                      <Globe className="h-6 w-6 text-blue-400" />
                     </div>
 
                     <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9">
-                      An android app that mimics the functionality of a contact manager in
-                      either Android or iOS phones. Users can view their list of contacts
-                      sorted in alphabetical order, view their location, and also add, edit,
-                      and remove a contact from the contact list.
+                      A web app for college students to host and join study sessions created by
+                      the students. For each session created the student must enter the class
+                      number, professor, building, room number, date and time frame.
                     </p>
 
                     <div className="block md:hidden rounded-lg mt-9 mx-auto ">
@@ -45,44 +45,57 @@ const ProjectsSection: FC = () => {
                       />
                     </div>
                     {/* Start Technologies used section */}
-                    <div className="flex items-center flex-wrap space-y-1 mt-10 space-x-3 lg:p-0">
+                    <div className="flex flex-wrap mt-8 -ml-3 lg:p-0">
+                      <a target="_blank" className={s.tag} href="https://nextjs.org/">
+                        #NextJS
+                      </a>
                       <a
+                        target="_blank"
                         className={s.tag}
-                        href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html"
+                        href="https://www.typescriptlang.org/"
                       >
-                        #Java
+                        #TypeScript
                       </a>
-                      <a className={s.tag} href="https://developer.android.com/studio">
-                        #Android Studio
+                      <a target="_blank" className={s.tag} href="https://www.postgresql.org/">
+                        #PostgreSQL
                       </a>
-                      <a className={s.tag} href="https://www.sqlite.org/index.html">
-                        #SQLite
+                      <a target="_blank" className={s.tag} href="https://tailwindcss.com/">
+                        #TailwindCSS
+                      </a>
+                      <a target="_blank" className={s.tag} href="https://firebase.google.com/">
+                        #Firebase
+                      </a>
+                      <a target="_blank" className={s.tag} href="https://nodejs.org/en/">
+                        #NodeJS
                       </a>
                     </div>
                     {/* End Technologies used section */}
                     {/* Start Project Links */}
-                    <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
-                      <Link href="/">
-                        <div className="shadow-md px-4 py-1 text-gray-400 rounded-md">
+                    <div className="flex justify-center md:justify-start space-x-10 mt-14 md:mt-8">
+                      <Link href="https://github.com/Jmains/study-addicts-nextjs">
+                        <a
+                          target="_blank"
+                          className="shadow-md px-4 py-1 text-gray-200 rounded-md bg-darkGray hover:bg-opacity-50 transition duration-200 ease-out"
+                        >
                           <Github className="h-6 w-6 mx-auto fill-current" />
                           <span className="block font-bold text-xs mt-1">Github</span>
-                        </div>
+                        </a>
                       </Link>
-                      <Link href="/">
+                      {/* <Link href="/">
                         <div className="shadow-md px-5 py-1 rounded-md">
                           <Eye className="h-6 w-6 fill-current text-red-500" />
                           <span className="block font-bold text-xs text-gray-400 mt-1">
                             Live
                           </span>
                         </div>
-                      </Link>
+                      </Link> */}
                     </div>
                     {/* End Project Links */}
                   </div>
 
                   <div className="hidden md:block rounded-lg p-7 mx-auto">
                     <img
-                      className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
+                      className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 shadow-xl"
                       src={projectsData[0].img}
                       alt=""
                     />
@@ -95,31 +108,33 @@ const ProjectsSection: FC = () => {
 
             {/* Card 2 */}
 
-            <div className="lg:pl-6 lg:col-span-11 relative mt-20 lg:mt-28">
+            <div className="lg:pl-6 lg:col-span-12 relative mt-20 lg:mt-28">
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div>
                   <div className="md:flex block">
                     <div className="hidden md:block rounded-lg pl-10 pt-6 lg:pl-6 xl:pr-10">
                       <img
-                        className="object-center object-cover rounded-lg h-56 w-96 lg:h-64 shadow-xl"
+                        className="object-center object-cover rounded-lg h-56 md:h-64 w-96 lg:h-64 shadow-xl"
                         src={projectsData[1].img}
                         alt=""
                       />
                     </div>
                     <div className="px-4 md:pl-12 md:pr-4 lg:pr-0 md:w-1/2 my-4">
-                      <h6 className="text-primaryLight font-semibold xl:text-lg">May, 2019</h6>
+                      <h6 className="text-primaryLight font-semibold xl:text-lg">
+                        March, 2020
+                      </h6>
                       <div className="flex justify-between mt-3">
                         <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:ml-0 border-primaryLight md:border-none px-4 md:px-0">
-                          Favorite Movie Collection
+                          Contact Manager
                         </h4>
                         <Android className="h-6 w-6" />
                       </div>
 
                       <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9">
-                        A web app for users to keep a personal collection of their favorite
-                        movies. Users must enter the title, year, a personal description of why
-                        they like the movie, and a personal rating (out of 5) for the movie.
-                        Users can update or remove a movie from their collection at any time.
+                        An android app that mimics the functionality of a contact manager in
+                        either Android or iOS phones. Users can view their list of contacts
+                        sorted in alphabetical order, view their location, and also add, edit,
+                        and remove a contact from the contact list.
                       </p>
 
                       <div className="block md:hidden rounded-lg mt-9 mx-auto md:pl-10">
@@ -130,32 +145,47 @@ const ProjectsSection: FC = () => {
                         />
                       </div>
 
-                      <div className="flex items-center mt-10 flex-wrap space-y-1 space-x-3">
-                        <a className={s.tag} href="https://angular.io/">
-                          #Angular
+                      <div className="flex flex-wrap mt-8 -ml-3 lg:p-0">
+                        <a
+                          target="_blank"
+                          className={s.tag}
+                          href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html"
+                        >
+                          #Java
                         </a>
-                        <a className={s.tag} href="https://www.typescriptlang.org/">
-                          #TypeScript
+                        <a
+                          target="_blank"
+                          className={s.tag}
+                          href="https://developer.android.com/studio"
+                        >
+                          #Android Studio
                         </a>
-                        <a className={s.tag} href="https://firebase.google.com/">
-                          #Firebase
+                        <a
+                          target="_blank"
+                          className={s.tag}
+                          href="https://www.sqlite.org/index.html"
+                        >
+                          #SQLite
                         </a>
                       </div>
-                      <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
-                        <Link href="/">
-                          <div className="shadow-md px-4 py-1 text-gray-400 rounded-md">
+                      <div className="flex justify-center md:justify-start space-x-10 mt-14 md:mt-8">
+                        <Link href="https://github.com/Jmains/ContactManager">
+                          <a
+                            target="_blank"
+                            className="shadow-md px-4 py-1 text-gray-100 bg-darkGray hover:bg-opacity-50 rounded-md transition duration-200 ease-out"
+                          >
                             <Github className="h-6 w-6 mx-auto fill-current" />
                             <span className="block font-bold text-xs mt-1">Github</span>
-                          </div>
+                          </a>
                         </Link>
-                        <Link href="/">
+                        {/* <Link href="/">
                           <div className="shadow-md px-5 py-1 rounded-md">
                             <Eye className="h-6 w-6 fill-current text-red-500" />
                             <span className="block font-bold text-xs text-gray-400 mt-1">
                               Live
                             </span>
                           </div>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -166,23 +196,25 @@ const ProjectsSection: FC = () => {
 
             {/* Card 3 */}
 
-            <div className="lg:pl-10 lg:col-span-11 lg:row-span-1 relative mt-20 lg:mt-32">
+            <div className="lg:pl-10 lg:col-span-12 lg:row-span-1 relative mt-20 lg:mt-32">
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="md:flex block">
                   <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
-                    <h6 className="text-primaryLight font-semibold xl:text-lg">April, 2021</h6>
+                    <h6 className="text-primaryLight font-semibold xl:text-lg">
+                      May, 2019 (First Project)
+                    </h6>
                     <div className="flex justify-between mt-3">
                       <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:-ml-0 border-primaryLight md:border-none px-4 md:px-0">
-                        SpaceX Redesign
+                        Favorite Movie Collection
                       </h4>
-                      <Android className="h-6 w-6" />
+                      <Globe className="h-6 w-6 text-blue-400" />
                     </div>
 
                     <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9">
-                      An android app that mimics the functionality of a contact manager in
-                      either Android or iOS phones. Users can view their list of contacts
-                      sorted in alphabetical order, view their location, and also add, edit,
-                      and remove a contact from the contact list.
+                      A web app for users to keep a personal collection of their favorite
+                      movies. Users must enter the title, year, a personal description of why
+                      they like the movie, and a personal rating (out of 5) for the movie.
+                      Users can update or remove a movie from their collection at any time.
                     </p>
 
                     <div className="block md:hidden rounded-lg mt-9 mx-auto ">
@@ -193,41 +225,51 @@ const ProjectsSection: FC = () => {
                       />
                     </div>
                     {/* Start Technologies used section */}
-                    <div className="flex items-center mt-10 space-x-3 lg:p-0">
-                      <a className={s.tag} href="https://www.typescriptlang.org/">
+                    <div className="flex flex-wrap -ml-3 mt-8 sp lg:p-0">
+                      <a
+                        target="_blank"
+                        className={s.tag}
+                        href="https://www.typescriptlang.org/"
+                      >
                         #TypeScript
                       </a>
-                      <a className={s.tag} href="https://nextjs.org/">
-                        #NextJS
+                      <a target="_blank" className={s.tag} href="https://angular.io/">
+                        #Angular
                       </a>
-                      <a className={s.tag} href="https://tailwindcss.com/">
-                        #TailwindCSS
+                      <a target="_blank" className={s.tag} href="https://firebase.google.com/">
+                        #Firebase
+                      </a>
+                      <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                        #Bootstrap
                       </a>
                     </div>
                     {/* End Technologies used section */}
                     {/* Start Project Links */}
-                    <div className="flex justify-center md:justify-start p-4 space-x-10 mt-8">
-                      <Link href="/">
-                        <div className="shadow-md px-4 py-1 text-gray-400 rounded-md">
+                    <div className="flex justify-center md:justify-start space-x-10 mt-14 md:mt-8">
+                      <Link href="https://github.com/Jmains/personal-favorite-movie-app">
+                        <a
+                          target="_blank"
+                          className="shadow-md px-4 py-1 text-gray-100 bg-darkGray rounded-md hover:bg-opacity-50 transition duration-200 ease-out"
+                        >
                           <Github className="h-6 w-6 mx-auto fill-current" />
                           <span className="block font-bold text-xs mt-1">Github</span>
-                        </div>
+                        </a>
                       </Link>
-                      <Link href="/">
+                      {/* <Link href="/">
                         <div className="shadow-md px-5 py-1 rounded-md">
                           <Eye className="h-6 w-6 fill-current text-red-500" />
                           <span className="block font-bold text-xs text-gray-400 mt-1">
                             Live
                           </span>
                         </div>
-                      </Link>
+                      </Link> */}
                     </div>
                     {/* End Project Links */}
                   </div>
 
                   <div className="hidden md:block rounded-lg p-7 mx-auto">
                     <img
-                      className="object-center object-cover rounded-lg mx-auto h-56 w-96 lg:h-64 shadow-xl"
+                      className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 lg:h-64 shadow-xl"
                       src={projectsData[0].img}
                       alt=""
                     />

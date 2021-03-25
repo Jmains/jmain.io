@@ -9,6 +9,7 @@ export { default as Android } from "./Android";
 export { default as ArrowLeft } from "./ArrowLeft";
 export { default as ArrowRight } from "./ArrowRight";
 export { default as X } from "./X";
+export { default as Globe } from "./Globe";
 
 // Loading Spinner
 export { default as LoadingSpinner } from "./LoadingSpinner";
