@@ -1,6 +1,6 @@
 import cn from "classnames";
 import { FC, ReactNode, Component } from "react";
-import Ticker from "react-ticker";
+// import Ticker from "react-ticker";
 
 interface Props {
   className?: string;
@@ -12,9 +12,9 @@ const Marquee: FC<Props> = ({ className = "", children }) => {
 
   return (
     <div className={rootClassName}>
-      <Ticker speed={3} offset={10}>
+      {/* <Ticker speed={3} offset={10}>
         {({ index }) => <div className="flex flex-row items-center">{children}</div>}
-      </Ticker>
+      </Ticker> */}
     </div>
   );
 };
