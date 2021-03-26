@@ -3,8 +3,14 @@ import s from "./ProjectsSection.module.css";
 import Link from "next/link";
 import { Android, Eye, Github, Globe } from "@components/icons";
 import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort";
+import lozad from "lozad";
 
 const ProjectsSection: FC = () => {
+  useEffect(() => {
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+  });
+
   return (
     <div className="bg-primaryBgDark w-full relative">
       <img
@@ -39,33 +45,59 @@ const ProjectsSection: FC = () => {
 
                     <div className="block md:hidden rounded-lg mt-9 mx-auto ">
                       <img
-                        className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl"
+                        className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl lozad"
                         src={projectsData[0].img}
                         alt=""
                       />
                     </div>
                     {/* Start Technologies used section */}
                     <div className="flex flex-wrap mt-8 -ml-3 lg:p-0">
-                      <a target="_blank" className={s.tag} href="https://nextjs.org/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://nextjs.org/"
+                      >
                         #NextJS
                       </a>
                       <a
                         target="_blank"
+                        rel="noopener"
                         className={s.tag}
                         href="https://www.typescriptlang.org/"
                       >
                         #TypeScript
                       </a>
-                      <a target="_blank" className={s.tag} href="https://www.postgresql.org/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://www.postgresql.org/"
+                      >
                         #PostgreSQL
                       </a>
-                      <a target="_blank" className={s.tag} href="https://tailwindcss.com/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://tailwindcss.com/"
+                      >
                         #TailwindCSS
                       </a>
-                      <a target="_blank" className={s.tag} href="https://firebase.google.com/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://firebase.google.com/"
+                      >
                         #Firebase
                       </a>
-                      <a target="_blank" className={s.tag} href="https://nodejs.org/en/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://nodejs.org/en/"
+                      >
                         #NodeJS
                       </a>
                     </div>
@@ -75,6 +107,7 @@ const ProjectsSection: FC = () => {
                       <Link href="https://github.com/Jmains/study-addicts-nextjs">
                         <a
                           target="_blank"
+                          rel="noopener"
                           className="shadow-md px-4 py-1 text-gray-200 rounded-md bg-darkGray hover:bg-opacity-50 transition duration-200 ease-out"
                         >
                           <Github className="h-6 w-6 mx-auto fill-current" />
@@ -95,7 +128,7 @@ const ProjectsSection: FC = () => {
 
                   <div className="hidden md:block rounded-lg p-7 mx-auto">
                     <img
-                      className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 shadow-xl"
+                      className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 shadow-xl lozad"
                       src={projectsData[0].img}
                       alt=""
                     />
@@ -114,7 +147,7 @@ const ProjectsSection: FC = () => {
                   <div className="md:flex block">
                     <div className="hidden md:block rounded-lg pl-10 pt-6 lg:pl-6 xl:pr-10">
                       <img
-                        className="object-center object-cover rounded-lg h-56 md:h-64 w-96 lg:h-64 shadow-xl"
+                        className="object-center object-cover rounded-lg h-56 md:h-64 w-96 lg:h-64 shadow-xl lozad"
                         src={projectsData[1].img}
                         alt=""
                       />
@@ -139,7 +172,7 @@ const ProjectsSection: FC = () => {
 
                       <div className="block md:hidden rounded-lg mt-9 mx-auto md:pl-10">
                         <img
-                          className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl"
+                          className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl lozad"
                           src={projectsData[1].img}
                           alt=""
                         />
@@ -148,6 +181,7 @@ const ProjectsSection: FC = () => {
                       <div className="flex flex-wrap mt-8 -ml-3 lg:p-0">
                         <a
                           target="_blank"
+                          rel="noopener"
                           className={s.tag}
                           href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html"
                         >
@@ -155,6 +189,7 @@ const ProjectsSection: FC = () => {
                         </a>
                         <a
                           target="_blank"
+                          rel="noopener"
                           className={s.tag}
                           href="https://developer.android.com/studio"
                         >
@@ -162,6 +197,7 @@ const ProjectsSection: FC = () => {
                         </a>
                         <a
                           target="_blank"
+                          rel="noopener"
                           className={s.tag}
                           href="https://www.sqlite.org/index.html"
                         >
@@ -172,6 +208,7 @@ const ProjectsSection: FC = () => {
                         <Link href="https://github.com/Jmains/ContactManager">
                           <a
                             target="_blank"
+                            rel="noopener"
                             className="shadow-md px-4 py-1 text-gray-100 bg-darkGray hover:bg-opacity-50 rounded-md transition duration-200 ease-out"
                           >
                             <Github className="h-6 w-6 mx-auto fill-current" />
@@ -219,7 +256,7 @@ const ProjectsSection: FC = () => {
 
                     <div className="block md:hidden rounded-lg mt-9 mx-auto ">
                       <img
-                        className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl"
+                        className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl lozad"
                         src={projectsData[0].img}
                         alt=""
                       />
@@ -228,18 +265,34 @@ const ProjectsSection: FC = () => {
                     <div className="flex flex-wrap -ml-3 mt-8 sp lg:p-0">
                       <a
                         target="_blank"
+                        rel="noopener"
                         className={s.tag}
                         href="https://www.typescriptlang.org/"
                       >
                         #TypeScript
                       </a>
-                      <a target="_blank" className={s.tag} href="https://angular.io/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://angular.io/"
+                      >
                         #Angular
                       </a>
-                      <a target="_blank" className={s.tag} href="https://firebase.google.com/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://firebase.google.com/"
+                      >
                         #Firebase
                       </a>
-                      <a target="_blank" className={s.tag} href="https://getbootstrap.com/">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={s.tag}
+                        href="https://getbootstrap.com/"
+                      >
                         #Bootstrap
                       </a>
                     </div>
@@ -249,6 +302,7 @@ const ProjectsSection: FC = () => {
                       <Link href="https://github.com/Jmains/personal-favorite-movie-app">
                         <a
                           target="_blank"
+                          rel="noopener"
                           className="shadow-md px-4 py-1 text-gray-100 bg-darkGray rounded-md hover:bg-opacity-50 transition duration-200 ease-out"
                         >
                           <Github className="h-6 w-6 mx-auto fill-current" />
@@ -269,7 +323,7 @@ const ProjectsSection: FC = () => {
 
                   <div className="hidden md:block rounded-lg p-7 mx-auto">
                     <img
-                      className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 lg:h-64 shadow-xl"
+                      className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 lg:h-64 shadow-xl lozad"
                       src={projectsData[0].img}
                       alt=""
                     />

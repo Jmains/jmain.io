@@ -139,6 +139,7 @@ const ContactSection: FC = () => {
               </div>
 
               <button
+                aria-label="send now"
                 name="send now"
                 className="flex items-center px-4 py-1 font-semibold text-white bg-primaryBgDark rounded-md mt-10 hover:bg-opacity-70 focus:ring-2 focus:outline-none focus:ring-purple-400 transition duration-200 ease-in-out"
                 type="submit"

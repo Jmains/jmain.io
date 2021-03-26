@@ -1,8 +1,11 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, FtProjIcon } from "@components/icons";
 import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort";
 import s from "./FeaturedProjectSection.module.css";
+// using ES6 modules
+import lozad from "lozad";
+
 import {
   TopWaveSolid,
   TopWaveClear,
@@ -11,6 +14,11 @@ import {
 } from "@components/waves";
 
 const FeaturedProjectSection: FC = () => {
+  useEffect(() => {
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+  }, []);
+
   return (
     <div className="relative bg-white">
       <div className="absolute top-0 mx-auto">
@@ -31,7 +39,7 @@ const FeaturedProjectSection: FC = () => {
         <section id="ftProjSection">
           <div className="mx-4 pt-10 pb-28 md:pt-24 sm:pb-40 md:pb-48 lg:pb-28 xl:pb-32 lg:pt-32 xl:pt-32 grid grid-cols-12 border-l border-r border-gray-200 md:border-none">
             <div className="hidden md:block col-span-8 lg:col-span-7 mt-28 md:mt-48 lg:mt-36 -ml-16 md:-ml-36 lg:-ml-44">
-              <img src="./ftProjMockup.svg" className="" alt="" />
+              <img src="/ftProjMockup.svg" className="lozad" alt="Featured Project Mockup" />
             </div>
 
             <div className="col-span-12 md:col-span-4 lg:col-span-5 lg:pr-10 md:-ml-36">
@@ -100,44 +108,95 @@ const FeaturedProjectSection: FC = () => {
               <div className="mt-10 px-4 lg:px-0">
                 <span className="font-semibold text-gray-800">Technologies:</span>
                 <div className="flex flex-wrap mt-2 -ml-3">
-                  <a target="_blank" className={s.tag} href="https://reactjs.org/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://reactjs.org/"
+                  >
                     #React
                   </a>
-                  <a target="_blank" className={s.tag} href="https://www.javascript.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://www.javascript.com/"
+                  >
                     #JavaScript
                   </a>
-                  <a target="_blank" className={s.tag} href="https://graphql.org/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://graphql.org/"
+                  >
                     #GraphQL
                   </a>
-                  <a target="_blank" className={s.tag} href="https://nodejs.org/en/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://nodejs.org/en/"
+                  >
                     #NodeJS
                   </a>
-                  <a target="_blank" className={s.tag} href="https://redis.io/">
+                  <a target="_blank" rel="noopener" className={s.tag} href="https://redis.io/">
                     #Redis
                   </a>
-                  <a target="_blank" className={s.tag} href="https://aws.amazon.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://aws.amazon.com/"
+                  >
                     #AWS
                   </a>
-                  <a target="_blank" className={s.tag} href="https://webpack.js.org/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://webpack.js.org/"
+                  >
                     #Webpack
                   </a>
                   <a
+                    rel="noopener"
                     target="_blank"
                     className={s.tag}
                     href="https://www.apollographql.com/docs/react/"
                   >
                     #Apollo
                   </a>
-                  <a target="_blank" className={s.tag} href="https://tailwindcss.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://tailwindcss.com/"
+                  >
                     #TailwindCSS
                   </a>
-                  <a target="_blank" className={s.tag} href="https://expressjs.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://expressjs.com/"
+                  >
                     #ExpressJS
                   </a>
-                  <a target="_blank" className={s.tag} href="https://www.heroku.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://www.heroku.com/"
+                  >
                     #Heroku
                   </a>
-                  <a target="_blank" className={s.tag} href="https://www.mongodb.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    className={s.tag}
+                    href="https://www.mongodb.com/"
+                  >
                     #MongoDB
                   </a>
                 </div>
@@ -146,6 +205,7 @@ const FeaturedProjectSection: FC = () => {
               <div className="pb-10 px-4 lg:px-0">
                 <Link href="https://kollab-me.herokuapp.com/community">
                   <a
+                    rel="noopener"
                     target="_blank"
                     className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 md:mt-16 w-32  space-x-1 mx-auto md:mx-0 lg:mt-20 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer"
                   >

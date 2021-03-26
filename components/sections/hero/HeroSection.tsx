@@ -109,7 +109,7 @@ const HeroSection: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 max-w-screen-xl lg:mr-4">
             <div className="rounded-br-sm rounded-bl-sm lg:rounded-bl-none lg:col-span-7 col-span-1 h-heroBg lg:h-heroSectionHeight max-h-heroBg relative">
               <Link href="https://github.com/Jmains">
-                <button>
+                <button aria-label="open my github page">
                   <Github className="h-7 w-7 lg:hidden fill-current text-gray-300 absolute top-0 right-0 mt-5 mr-4 md:mr-10 shadow-md cursor-pointer" />
                 </button>
               </Link>
@@ -173,6 +173,7 @@ const HeroSection: FC = () => {
                 </motion.h2>
                 <div className="lg:flex lg:items-center">
                   <motion.button
+                    aria-label="scroll to my featured project section"
                     initial="hidden"
                     animate="show"
                     variants={callToActionBtnVariants}

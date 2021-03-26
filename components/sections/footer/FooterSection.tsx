@@ -28,6 +28,7 @@ const FooterSection: FC = () => {
             </a>
             <div className="pl-5">
               <button
+                aria-label="scroll to contact section"
                 onClick={() => {
                   scrollToElement("contactSection");
                 }}
@@ -44,6 +45,7 @@ const FooterSection: FC = () => {
               <span className="text-white">Resources</span>
               <div className="space-y-2 mt-3">
                 <button
+                  aria-label="scroll to projects section"
                   onClick={() => {
                     scrollToElement("projectsSection");
                   }}
@@ -52,6 +54,7 @@ const FooterSection: FC = () => {
                   Projects
                 </button>
                 <button
+                  aria-label="scroll to skills section"
                   onClick={() => {
                     scrollToElement("skillsSection");
                   }}
@@ -60,6 +63,7 @@ const FooterSection: FC = () => {
                   Skills
                 </button>
                 <button
+                  aria-label="scroll to contact section"
                   onClick={() => {
                     scrollToElement("contactSection");
                   }}
@@ -67,7 +71,10 @@ const FooterSection: FC = () => {
                 >
                   Contact
                 </button>
-                <button className="block hover:text-white hover:underline cursor-pointer focus:outline-none focus:ring-1 focus:ring-purple-400">
+                <button
+                  aria-label="scroll to about section"
+                  className="block hover:text-white hover:underline cursor-pointer focus:outline-none focus:ring-1 focus:ring-purple-400"
+                >
                   About
                 </button>
               </div>
@@ -79,6 +86,7 @@ const FooterSection: FC = () => {
                 <a
                   href="https://www.instagram.com/jermain_18/"
                   target="_blank"
+                  rel="noopener"
                   className="block w-24 hover:text-white hover:underline focus:outline-none focus:ring-1 focus:ring-purple-400"
                 >
                   Instagram
@@ -109,6 +117,7 @@ const FooterSection: FC = () => {
             <Link href="https://github.com/Jmains/jmain.io">
               <a
                 target="_blank"
+                rel="noopener"
                 className="px-3 w-36 py-1 flex items-center bg-gray-300 text-gray-800 rounded-md mt-4 text-xs shadow-md hover:bg-opacity-70 transition duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-purple-400"
               >
                 <span>

@@ -145,6 +145,7 @@ const Navbar: FC = () => {
 
           <div className="text-gray-400 text-sm lg:text-base lg:mr-2">
             <button
+              aria-label="scroll to projects section"
               onClick={() => {
                 scrollToElement("projectsSection");
               }}
@@ -158,6 +159,7 @@ const Navbar: FC = () => {
               projects
             </button>
             <button
+              aria-label="scroll to skills section"
               onClick={() => {
                 scrollToElement("skillsSection");
               }}
@@ -171,6 +173,7 @@ const Navbar: FC = () => {
               skills
             </button>
             <button
+              aria-label="scroll to contact section"
               onClick={() => {
                 scrollToElement("contactSection");
               }}

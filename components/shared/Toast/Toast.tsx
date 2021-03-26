@@ -35,6 +35,7 @@ const Toast: FC<ToastProps> = ({ text, className, action, hide }) => {
     <dialog className={rootClassName}>
       <span className="block">{text}</span>
       <button
+        aria-label="close toast message"
         type="button"
         name="close toast message"
         className="hover:bg-green-700 bg-green-900 rounded-full p-0.5 ml-2"
