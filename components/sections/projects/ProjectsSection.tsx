@@ -27,9 +27,9 @@ const ProjectsSection: FC = () => {
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="md:flex block">
                   <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
-                    <h6 className="text-primaryLight font-semibold xl:text-lg">
+                    <span className="block text-primaryLight font-semibold xl:text-lg">
                       Currently Working On
-                    </h6>
+                    </span>
                     <div className="flex justify-between mt-3">
                       <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:-ml-0 border-primaryLight md:border-none px-4 md:px-0">
                         Study Addicts
@@ -153,9 +153,9 @@ const ProjectsSection: FC = () => {
                       />
                     </div>
                     <div className="px-4 md:pl-12 md:pr-4 lg:pr-0 md:w-1/2 my-4">
-                      <h6 className="text-primaryLight font-semibold xl:text-lg">
+                      <span className="block text-primaryLight font-semibold xl:text-lg">
                         March, 2020
-                      </h6>
+                      </span>
                       <div className="flex justify-between mt-3">
                         <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:ml-0 border-primaryLight md:border-none px-4 md:px-0">
                           Contact Manager
@@ -237,9 +237,9 @@ const ProjectsSection: FC = () => {
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="md:flex block">
                   <div className="px-4 lg:px-0 md:w-1/2 my-4 md:pl-10">
-                    <h6 className="text-primaryLight font-semibold xl:text-lg">
+                    <span className="block text-primaryLight font-semibold xl:text-lg">
                       May, 2019 (First Project)
-                    </h6>
+                    </span>
                     <div className="flex justify-between mt-3">
                       <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:-ml-0 border-primaryLight md:border-none px-4 md:px-0">
                         Favorite Movie Collection

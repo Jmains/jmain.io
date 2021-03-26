@@ -140,14 +140,14 @@ const HeroSection: FC = () => {
                     />
                   </motion.div>
 
-                  <motion.h4
+                  <motion.span
                     initial="hidden"
                     animate="show"
                     variants={subTitleVariants}
-                    className="lg:ml-3 text-sm md:text-base lg:text-lg lg:text-gray-400"
+                    className="block lg:ml-3 text-sm md:text-base lg:text-lg lg:text-gray-400"
                   >
                     Full Stack Developer | Aspiring UX/UI Designer
-                  </motion.h4>
+                  </motion.span>
                 </div>
                 <motion.h2
                   initial="hidden"
