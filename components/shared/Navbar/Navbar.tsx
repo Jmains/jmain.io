@@ -36,28 +36,28 @@ const Navbar: FC = () => {
     ];
 
     const handleScroll = throttle(() => {
-      if (navRef.current) {
-        const { height: navbarHeight } = getSectionDimension(navRef.current);
-        const scrollPosition = window.scrollY + navbarHeight;
-        const selected = sections.find(({ section }) => {
-          if (section) {
-            const { offsetTop, offsetBottom } = getSectionDimension(section);
-            return scrollPosition > offsetTop && scrollPosition < offsetBottom;
-          }
-        });
-
-        if (selected && selected.name !== sectionIsVisibleName) {
-          setSectionIsVisibleName(selected?.name);
-        } else if (!selected && sectionIsVisibleName) {
-          setSectionIsVisibleName("");
-        }
-      }
-
       const offset = 10;
       const { scrollTop } = document.documentElement;
 
       const scrolled = scrollTop > offset;
       setHasScrolled(scrolled);
+
+      if (!navRef.current) {
+        return;
+      }
+
+      const { height: navbarHeight } = getSectionDimension(navRef.current);
+      const scrollPosition = window.scrollY + navbarHeight;
+      const selected = sections.find(({ section }) => {
+        if (!section) return null;
+
+        const { offsetTop, offsetBottom } = getSectionDimension(section);
+        return scrollPosition > offsetTop && scrollPosition < offsetBottom;
+      });
+
+      selected && selected.name !== sectionIsVisibleName
+        ? setSectionIsVisibleName(selected?.name)
+        : setSectionIsVisibleName("");
     }, 100);
 
     handleScroll();

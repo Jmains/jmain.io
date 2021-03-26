@@ -25,12 +25,11 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries: any) => {
-        console.log("Intersection observer fired");
-        if (entries[0].isIntersecting) {
-          setVisible(true);
-          if (nodeRef.current) {
-            observer.unobserve(nodeRef.current);
-          }
+        if (!entries[0].isIntersecting) return;
+
+        setVisible(true);
+        if (nodeRef.current) {
+          observer.unobserve(nodeRef.current);
         }
       },
       { threshold: 0.25 }

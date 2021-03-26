@@ -1,31 +1,18 @@
-import {
-  ArrowDown,
-  OctagonClear,
-  OctagonCyan,
-  OctagonPink,
-  ThreeOctagon,
-  ThreeBlackOct,
-  ThreeWhiteOct,
-  Github,
-  Twitter,
-  Instagram,
-} from "@components/icons";
+import { ArrowDown, ThreeOctagon, Github } from "@components/icons";
 import React, { FC, useEffect, useState } from "react";
 import s from "./HeroSection.module.css";
-import Image from "next/image";
 import Link from "next/link";
-import cn from "classnames";
 import { motion } from "framer-motion";
 import { scrollToElement } from "@utils/scrollToElement";
 
 const HeroSection: FC = () => {
-  const [offset, setOffSet] = useState(-1);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const windowHeight = (window.innerHeight + 50) * -1;
-      setOffSet(windowHeight);
-    }
-  }, []);
+  // const [offset, setOffSet] = useState(-1);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const windowHeight = (window.innerHeight + 50) * -1;
+  //     setOffSet(windowHeight);
+  //   }
+  // }, []);
 
   const imageVariants = {
     hidden: { opacity: 0, y: -70 },
