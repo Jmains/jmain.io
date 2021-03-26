@@ -26,8 +26,8 @@ const Toast: FC<ToastProps> = ({ text, className, action, hide }) => {
     "text-center p-4 mt-24 bg-green-400 text-sm flex justify-center items-center font-medium fixed top-0 left-0 right-0 w-full max-w-sm mx-auto rounded-lg z-50 transition-all duration-300 ease-out md:flex md:text-left",
     {
       transform: true,
-      "translate-y-0 opacity-100": !hide,
-      "translate-y-full opacity-0": hide,
+      "block translate-y-0 opacity-100": !hide,
+      "hidden translate-y-full opacity-0": hide,
     },
     className
   );
