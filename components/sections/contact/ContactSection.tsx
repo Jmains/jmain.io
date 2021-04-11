@@ -129,7 +129,7 @@ const ContactSection: FC = () => {
                   onChange={(ev) => {
                     setMessage(ev.target.value);
                   }}
-                  placeholder="Just wanted to say hi!"
+                  placeholder="Hey love the site let's talk!"
                   required
                   value={message}
                   maxLength={8000}

@@ -17,13 +17,30 @@ const getSectionDimension = (element: HTMLElement) => {
 };
 
 const Navbar: FC = () => {
-  // const uiDispatch = useUIDispatch();
-  // const navRef = useRef<HTMLElement | null>(null);
   const navRef = useRef() as MutableRefObject<HTMLElement>;
 
   const [hasScrolled, setHasScrolled] = useState(false);
   const [sectionIsVisibleName, setSectionIsVisibleName] = useState("");
 
+  // Handle navbar on scroll effect
+  useEffect(() => {
+    const handleScroll = throttle(() => {
+      const offset = 10;
+      const { scrollTop } = document.documentElement;
+
+      const scrolled = scrollTop > offset;
+      setHasScrolled(scrolled);
+    }, 300);
+
+    handleScroll();
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Highlight navbar items when in relative section
   useEffect(() => {
     const projectsSection = document.getElementById("projectsSection");
     const skillsSection = document.getElementById("skillsSection");
@@ -35,38 +52,31 @@ const Navbar: FC = () => {
       { section: contactSection, name: "contactSection" },
     ];
 
-    const handleScroll = throttle(() => {
-      const offset = 10;
-      const { scrollTop } = document.documentElement;
+    const handleSectionScroll = throttle(() => {
+      if (navRef.current) {
+        const { height: navbarHeight } = getSectionDimension(navRef.current);
+        const scrollPosition = window.scrollY + navbarHeight;
 
-      const scrolled = scrollTop > offset;
-      setHasScrolled(scrolled);
+        const selected = sections.find(({ section }) => {
+          if (section) {
+            const { offsetTop, offsetBottom } = getSectionDimension(section);
+            return scrollPosition > offsetTop && scrollPosition < offsetBottom;
+          }
+        });
 
-      if (!navRef.current) {
-        return;
+        selected && selected.name !== sectionIsVisibleName
+          ? setSectionIsVisibleName(selected?.name)
+          : setSectionIsVisibleName("");
       }
+    }, 200);
 
-      const { height: navbarHeight } = getSectionDimension(navRef.current);
-      const scrollPosition = window.scrollY + navbarHeight;
-      const selected = sections.find(({ section }) => {
-        if (!section) return null;
-
-        const { offsetTop, offsetBottom } = getSectionDimension(section);
-        return scrollPosition > offsetTop && scrollPosition < offsetBottom;
-      });
-
-      selected && selected.name !== sectionIsVisibleName
-        ? setSectionIsVisibleName(selected?.name)
-        : setSectionIsVisibleName("");
-    }, 100);
-
-    handleScroll();
-    document.addEventListener("scroll", handleScroll);
+    handleSectionScroll();
+    document.addEventListener("scroll", handleSectionScroll);
 
     return () => {
-      document.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("scroll", handleSectionScroll);
     };
-  }, [sectionIsVisibleName]);
+  }, []);
 
   return (
     <nav
