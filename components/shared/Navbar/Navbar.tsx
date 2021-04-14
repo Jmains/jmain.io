@@ -99,7 +99,7 @@ const Navbar: FC = () => {
               <div className="sm:ml-6 flex items-baseline space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
                 {/* <Link href="/"> */}
-                <button
+                <span
                   aria-label="scroll to top of page"
                   onClick={() => {
                     scrollToElement("heroSection");
@@ -107,7 +107,7 @@ const Navbar: FC = () => {
                   className={s.gradientText}
                 >
                   JM.
-                </button>
+                </span>
                 {/* </Link> */}
               </div>
             </div>
