@@ -20,7 +20,7 @@ import {
   Android,
 } from "@components/icons";
 import { FC } from "react";
-import s from "./SkillsSection.module.css";
+import styles from "./SkillsSection.module.css";
 import { TopWaveSolid, TopWaveClear } from "@components/waves";
 interface Props {}
 
@@ -36,7 +36,7 @@ const SkillsSection: FC<Props> = () => {
       <div className="max-w-screen-xl mx-auto">
         <section id="skillsSection">
           <div className="grid grid-cols-1 mx-4 md:grid-cols-1 lg:grid-cols-1 border-l border-r border-gray-300 md:border-none pt-16 pb-20 lg:pb-32 lg:pt-32">
-            <h2 className={s.gradientText}>Skills</h2>
+            <h2 className={styles.gradientText}>Skills</h2>
 
             <div className="mt-16 px-4 sm:px-11">
               <h3 className="text-gray-900 tracking-wide md:text-left text-lg lg:text-2xl font-medium">

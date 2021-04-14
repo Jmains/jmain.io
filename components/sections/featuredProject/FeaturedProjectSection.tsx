@@ -1,9 +1,7 @@
 import { FC, useEffect } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, FtProjIcon } from "@components/icons";
-import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort";
+import { ArrowRight, FtProjIcon } from "@components/icons";
 import s from "./FeaturedProjectSection.module.css";
-// using ES6 modules
 import lozad from "lozad";
 
 import {
@@ -56,7 +54,7 @@ const FeaturedProjectSection: FC = () => {
                     KollabMe
                   </h3>
                   <div className="lg:mt-2">
-                    <Link href="https://kollab-me.herokuapp.com/community">
+                    <Link href="https://kollabme.app/community">
                       <a className="text-gray-600 md:text-xl focus:outline-none focus:ring-2 focus:ring-purple-400 rounded-md py-1 hover:underline">
                         kollabme.app
                       </a>
@@ -82,9 +80,9 @@ const FeaturedProjectSection: FC = () => {
 
               <div className="md:hidden mt-12 w-full relative">
                 <img
-                  className="object-center object-cover "
-                  src="./smFtProjMockup.svg"
-                  alt=""
+                  className="object-center object-cover"
+                  src="/smFtProjMockup.svg"
+                  alt="featured project mockup"
                 />
               </div>
 
@@ -203,13 +201,13 @@ const FeaturedProjectSection: FC = () => {
               </div>
 
               <div className="pb-10 px-4 lg:px-0">
-                <Link href="https://kollab-me.herokuapp.com/community">
+                <Link href="https://kollabme.app/community">
                   <a
                     rel="noopener"
                     target="_blank"
-                    className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 md:mt-16 w-32  space-x-1 mx-auto md:mx-0 lg:mt-20 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer"
+                    className="py-2 flex text-white font-semibold tracking-wide text-sm bg-primaryDark justify-center items-center mt-24 md:mt-16 w-32 space-x-1 mx-auto md:mx-0 lg:mt-20 rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200 ease-in-out cursor-pointer"
                   >
-                    Check it out
+                    Check it out <ArrowRight className="ml-1 h-5 w-5" />
                   </a>
                 </Link>
               </div>

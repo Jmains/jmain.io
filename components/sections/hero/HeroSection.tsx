@@ -1,18 +1,10 @@
 import { ArrowDown, ThreeOctagon, Github } from "@components/icons";
-import React, { FC, useEffect, useState } from "react";
-import s from "./HeroSection.module.css";
+import React, { FC } from "react";
+import styles from "./HeroSection.module.css";
 import Link from "next/link";
 import { scrollToElement } from "@utils/scrollToElement";
 
 const HeroSection: FC = () => {
-  // const [offset, setOffSet] = useState(-1);
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     const windowHeight = (window.innerHeight + 50) * -1;
-  //     setOffSet(windowHeight);
-  //   }
-  // }, []);
-
   return (
     <div className="bg-primaryBgDark ">
       <div className="max-w-screen-xl mx-auto">
@@ -29,32 +21,36 @@ const HeroSection: FC = () => {
                 {/* Profile Pic small screen */}
                 <div className="lg:hidden">
                   <img
-                    className={s.smScreenProfileImg}
+                    className={styles.smScreenProfileImg}
                     src="/headshot.JPG"
                     alt="picture of me"
                   />
                 </div>
 
-                <h1 className={s.gradientText}>Jackson Main</h1>
+                <h1 className={styles.gradientText}>Jackson Main</h1>
 
                 <div className="flex mt-3 items-center text-gray-400 justify-center lg:justify-start">
                   {/* Profile Pic large screen */}
                   <div className="lg:block hidden">
-                    <img className={s.subheadingImg} src="/headshot.JPG" alt="picture of me" />
+                    <img
+                      className={styles.subheadingImg}
+                      src="/headshot.JPG"
+                      alt="picture of me"
+                    />
                   </div>
 
-                  <span className={s.subheading}>
+                  <span className={styles.subheading}>
                     Full Stack Developer | Aspiring UX/UI Designer
                   </span>
                 </div>
-                <h2 className={s.headline}>
+                <h2 className={styles.headline}>
                   Striving to provide the most memorable and meaningful user experiences on the
                   web.
                 </h2>
                 <div className="lg:flex lg:items-center">
                   <button
                     aria-label="scroll to my featured project section"
-                    className={s.callToAction}
+                    className={styles.callToAction}
                     onClick={() => {
                       scrollToElement("ftProjSection");
                     }}
@@ -66,7 +62,7 @@ const HeroSection: FC = () => {
                       onClick={() => {
                         scrollToElement("ftProjSection");
                       }}
-                      className={s.arrowDown}
+                      className={styles.arrowDown}
                     />
                   </div>
                 </div>

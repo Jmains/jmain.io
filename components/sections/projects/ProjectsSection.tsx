@@ -1,5 +1,5 @@
 import { FC, useEffect, useRef, useState } from "react";
-import s from "./ProjectsSection.module.css";
+import styles from "./ProjectsSection.module.css";
 import Link from "next/link";
 import { Android, Eye, Github, Globe } from "@components/icons";
 import { FadeInElementWhenInViewPort } from "@utils/FadeInElementWhenInViewPort";
@@ -21,7 +21,7 @@ const ProjectsSection: FC = () => {
       <div className="max-w-screen-xl mx-auto">
         <section id="projectsSection">
           <div className="grid grid-cols-1 lg:grid-cols-12 grid-flow-row border-l border-r border-gray-800 md:border-none justify-center mx-4 pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
-            <h2 className={s.gradientText}>Projects</h2>
+            <h2 className={styles.gradientText}>Projects</h2>
             {/* Card 1 */}
             <div className="lg:px-10 lg:col-span-12 lg:row-span-1 relative mt-20">
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
@@ -46,8 +46,8 @@ const ProjectsSection: FC = () => {
                     <div className="block md:hidden rounded-lg mt-9 mx-auto ">
                       <img
                         className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl lozad"
-                        src={projectsData[0].img}
-                        alt=""
+                        src="/studyAddicts.png"
+                        alt="image of study addicts"
                       />
                     </div>
                     {/* Start Technologies used section */}
@@ -55,7 +55,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://nextjs.org/"
                       >
                         #NextJS
@@ -63,7 +63,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://www.typescriptlang.org/"
                       >
                         #TypeScript
@@ -71,7 +71,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://www.postgresql.org/"
                       >
                         #PostgreSQL
@@ -79,7 +79,15 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
+                        href="https://www.prisma.io/"
+                      >
+                        #Prisma
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={styles.tag}
                         href="https://tailwindcss.com/"
                       >
                         #TailwindCSS
@@ -87,7 +95,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://firebase.google.com/"
                       >
                         #Firebase
@@ -95,7 +103,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://nodejs.org/en/"
                       >
                         #NodeJS
@@ -129,8 +137,8 @@ const ProjectsSection: FC = () => {
                   <div className="hidden md:block rounded-lg p-7 mx-auto">
                     <img
                       className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 shadow-xl lozad"
-                      src={projectsData[0].img}
-                      alt=""
+                      src="/studyAddicts.png"
+                      alt="image of study addicts"
                     />
                   </div>
                 </div>
@@ -148,11 +156,11 @@ const ProjectsSection: FC = () => {
                     <div className="hidden md:block rounded-lg pl-10 pt-6 lg:pl-6 xl:pr-10">
                       <img
                         className="object-center object-cover rounded-lg h-56 md:h-64 w-96 lg:h-64 shadow-xl lozad"
-                        src={projectsData[1].img}
-                        alt=""
+                        src="/androidApp.png"
+                        alt="image of contact manager app"
                       />
                     </div>
-                    <div className="px-4 md:pl-12 md:pr-4 lg:pr-0 md:w-1/2 my-4">
+                    <div className="px-4 md:pl-20 md:pr-4 lg:pr-0 md:w-1/2 my-4">
                       <span className="block text-primaryLight font-semibold xl:text-lg">
                         March, 2020
                       </span>
@@ -173,8 +181,8 @@ const ProjectsSection: FC = () => {
                       <div className="block md:hidden rounded-lg mt-9 mx-auto md:pl-10">
                         <img
                           className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl lozad"
-                          src={projectsData[1].img}
-                          alt=""
+                          src="/androidApp.png"
+                          alt="image of contact manager app"
                         />
                       </div>
 
@@ -182,7 +190,7 @@ const ProjectsSection: FC = () => {
                         <a
                           target="_blank"
                           rel="noopener"
-                          className={s.tag}
+                          className={styles.tag}
                           href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html"
                         >
                           #Java
@@ -190,7 +198,7 @@ const ProjectsSection: FC = () => {
                         <a
                           target="_blank"
                           rel="noopener"
-                          className={s.tag}
+                          className={styles.tag}
                           href="https://developer.android.com/studio"
                         >
                           #Android Studio
@@ -198,7 +206,7 @@ const ProjectsSection: FC = () => {
                         <a
                           target="_blank"
                           rel="noopener"
-                          className={s.tag}
+                          className={styles.tag}
                           href="https://www.sqlite.org/index.html"
                         >
                           #SQLite
@@ -257,8 +265,8 @@ const ProjectsSection: FC = () => {
                     <div className="block md:hidden rounded-lg mt-9 mx-auto ">
                       <img
                         className="object-center object-cover rounded-lg w-full h-56 sm:h-80 shadow-xl lozad"
-                        src={projectsData[0].img}
-                        alt=""
+                        src="/favoriteMovieApp.png"
+                        alt="image of favorite movie collection app"
                       />
                     </div>
                     {/* Start Technologies used section */}
@@ -266,7 +274,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://www.typescriptlang.org/"
                       >
                         #TypeScript
@@ -274,7 +282,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://angular.io/"
                       >
                         #Angular
@@ -282,7 +290,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://firebase.google.com/"
                       >
                         #Firebase
@@ -290,7 +298,7 @@ const ProjectsSection: FC = () => {
                       <a
                         target="_blank"
                         rel="noopener"
-                        className={s.tag}
+                        className={styles.tag}
                         href="https://getbootstrap.com/"
                       >
                         #Bootstrap
@@ -324,8 +332,8 @@ const ProjectsSection: FC = () => {
                   <div className="hidden md:block rounded-lg p-7 mx-auto">
                     <img
                       className="object-center object-cover rounded-lg mx-auto h-56 md:h-64 w-96 lg:h-64 shadow-xl lozad"
-                      src={projectsData[0].img}
-                      alt=""
+                      src="/favoriteMovieApp.png"
+                      alt="image of favorite movie collection app"
                     />
                   </div>
                 </div>

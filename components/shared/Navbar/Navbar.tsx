@@ -54,8 +54,9 @@ const Navbar: FC = () => {
 
     const handleSectionScroll = throttle(() => {
       if (navRef.current) {
-        const { height: navbarHeight } = getSectionDimension(navRef.current);
-        const scrollPosition = window.scrollY + navbarHeight;
+        // const { height: navbarHeight } = getSectionDimension(navRef.current);
+        // const scrollPosition = window.scrollY + navbarHeight;
+        const scrollPosition = window.scrollY;
 
         const selected = sections.find(({ section }) => {
           if (section) {
@@ -97,61 +98,21 @@ const Navbar: FC = () => {
             <div className="md:block">
               <div className="sm:ml-6 flex items-baseline space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
-                <Link href="/">
-                  <a className={s.gradientText}>JM.</a>
-                </Link>
+                {/* <Link href="/"> */}
+                <button
+                  aria-label="scroll to top of page"
+                  onClick={() => {
+                    scrollToElement("heroSection");
+                  }}
+                  className={s.gradientText}
+                >
+                  JM.
+                </button>
+                {/* </Link> */}
               </div>
             </div>
           </div>
           {/* End Navbar Logo */}
-
-          <div className="hidden md:block">
-            <div className="ml-4 flex items-center md:ml-6">
-              {/* Profile dropdown  */}
-              <div className="ml-3 relative">
-                {/* Profile dropdown panel, show/hide based on dropdown state.
-
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95" */}
-
-                {/* TODO: remove hidden attribute at the end */}
-                <div
-                  className="origin-top-right text-sm md:text-base lg:text-lg absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 hidden"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="user-menu"
-                >
-                  <a
-                    href="#"
-                    className="block px-4 py-2  text-gray-700 hover:bg-gray-100"
-                    role="menuitem"
-                  >
-                    projects.
-                  </a>
-
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    role="menuitem"
-                  >
-                    skills.
-                  </a>
-
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    role="menuitem"
-                  >
-                    about.
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div className="text-gray-400 text-sm lg:text-base lg:mr-2">
             <button
