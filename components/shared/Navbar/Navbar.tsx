@@ -54,9 +54,9 @@ const Navbar: FC = () => {
 
     const handleSectionScroll = throttle(() => {
       if (navRef.current) {
-        // const { height: navbarHeight } = getSectionDimension(navRef.current);
-        // const scrollPosition = window.scrollY + navbarHeight;
-        const scrollPosition = window.scrollY;
+        const { height: navbarHeight } = getSectionDimension(navRef.current);
+        const scrollPosition = window.scrollY + navbarHeight;
+        // const scrollPosition = window.scrollY;
 
         const selected = sections.find(({ section }) => {
           if (section) {
