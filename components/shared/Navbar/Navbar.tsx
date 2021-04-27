@@ -96,7 +96,7 @@ const Navbar: FC = () => {
           {/* Navbar Logo */}
           <div className="flex items-center">
             <div className="md:block">
-              <div className="sm:ml-6 flex items-baseline space-x-4">
+              <div className="md:ml-6 flex items-baseline space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
                 {/* <Link href="/"> */}
                 <span

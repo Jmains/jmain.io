@@ -45,7 +45,7 @@ const ProjectsSection: FC = () => {
 
                     <div className="block lg:hidden rounded-lg mt-9 ">
                       <img
-                        className="object-center object-cover rounded-lg w-full md:mx-auto md:w-3/4 md:h-80 h-64 shadow-xl lozad"
+                        className="object-center object-cover rounded-lg w-full md:w-3/4 md:h-80 h-64 shadow-xl lozad"
                         src="/studyAddicts.png"
                         alt="image of study addicts"
                       />
@@ -179,7 +179,7 @@ const ProjectsSection: FC = () => {
 
                     <div className="block lg:hidden rounded-lg mt-9">
                       <img
-                        className="object-center object-cover rounded-lg md:mx-auto md:w-3/4 md:h-80 w-full h-64 shadow-xl lozad"
+                        className="object-center object-cover rounded-lg md:w-3/4 md:h-80 w-full h-64 shadow-xl lozad"
                         src="/androidApp.png"
                         alt="image of contact manager app"
                       />
@@ -262,7 +262,7 @@ const ProjectsSection: FC = () => {
 
                     <div className="block lg:hidden rounded-lg mt-9">
                       <img
-                        className="object-center object-cover rounded-lg md:mx-auto md:w-3/4 md:h-80 w-full h-64 shadow-xl lozad"
+                        className="object-center object-cover rounded-lg md:w-3/4 md:h-80 w-full h-64 shadow-xl lozad"
                         src="/favoriteMovieApp.png"
                         alt="image of favorite movie collection app"
                       />
