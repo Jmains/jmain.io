@@ -23,7 +23,7 @@ const ProjectsSection: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 grid-flow-row border-l border-r border-gray-800 md:border-none justify-center mx-4 pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
             <h2 className={styles.gradientText}>Projects</h2>
             {/* Card 1 */}
-            <div className="lg:pl-10 lg:pr-8 lg:col-span-12 lg:row-span-1 relative mt-20">
+            <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 lg:row-span-1 relative mt-20">
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="lg:grid lg:grid-cols-2 gap-x-10">
                   <div className="px-4 lg:px-0 my-4 lg:col-span-1">
@@ -136,7 +136,7 @@ const ProjectsSection: FC = () => {
 
                   <div className="hidden lg:block lg:col-span-1">
                     <img
-                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 shadow-xl lozad"
+                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 lg:pr-6 shadow-xl lozad"
                       src="/studyAddicts.png"
                       alt="image of study addicts"
                     />
@@ -149,7 +149,7 @@ const ProjectsSection: FC = () => {
 
             {/* Card 2 */}
 
-            <div className="lg:pl-10 lg:pr-8 lg:col-span-12 relative mt-20 lg:mt-28">
+            <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 relative mt-20 lg:mt-28">
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="lg:grid lg:grid-cols-2 gap-x-10">
                   <div className="hidden lg:block lg:col-span-1">
@@ -159,7 +159,7 @@ const ProjectsSection: FC = () => {
                       alt="image of contact manager app"
                     />
                   </div>
-                  <div className="px-4 lg:px-0 my-4 lg:col-span-1">
+                  <div className="px-4 lg:px-0 my-4 lg:col-span-1 lg:pr-6">
                     <span className="block text-primaryLight font-semibold xl:text-lg">
                       March, 2020
                     </span>
@@ -170,7 +170,7 @@ const ProjectsSection: FC = () => {
                       <Android className="h-6 w-6" />
                     </div>
 
-                    <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9">
+                    <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9 ">
                       An android app that mimics the functionality of a contact manager in
                       either Android or iOS phones. Users can view their list of contacts
                       sorted in alphabetical order, view their location, and also add, edit,
@@ -239,7 +239,7 @@ const ProjectsSection: FC = () => {
 
             {/* Card 3 */}
 
-            <div className="lg:pl-10 lg:pr-8 lg:col-span-12 lg:row-span-1 relative mt-20 lg:mt-32">
+            <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 lg:row-span-1 relative mt-20 lg:mt-32">
               <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
                 <div className="lg:grid lg:grid-cols-2 gap-x-10">
                   <div className="px-4 lg:px-0 my-4 lg:col-span-1">
@@ -329,7 +329,7 @@ const ProjectsSection: FC = () => {
 
                   <div className="hidden lg:block lg:col-span-1">
                     <img
-                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 shadow-xl lozad"
+                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 lg:pr-6 shadow-xl lozad"
                       src="/favoriteMovieApp.png"
                       alt="image of favorite movie collection app"
                     />

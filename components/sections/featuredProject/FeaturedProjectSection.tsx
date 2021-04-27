@@ -45,7 +45,7 @@ const FeaturedProjectSection: FC = () => {
                 <div className="flex items-center justify-center lg:justify-start lg:-ml-8">
                   <FtProjIcon className="h-20 w-20 lg:h-24 lg:w-24 lg:mt-6 ml-6 mt-5" />
                 </div>
-                <h2 className="text-primaryDark uppercase font-bold tracking-widest text-2xl md:text-3xl lg:text-4xl mt-4 lg:mt-6 text-center lg:text-left">
+                <h2 className="text-primaryDark uppercase font-bold tracking-widest text-2xl sm:text-3xl lg:text-4xl mt-4 lg:mt-6 text-center lg:text-left">
                   Featured Project
                 </h2>
 

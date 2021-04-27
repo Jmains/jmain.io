@@ -42,7 +42,7 @@ const SkillsSection: FC<Props> = () => {
               <h3 className="text-gray-900 tracking-wide md:text-left text-lg lg:text-2xl font-medium">
                 Languages
               </h3>
-              <div className="grid grid-cols-3 pl-2 sm:pl-0 lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-16 lg:gap-y-24 pb-16">
+              <div className="grid grid-cols-3 lg:grid-cols-6 pl-2 sm:pl-0 lg:w-full grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-16 lg:gap-y-24 pb-16">
                 <div>
                   <Typescript className="h-10 w-10 sm:h-12 sm:w-12 shadow-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
@@ -90,7 +90,7 @@ const SkillsSection: FC<Props> = () => {
               <h3 className="text-gray-800 tracking-wide md:text-left mt-8 text-lg lg:text-2xl font-medium">
                 Frameworks & Libraries
               </h3>
-              <div className="grid grid-cols-3 pl-2 sm:pl-0 lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-14 lg:gap-y-24 pb-16">
+              <div className="grid grid-cols-3 lg:grid-cols-6 pl-2 sm:pl-0 w-full grid-flow-row mt-10 lg:mt-20 gap-x-12 gap-y-14 lg:gap-y-24 pb-16">
                 <div>
                   <Reactjs className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
@@ -133,7 +133,7 @@ const SkillsSection: FC<Props> = () => {
               <h3 className="text-gray-800 tracking-wide md:text-left mt-10 text-lg lg:text-2xl font-medium">
                 Tools & Databases
               </h3>
-              <div className="grid grid-cols-3 pl-2 sm:pl-0 w-full lg:w-8/12 xl:w-9/12 grid-flow-row mt-10 lg:mt-20 gap-y-14 lg:gap-y-24 gap-x-12">
+              <div className="grid grid-cols-3 lg:grid-cols-6 pl-2 sm:pl-0 w-full grid-flow-row mt-10 lg:mt-20 gap-y-14 lg:gap-y-24 gap-x-12">
                 <div>
                   <MongoDb className="h-12 w-12 sm:w-14 sm:h-14 shadow-md p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
