@@ -83,7 +83,7 @@ const ContactSection: FC = () => {
     <div className="bg-primaryDark w-full relative">
       <div className="max-w-screen-xl mx-auto">
         <section id="contactSection">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 mx-4 px-4 sm:pr-0 md:pr-2 lg:pr-7 xl:pr-14 sm:pl-10 border-l border-r border-gray-400 md:border-none pb-24 pt-8 md:pb-40 md:pt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 mx-4 px-4 md:pr-0 md:pr-2 lg:pr-7 xl:pr-14 sm:pl-10 border-l border-r border-gray-400 md:border-none pb-24 pt-8 md:pb-40 md:pt-12">
             <div className="sm:col-span-1 sm:pr-5">
               <h2 className="font-bold text-white text-5xl mt-16">Say Hi!</h2>
               <p className="text-white mt-5 lg:text-lg">
