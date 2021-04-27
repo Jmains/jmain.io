@@ -75,7 +75,7 @@ const FooterSection: FC = () => {
                   aria-label="scroll to about section"
                   className="block hover:text-white hover:underline cursor-pointer focus:outline-none focus:ring-1 focus:ring-purple-400"
                 >
-                  About
+                  About (In Progress)
                 </button>
               </div>
             </div>
