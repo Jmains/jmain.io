@@ -134,9 +134,9 @@ const ProjectsSection: FC = () => {
                     {/* End Project Links */}
                   </div>
 
-                  <div className="hidden lg:block lg:col-span-1">
+                  <div className="hidden lg:block lg:col-span-1 xl:pr-6">
                     <img
-                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 lg:pr-6 shadow-xl lozad"
+                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5  shadow-xl lozad"
                       src="/studyAddicts.png"
                       alt="image of study addicts"
                     />
@@ -159,7 +159,7 @@ const ProjectsSection: FC = () => {
                       alt="image of contact manager app"
                     />
                   </div>
-                  <div className="px-4 lg:px-0 my-4 lg:col-span-1 lg:pr-6">
+                  <div className="px-4 lg:px-0 my-4 lg:col-span-1 xl:pr-6">
                     <span className="block text-primaryLight font-semibold xl:text-lg">
                       March, 2020
                     </span>
@@ -327,9 +327,9 @@ const ProjectsSection: FC = () => {
                     {/* End Project Links */}
                   </div>
 
-                  <div className="hidden lg:block lg:col-span-1">
+                  <div className="hidden lg:block lg:col-span-1 xl:pr-6">
                     <img
-                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 lg:pr-6 shadow-xl lozad"
+                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 shadow-xl lozad"
                       src="/favoriteMovieApp.png"
                       alt="image of favorite movie collection app"
                     />
