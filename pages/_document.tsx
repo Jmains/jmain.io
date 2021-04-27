@@ -39,7 +39,7 @@ class MyDocument extends Document {
             defer
           ></script> */}
         </Head>
-        <body>
+        <body className="bg-primaryBgDark">
           <Main />
           <NextScript />
         </body>
