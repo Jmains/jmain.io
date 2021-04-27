@@ -12,6 +12,16 @@
   animation: fadeDown 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subheading {
+  @apply block lg:ml-3 text-sm md:text-base lg:text-lg lg:text-gray-400;
+  animation: fadeDown 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subheadingImg {
+  @apply h-12 w-12 rounded-full object-cover object-center shadow-md;
+  animation: fadeDown 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .callToAction {
   @apply mt-12 text-white font-semibold bg-primaryDark px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300 hover:text-white hover:bg-opacity-50 transition duration-200 ease-in-out;
   animation: fadeUp 2s ease;
@@ -24,16 +34,6 @@
 
 .container {
   height: 806px;
-}
-
-.subheading {
-  @apply block lg:ml-3 text-sm md:text-base lg:text-lg lg:text-gray-400;
-  animation: fadeDown 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subheadingImg {
-  @apply h-12 w-12 rounded-full object-cover object-center shadow-md;
-  animation: fadeInFromLeft 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smScreenProfileImg {

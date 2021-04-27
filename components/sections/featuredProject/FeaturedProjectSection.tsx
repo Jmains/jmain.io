@@ -42,14 +42,14 @@ const FeaturedProjectSection: FC = () => {
 
             <div className="col-span-12 md:col-span-4 lg:col-span-5 lg:pr-10 md:-ml-36">
               <div className="md:mt-24 mt-14 px-4 lg:px-0">
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center lg:justify-start lg:-ml-8">
                   <FtProjIcon className="h-20 w-20 lg:h-24 lg:w-24 lg:mt-6 ml-6 mt-5" />
                 </div>
-                <h2 className="text-primaryDark uppercase font-bold tracking-widest text-2xl md:text-3xl lg:text-4xl mt-4 lg:mt-6 text-center">
+                <h2 className="text-primaryDark uppercase font-bold tracking-widest text-2xl md:text-3xl lg:text-4xl mt-4 lg:mt-6 text-center lg:text-left">
                   Featured Project
                 </h2>
 
-                <div className="text-center md:text-center mt-5">
+                <div className="text-center md:text-center lg:text-left mt-5">
                   <h3 className="text-xl font-semibold text-gray-900 md:text-2xl lg:text-3xl">
                     KollabMe
                   </h3>
@@ -70,10 +70,10 @@ const FeaturedProjectSection: FC = () => {
                 </span>
 
                 <p className="text-gray-600 px-4 lg:px-0 mt-2 md:leading-7 xl:leading-9 max-w-2xl">
-                  An online platform to <em className="text-primaryDark">develop</em>,{" "}
-                  <em className="text-primaryDark">connect</em> and{" "}
-                  <em className="text-primaryDark">discover</em> individuals from all avenues
-                  of entertainment, such as artists, musicians, audio engineers, comedians and
+                  An online platform to <em className="font-bold">develop</em>,{" "}
+                  <em className="font-bold">connect</em> and{" "}
+                  <em className="font-bold">discover</em> individuals from all avenues of
+                  entertainment, such as artists, musicians, audio engineers, comedians and
                   painters.
                 </p>
               </div>
@@ -96,10 +96,9 @@ const FeaturedProjectSection: FC = () => {
                   It's difficult for amateur artists, musicians, comedians and painters to
                   recieve recognition and promote their original creations. This platform
                   provides a way for those individuals to{" "}
-                  <em className="text-primaryDark">showcase</em> and promote their craft as
-                  well as <em className="text-primaryDark">follow</em> and{" "}
-                  <em className="text-primaryDark">collaborate</em> with others in adjacent
-                  fields.{" "}
+                  <em className="font-bold">showcase</em> and promote their craft as well as{" "}
+                  <em className="font-bold">follow</em> and{" "}
+                  <em className="font-bold">collaborate</em> with others in adjacent fields.{" "}
                 </p>
               </div>
 
