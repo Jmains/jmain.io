@@ -44,41 +44,41 @@ const SkillsSection: FC<Props> = () => {
               </h3>
               <div className="grid grid-cols-3 lg:grid-cols-6 pl-2 sm:pl-0 lg:w-full grid-flow-row mt-10 lg:mt-20 gap-x-12 lg:gap-x-32 xl:gap-x-40 gap-y-16 lg:gap-y-24 pb-16">
                 <div>
-                  <Typescript className="h-10 w-10 sm:h-12 sm:w-12 shadow-md" />
+                  <Typescript className="h-10 w-10 sm:h-12 sm:w-12" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     TypeScript
                   </span>
                 </div>
 
                 <div>
-                  <Javascript className="h-10 w-10 sm:h-12 sm:w-12 shadow-md rounded-md" />
+                  <Javascript className="h-10 w-10 sm:h-12 sm:w-12 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     JavaScript
                   </span>
                 </div>
 
                 <div>
-                  <Java className="h-10 w-10 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+                  <Java className="h-10 w-10 sm:h-14 sm:w-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Java
                   </span>
                 </div>
                 <div>
-                  <Nodejs className="h-12 w-12 p-1 shadow-md rounded-md" />
+                  <Nodejs className="h-12 w-12 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     NodeJS
                   </span>
                 </div>
 
                 <div>
-                  <Html className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+                  <Html className="h-12 w-12 sm:h-14 sm:w-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Html
                   </span>
                 </div>
 
                 <div>
-                  <Css className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+                  <Css className="h-12 w-12 sm:h-14 sm:w-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     CSS
                   </span>
@@ -92,37 +92,37 @@ const SkillsSection: FC<Props> = () => {
               </h3>
               <div className="grid grid-cols-3 lg:grid-cols-6 pl-2 sm:pl-0 w-full grid-flow-row mt-10 lg:mt-20 gap-x-12 lg:gap-x-32 xl:gap-x-36 gap-y-14 lg:gap-y-24 pb-16">
                 <div>
-                  <Reactjs className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+                  <Reactjs className="h-12 w-12 sm:h-14 sm:w-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     ReactJS
                   </span>
                 </div>
                 <div>
-                  <Nextjs className="h-12 w-12 sm:h-16 sm:w-16 p-1 shadow-md rounded-md" />
+                  <Nextjs className="h-12 w-12 sm:h-16 sm:w-16 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     NextJS
                   </span>
                 </div>
                 <div>
-                  <Graphql className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+                  <Graphql className="h-12 w-12 sm:w-14 sm:h-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     GraphQL
                   </span>
                 </div>
                 <div>
-                  <Express className="h-12 w-12 sm:w-16 sm:h-16 p-1 shadow-md rounded-md" />
+                  <Express className="h-12 w-12 sm:w-16 sm:h-16 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     ExpressJS
                   </span>
                 </div>
                 <div>
-                  <Tailwind className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+                  <Tailwind className="h-12 w-12 sm:w-14 sm:h-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     TailwindCSS
                   </span>
                 </div>
                 <div>
-                  <Apollo className="h-12 w-12 sm:w-16 sm:h-16 p-1 shadow-md rounded-md" />
+                  <Apollo className="h-12 w-12 sm:w-16 sm:h-16 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Apollo
                   </span>
@@ -135,38 +135,38 @@ const SkillsSection: FC<Props> = () => {
               </h3>
               <div className="grid grid-cols-3 lg:grid-cols-6 pl-2 sm:pl-0 w-full grid-flow-row mt-10 lg:mt-20 gap-y-14 lg:gap-y-24 gap-x-12 lg:gap-x-32 xl:gap-x-40">
                 <div>
-                  <MongoDb className="h-12 w-12 sm:w-14 sm:h-14 shadow-md p-1 rounded-md" />
+                  <MongoDb className="h-12 w-12 sm:w-14 sm:h-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     MongoDB
                   </span>
                 </div>
                 <div>
-                  <Webpack className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+                  <Webpack className="h-12 w-12 sm:w-14 sm:h-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Webpack
                   </span>
                 </div>
 
                 <div>
-                  <Git className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+                  <Git className="h-12 w-12 sm:w-14 sm:h-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Git
                   </span>
                 </div>
                 <div>
-                  <Postgres className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+                  <Postgres className="h-12 w-12 sm:h-14 sm:w-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Postgres
                   </span>
                 </div>
                 <div>
-                  <Android className="h-12 w-12 sm:w-14 sm:h-14 p-1 shadow-md rounded-md" />
+                  <Android className="h-12 w-12 sm:w-14 sm:h-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Android Studio
                   </span>
                 </div>
                 <div>
-                  <Github className="h-12 w-12 sm:h-14 sm:w-14 p-1 shadow-md rounded-md" />
+                  <Github className="h-12 w-12 sm:h-14 sm:w-14 p-1 rounded-md" />
                   <span className="block mt-1 font-medium text-gray-600 text-sm lg:text-base">
                     Github
                   </span>

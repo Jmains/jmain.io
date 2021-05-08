@@ -57,7 +57,7 @@ const HeroSection: FC = () => {
                   >
                     Let's see my work!
                   </button>
-                  <div className="flex justify-center mt-20 animate-bounce lg:ml-20">
+                  <div className="flex justify-center mt-20 animate-bounce lg:ml-20 lg:hidden">
                     <ArrowDown
                       onClick={() => {
                         scrollToElement("ftProjSection");
