@@ -9,13 +9,13 @@ import {
 } from "react";
 import cn from "classnames";
 
-interface ToastProps {
+interface FadeInProps {
   children: ReactNode | ReactNode[] | Component[];
   fadeInDirection?: string;
   className?: string;
 }
 
-export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
+export const FadeInElementWhenInViewPort: FC<FadeInProps> = ({
   children,
   fadeInDirection = "",
   className,
@@ -44,9 +44,9 @@ export const FadeInElementWhenInViewPort: FC<ToastProps> = ({
   }, [isVisible]);
 
   const rootClassName = cn(
-    "transition-transform ease-in-out duration-500 transform",
+    "transition-transform transition-opacity ease-in-out duration-1000 transform",
     {
-      "opacity-100 visible": isVisible,
+      "opacity-100 visible translate-x-0": isVisible,
       [`${fadeInDirection} invisible opacity-0`]: !isVisible,
     },
     className
