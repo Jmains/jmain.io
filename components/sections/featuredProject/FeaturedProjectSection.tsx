@@ -63,7 +63,7 @@ const FeaturedProjectSection: FC = () => {
                 </div>
               </div>
 
-              <div className="mx-auto md:mx-0 mt-16 md:mt-16 lg:text-lg">
+              <div className="mx-auto md:mx-0 mt-16 md:mt-12 lg:text-lg">
                 <span className="block text-gray-800 font-semibold px-3 lg:px-0 relative">
                   What?
                   <div className="md:hidden h-6 border-l-4 border-primaryDark absolute top-0 left-0 -ml-1"></div>
@@ -86,7 +86,7 @@ const FeaturedProjectSection: FC = () => {
                 />
               </div>
 
-              <div className="-mt-10 sm:-mt-28 md:mt-16 lg:mt-20 mx-auto lg:text-lg">
+              <div className="-mt-10 sm:-mt-28 md:mt-16 lg:mt-16 mx-auto lg:text-lg">
                 <span className="block text-gray-800 font-semibold px-3 lg:px-0 relative">
                   Why?
                   <div className="md:hidden h-6 border-l-4 border-primaryDark absolute top-0 left-0 -ml-1"></div>
