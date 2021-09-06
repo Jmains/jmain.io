@@ -32,7 +32,7 @@ export const FadeInElementWhenInViewPort: FC<FadeInProps> = ({
           observer.unobserve(nodeRef.current);
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.05, root: null, rootMargin: "-100px 0px" }
     );
 
     if (nodeRef.current) {
@@ -44,12 +44,11 @@ export const FadeInElementWhenInViewPort: FC<FadeInProps> = ({
   }, [isVisible]);
 
   const rootClassName = cn(
-    "transition-transform transition-opacity ease-in-out duration-1000 transform",
+    className,
+    `transition-opacity ease-in-out duration-500 opacity-0`,
     {
-      "opacity-100 visible translate-x-0": isVisible,
-      [`${fadeInDirection} invisible opacity-0`]: !isVisible,
-    },
-    className
+      "opacity-100": isVisible,
+    }
   );
 
   return (

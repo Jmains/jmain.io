@@ -24,7 +24,7 @@ const ProjectsSection: FC = () => {
             <h2 className={styles.gradientText}>Projects</h2>
             {/* Card 1 */}
             <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 lg:row-span-1 relative mt-20">
-              <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
+              <FadeInElementWhenInViewPort>
                 <div className="lg:grid lg:grid-cols-2 gap-x-10">
                   <div className="px-4 lg:px-0 my-4 lg:col-span-1">
                     <span className="block text-primaryLight font-semibold xl:text-lg">
@@ -150,7 +150,7 @@ const ProjectsSection: FC = () => {
             {/* Card 2 */}
 
             <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 relative mt-20 lg:mt-28">
-              <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
+              <FadeInElementWhenInViewPort>
                 <div className="lg:grid lg:grid-cols-2 gap-x-10">
                   <div className="hidden lg:block lg:col-span-1">
                     <img
@@ -240,7 +240,7 @@ const ProjectsSection: FC = () => {
             {/* Card 3 */}
 
             <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 lg:row-span-1 relative mt-20 lg:mt-32">
-              <FadeInElementWhenInViewPort fadeInDirection="translate-x-24 md:translate-x-48 lg:translate-x-80">
+              <FadeInElementWhenInViewPort>
                 <div className="lg:grid lg:grid-cols-2 gap-x-10">
                   <div className="px-4 lg:px-0 my-4 lg:col-span-1">
                     <span className="block text-primaryLight font-semibold xl:text-lg">
@@ -352,24 +352,21 @@ const projectsData = [
     description:
       "An android app that mimics the functionality of a contact manager in either Android or iOS phones. Users can view their list of contacts sorted in alphabetical order, view their location, and also add, edit, and remove a contact from the contact list.",
     technologies: ["Next.js", "javascript", "html", "css", "apollo", "mongoDB"],
-    img:
-      "https://images.unsplash.com/photo-1554731617-8eafa9975365?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80",
+    img: "https://images.unsplash.com/photo-1554731617-8eafa9975365?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80",
   },
   {
     title: "Favorite Movie App",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tellus elit, duis consectetur aliquam proin metus. A nulla nibh ornare diam",
     technologies: ["Next.js", "javascript", "html", "css", "apollo", "mongoDB"],
-    img:
-      "https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=978&q=80",
+    img: "https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=978&q=80",
   },
   {
     title: "SpaceX Clone",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tellus elit, duis consectetur aliquam proin metus. A nulla nibh ornare diam",
     technologies: ["Next.js", "javascript", "html", "css", "apollo", "mongoDB"],
-    img:
-      "https://images.unsplash.com/photo-1518365050014-70fe7232897f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+    img: "https://images.unsplash.com/photo-1518365050014-70fe7232897f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
   },
 ];
 
