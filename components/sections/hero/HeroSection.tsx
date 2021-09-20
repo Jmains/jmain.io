@@ -40,7 +40,7 @@ const HeroSection: FC = () => {
                   </div>
 
                   <span className={styles.subheading}>
-                    Full Stack Developer | Aspiring UX/UI Designer
+                    Software Engineer | Aspiring UX/UI Designer
                   </span>
                 </div>
                 <h2 className={styles.headline}>

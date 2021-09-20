@@ -72,7 +72,7 @@ const FeaturedProjectSection: FC = () => {
                 <p className="text-gray-600 px-4 lg:px-0 mt-4 md:leading-7 xl:leading-9 max-w-2xl">
                   An online platform to <em className="font-bold">develop</em>,{" "}
                   <em className="font-bold">connect</em> and{" "}
-                  <em className="font-bold">discover</em> individuals from all avenues of
+                  <em className="font-bold">discover</em> creators from all avenues of
                   entertainment, such as artists, musicians, audio engineers, comedians and
                   painters.
                 </p>
@@ -93,12 +93,12 @@ const FeaturedProjectSection: FC = () => {
                 </span>
 
                 <p className="text-gray-600 px-4 lg:px-0 mt-4 md:leading-7 xl:leading-9 max-w-2xl">
-                  It's difficult for amateur artists, musicians, comedians and painters to
-                  recieve recognition and promote their original creations. This platform
-                  provides a way for those individuals to{" "}
-                  <em className="font-bold">showcase</em> and promote their craft as well as{" "}
-                  <em className="font-bold">follow</em> and{" "}
-                  <em className="font-bold">collaborate</em> with others in adjacent fields.{" "}
+                  With everyone trying to get their name out there, it's difficult for amateur
+                  artists, musicians, comedians and painters to receive recognition and promote
+                  their original creations. This platform aims to provide a way for these
+                  individuals to <em className="font-bold">showcase</em> and promote their
+                  craft in addition to <em className="font-bold">following</em> and{" "}
+                  <em className="font-bold">collaborating</em> with others in adjacent fields.{" "}
                 </p>
               </div>
 

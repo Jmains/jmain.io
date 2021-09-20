@@ -22,6 +22,7 @@ const ProjectsSection: FC = () => {
         <section id="projectsSection">
           <div className="grid grid-cols-1 lg:grid-cols-12 grid-flow-row border-l border-r border-gray-800 md:border-none justify-center mx-4 pb-20 md:pt-10 md:pb-32 lg:pt-10 lg:pb-48">
             <h2 className={styles.gradientText}>Projects</h2>
+
             {/* Card 1 */}
             <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 lg:row-span-1 relative mt-20">
               <FadeInElementWhenInViewPort>
@@ -32,15 +33,18 @@ const ProjectsSection: FC = () => {
                     </span>
                     <div className="flex justify-between items-center mt-3">
                       <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:-ml-0 border-primaryLight md:border-none px-4 md:px-0">
-                        Study Addicts
+                        Study Groups
                       </h4>
                       <Globe className="h-6 w-6 text-blue-400" />
                     </div>
 
                     <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9">
                       A web app for college students to host and join study sessions created by
-                      the students. For each session created the student must enter the class
-                      number, professor, building, room number, date and time frame.
+                      the students. Users can only log in with their specific school email.
+                      Each session created may be for a specific class number and professor but
+                      can also simply be subject based. Some input fields include, the class
+                      number, class subject, professor, building, room number, date and time
+                      frame.
                     </p>
 
                     <div className="block lg:hidden rounded-lg mt-9 ">
@@ -146,6 +150,102 @@ const ProjectsSection: FC = () => {
             </div>
 
             {/* End Card 1 */}
+
+            {/* Card new 2 */}
+
+            <div className="md:pl-6 lg:pl-10 lg:pr-8 lg:col-span-12 relative mt-20 lg:mt-28">
+              <FadeInElementWhenInViewPort>
+                <div className="lg:grid lg:grid-cols-2 gap-x-10">
+                  <div className="hidden lg:block lg:col-span-1">
+                    <img
+                      className="object-center object-cover rounded-lg h-80 w-full lg:mt-5 shadow-xl lozad"
+                      src="/BisneyM.png"
+                      alt="Bisney Minus"
+                    />
+                  </div>
+                  <div className="px-4 lg:px-0 my-4 lg:col-span-1 xl:pr-6">
+                    <span className="block text-primaryLight font-semibold xl:text-lg">
+                      July, 2021
+                    </span>
+                    <div className="flex justify-between mt-3">
+                      <h4 className="text-gray-200 text-xl xl:text-2xl font-semibold border-l-4 -ml-5 md:ml-0 border-primaryLight md:border-none px-4 md:px-0">
+                        Bisney Minus
+                      </h4>
+                      <Globe className="h-6 w-6 text-blue-400" />
+                    </div>
+
+                    <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9 ">
+                      To sharpen my frontend skills I recreated the Disney+ dashboard UI using
+                      React, HTML, and CSS. Check out the live version here:{" "}
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className="text-blue-400 hover:underline"
+                        href="https://bisneym.app"
+                      >
+                        https://bisneym.app
+                      </a>
+                    </p>
+
+                    <div className="block lg:hidden rounded-lg mt-9">
+                      <img
+                        className="object-center object-cover rounded-lg md:w-3/4 md:h-80 w-full h-64 shadow-xl lozad"
+                        src="/BisneyM.png"
+                        alt="Bisney Minus"
+                      />
+                    </div>
+
+                    <div className="flex flex-wrap mt-8 -ml-3 lg:p-0">
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={styles.tag}
+                        href="https://www.w3schools.com/html/"
+                      >
+                        #HTML
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={styles.tag}
+                        href="https://www.w3schools.com/css/"
+                      >
+                        #CSS
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        className={styles.tag}
+                        href="https://reactjs.org/"
+                      >
+                        #React
+                      </a>
+                    </div>
+                    <div className="flex justify-center md:justify-start space-x-10 mt-14 md:mt-8">
+                      <Link href="https://github.com/Jmains/bisney-minus">
+                        <a
+                          target="_blank"
+                          rel="noopener"
+                          className="shadow-md px-4 py-1 text-gray-100 bg-darkGray hover:bg-opacity-50 rounded-md transition duration-200 ease-out"
+                        >
+                          <Github className="h-6 w-6 mx-auto fill-current" />
+                          <span className="block font-bold text-xs mt-1">Github</span>
+                        </a>
+                      </Link>
+                      {/* <Link href="/">
+                          <div className="shadow-md px-5 py-1 rounded-md">
+                            <Eye className="h-6 w-6 fill-current text-red-500" />
+                            <span className="block font-bold text-xs text-gray-400 mt-1">
+                              Live
+                            </span>
+                          </div>
+                        </Link> */}
+                    </div>
+                  </div>
+                </div>
+              </FadeInElementWhenInViewPort>
+            </div>
+            {/* End Card new 2 */}
 
             {/* Card 2 */}
 
@@ -254,10 +354,12 @@ const ProjectsSection: FC = () => {
                     </div>
 
                     <p className="text-gray-400 mt-5 lg:text-lg xl:leading-9">
-                      A web app for users to keep a personal collection of their favorite
-                      movies. Users must enter the title, year, a personal description of why
-                      they like the movie, and a personal rating (out of 5) for the movie.
-                      Users can update or remove a movie from their collection at any time.
+                      Created for my self to keep track of the movies I watched with my dad
+                      every Saturday at the theatres. A web app for users to keep a personal
+                      collection of their favorite movies. Users can enter the title, year, a
+                      personal description of why they like the movie, and a personal rating
+                      (out of 5) for the movie. Users can update or remove a movie from their
+                      collection at any time.
                     </p>
 
                     <div className="block lg:hidden rounded-lg mt-9">
